@@ -59,7 +59,7 @@
 
   function base(api, box) {
     api.setRounding('1');
-    ['ShowAxes(false)', 'ShowGrid(false)', 'ZoomIn(' + box.join(',') + ')'].forEach(function (c) { api.evalCommand(c); });
+    ['ShowAxes(false)', 'ShowGrid(false)', 'ZoomIn(' + box.join(',') + ')', 'SetAxesRatio(1,1)'].forEach(function (c) { api.evalCommand(c); });
   }
   function style(api, name, color, thick) {
     api.evalCommand('SetColor(' + name + ',"' + color + '")');
@@ -75,7 +75,7 @@
   var BUILDS = {
     /* 半徑是集合：拖動圓上任一點，圓心到它的距離都相同 */
     'radius-set': function (api) {
-      base(api, [-5.2, -3.6, 5.2, 3.6]);
+      base(api, [-5.6, -3.584, 5.6, 3.584]);
       run(api, ['O=(0,0)', 'A=(3,0)', 'c=Circle(O,A)',
         'P=Point(c,0.14)', 'Q=Point(c,0.41)', 'R=Point(c,0.66)',
         'sA=Segment(O,A)', 'sP=Segment(O,P)', 'sQ=Segment(O,Q)', 'sR=Segment(O,R)',
@@ -91,7 +91,7 @@
 
     /* 46% 迷思：兩圓半徑相同，位置不同也不疊合，仍然一樣大 */
     'two-circles': function (api) {
-      base(api, [-8, -4.6, 8, 4.6]);
+      base(api, [-8, -5.12, 8, 5.12]);
       run(api, ['O1=(-3.8,0)', 'A=(-0.8,0)', 'c1=Circle(O1,A)', 'k=Radius(c1)',
         'O2=(3.8,0.4)', 'c2=Circle(O2,k)', 'B=Point(c2,0.02)',
         's1=Segment(O1,A)', 's2=Segment(O2,B)']);
@@ -106,7 +106,7 @@
 
     /* 弦與直徑：只有通過圓心的那一條弦才是直徑 */
     'chord': function (api) {
-      base(api, [-5.2, -3.8, 5.2, 3.8]);
+      base(api, [-5.6, -3.584, 5.6, 3.584]);
       run(api, ['O=(0,0)', 'c=Circle(O,3)', 'H=Point(Segment((0,-2.8),(0,2.8)))', 'SetCoords(H,0,1.7)',
         'l=Line(H,H+(1,0))', 'E=Intersect(c,l,1)', 'F=Intersect(c,l,2)', 'ch=Segment(E,F)',
         'SetVisibleInView(l,1,false)', 'SetFixed(O,true)']);
@@ -122,7 +122,7 @@
 
     /* 直徑由兩條半徑接成：以加法取代倍數除法 */
     'diameter-sum': function (api) {
-      base(api, [-5.2, -3.8, 5.2, 3.8]);
+      base(api, [-5.6, -3.584, 5.6, 3.584]);
       run(api, ['O=(0,0)', 'c=Circle(O,3)', 'A=Point(c,0.06)', 'B=Rotate(A,pi,O)',
         'rA=Segment(O,A)', 'rB=Segment(O,B)', 'SetFixed(O,true)']);
       style(api, 'c', INK, 5);

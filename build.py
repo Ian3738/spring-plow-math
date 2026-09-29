@@ -3,7 +3,7 @@
 import pathlib, sys
 
 ROOT = pathlib.Path(__file__).parent
-V = "5"   # 快取版本號，改樣式或腳本後要加一
+V = "6"   # 快取版本號，改樣式或腳本後要加一
 
 PAGES = [
   ("index",      "總覽",     "圓的概念 UDL 設計",
