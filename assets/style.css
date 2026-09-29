@@ -289,3 +289,6 @@ footer.foot p{font-family:var(--mono); font-size:.72rem; color:var(--graphite); 
 /* ── KaTeX 調整 ── */
 .katex{font-size:1.06em}
 .katex-display{margin:.9em 0; overflow-x:auto; overflow-y:hidden; padding:4px 0}
+
+/* 標題列與帶分隔線的說明列不受內文 66 字寬限制 */
+.def-h,.ggb-how,.why{max-width:none}
