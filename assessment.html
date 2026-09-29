@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>評量與效果檢核｜圓的概念</title>
+<meta name="description" content="以 Q20 為錨點設計前後測，自編檢核題逐一對應三種錯誤類型，並事先寫明什麼情況要判定為無效。">
+<meta name="color-scheme" content="light dark">
+<script>
+(function(){var d=document.documentElement,t,f;
+try{t=localStorage.getItem('spm-theme');f=localStorage.getItem('spm-fs');}catch(e){}
+if(t)d.setAttribute('data-theme',t);d.setAttribute('data-fs',f||'m');})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="topbar">
+  <div class="wrap row1">
+    <a class="brand" href="index.html">春耕未來・數造共好<small>圓的概念</small></a>
+    <div class="ctrls">
+      <span class="lbl" id="fsl">文字大小</span>
+      <button class="tog" type="button" data-fs-set="m" aria-describedby="fsl">標準</button>
+      <button class="tog" type="button" data-fs-set="l" aria-describedby="fsl">大</button>
+      <button class="tog" type="button" data-fs-set="xl" aria-describedby="fsl">特大</button>
+      <button class="tog" type="button" id="themeBtn" aria-pressed="false">深色</button>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="頁面導覽">
+    <div class="wrap"><ol>
+      <li><a href="index.html"><span class="n">01</span>總覽</a></li>
+      <li><a href="concept.html"><span class="n">02</span>數學本質</a></li>
+      <li><a href="udl.html"><span class="n">03</span>UDL 設計</a></li>
+      <li><a href="lesson.html"><span class="n">04</span>教學流程</a></li>
+      <li><a href="scaffold.html"><span class="n">05</span>教學鷹架</a></li>
+      <li><a href="ai.html"><span class="n">06</span>AI 協作</a></li>
+      <li><a href="assessment.html" aria-current="page"><span class="n">07</span>評量檢核</a></li>
+    </ol></div>
+  </nav>
+</header>
+<header class="ph">
+  <div class="wrap">
+    <p class="kicker">怎麼知道調整有效</p>
+    <h1>評量與效果檢核</h1>
+    <p class="lede">以 Q20 為錨點設計前後測，自編檢核題逐一對應三種錯誤類型，並事先寫明什麼情況要判定為無效。</p>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<section id="logic" aria-labelledby="h-logic">
+  <p class="eyebrow">以 Q20 為錨點</p>
+  <h2 id="h-logic">評量設計的邏輯：一題只讓一種錯誤出現</h2>
+  <p>本單元的評量從 112 年度縣市學生學習能力檢測數學三年級第 20 題（以下稱 Q20）出發。我們手上有的是試題分析報告所載的評量目標、選答率、選項說明與教學建議，<strong>沒有試題原文</strong>。因此本頁不重構 Q20，不出「仿 Q20」的題目，也不猜測它四個選項的文字。</p>
+  <p>自編檢核題改以報告歸納的三種錯誤類型為對象：每一種類型配兩題，一題只讓一種誤解有機會出現。學生答錯時，老師看他選了哪個選項，就能回推是哪一種誤解，再回到對應的鷹架。</p>
+  <blockquote class="official">
+    <p>本題給定半徑 3 公分的圓及圓上標示半徑、直徑及兩條弦的圖像，要求學生選出正確的敘述，評量學生是否認識「圓心」、「圓周」、「半徑」與「直徑」的意義。</p>
+    <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 68 頁，Q20 試題分析（一）評量目標。</cite>
+  </blockquote>
+
+  <div class="tiles c4">
+    <div class="stat"><p class="k">Q20 通過率．十縣市全體</p><p class="n">21%</p><p class="d">高分組 34%，低分組 15%。鑑別度 0.19，即兩組答對率只差 19 個百分點。</p></div>
+    <div class="stat alert"><p class="k">選錯誤選項 ④</p><p class="n">46%</p><p class="d">是選正答人數的兩倍多。報告說明選它的學生誤認為兩個圓要完全疊合才算一樣大。</p></div>
+    <div class="stat alert"><p class="k">高分組選 ④</p><p class="n">47%</p><p class="d">低分組為 35%。總分較高的學生，反而更常選這個錯誤選項。</p></div>
+    <div class="stat"><p class="k">新竹市．空間與形狀</p><p class="n">42.4%</p><p class="d">新竹市 201 個班級之班級答對率平均，四個向度中最低（整體 66.5%）。這一格是新竹市資料，左邊三格是十縣市全體。</p></div>
+  </div>
+
+  <div class="tw"><table>
+    <caption>Q20 各選項選答率（十縣市全體有效樣本．報告第 67 頁）</caption>
+    <thead><tr><th scope="col">組別</th><th scope="col" class="num">①（正答）</th><th scope="col" class="num">②</th><th scope="col" class="num">③</th><th scope="col" class="num">④</th><th scope="col" class="num">其他</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">全體</th><td class="num">.21</td><td class="num">.19</td><td class="num">.13</td><td class="num">.46</td><td class="num">.01</td></tr>
+      <tr class="hl"><th scope="row">高分組</th><td class="num">.34</td><td class="num">.11</td><td class="num">.08</td><td class="num">.47</td><td class="num">.00</td></tr>
+      <tr><th scope="row">低分組</th><td class="num">.15</td><td class="num">.27</td><td class="num">.22</td><td class="num">.35</td><td class="num">.01</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box note"><p class="tag">資料範圍</p><p>選答率以十縣市的有效樣本計算。報告說明刪除無效樣本後，納入分析的有效樣本為 44,467 人（到考 49,031 人）；高分組與低分組分別是總分排名前 27% 與後 27% 的學生，鑑別度為兩組答對率之差（報告第 6 頁，表 4-1）。這些比例不是新竹市專屬的資料。</p></div>
+
+  <h3>為什麼要把三種錯誤拆開來測</h3>
+  <p>報告對選 ②、③、④ 的學生，都先寫「可能不認識四個名詞的意義」，再各自加上一種特定誤解。以選 ④ 的 46% 為例：</p>
+  <blockquote class="official">
+    <p>這些學生可能不認識「圓心」、「圓周」、「半徑」與「直徑」的意義，他們知道沒有過圓心的弦不是直徑，但誤認為畫出來的兩個圓要完全疊合才算一樣大，而不是半徑一樣長的圓就是一樣大。</p>
+    <cite>同上報告，第 68 頁，Q20 試題分析（三）選項及學生表現說明第 4 點。</cite>
+  </blockquote>
+  <p>同一個選項背後有兩種可能原因。學生選 ④，老師無法分辨他是四個名詞都不熟，還是名詞都懂、只卡在「一樣大」的判斷，而這兩種學生需要的鷹架不同。報告在教學建議中把原因整理成三類，本頁的檢核題就依這三類拆開：</p>
+  <blockquote class="official">
+    <p>1. 學生可能不認識「圓心」、「圓周」、「半徑」與「直徑」的意義。</p>
+    <p>2. 學生可能認為過圓心及水平的弦都是直徑。</p>
+    <p>3. 學生可能認為畫出來的兩個圓要完全疊合才算一樣大，而不是半徑一樣長的圓就是一樣大。</p>
+    <cite>同上報告，第 69 頁，Q20 教學建議（一）錯誤類型的可能原因。</cite>
+  </blockquote>
+  <div class="box key"><p class="tag">高分組的 47% 告訴我們什麼</p><p>如果錯誤類型 3 會隨一般數學能力提高而自然消失，高分組選 ④ 的比例應該比低分組低。實際上高分組是 47%，低分組是 35%。類型 3 不能等學生「程度變好」就解決，要直接教、單獨測。所以本頁的前後測把類型 3 單獨計算，並且把高分組與低分組分開看（見<a href="#prepost">前後測設計</a>）。</p></div>
+
+  <div class="tw"><table>
+    <caption>三種錯誤類型與檢核題、鷹架的對應</caption>
+    <thead><tr><th scope="col">錯誤類型</th><th scope="col">課堂上可觀察的表現</th><th scope="col">檢核題編號</th><th scope="col">對應鷹架</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">類型 1<br>不認識圓心、圓周、半徑與直徑的意義</th>
+        <td>問「圓周在哪裡」，學生用手掌抹過整個圓面；把圓內任一點拉到邊的線叫做半徑；半徑、直徑兩個詞互換使用；說圓心也在圓上。</td>
+        <td>第 1、2 題<br>（第 3 題選 ③、第 4 題選 ④ 也歸此類）</td>
+        <td>半徑四種意涵明示化、區分圓與圓區域（<a href="udl.html#g2">G2 ★</a>）；四詞圖示對照卡；先說「從中心到邊」，再引入術語（<a href="udl.html#g7">G7</a>）。</td></tr>
+      <tr><th scope="row">類型 2<br>認為過圓心及水平的弦都是直徑</th>
+        <td>看到橫的線段就說是直徑；斜放的直徑被說成「不是直徑」；量出一條弦比直徑短，仍說它是直徑；找直徑時不先找圓心。</td>
+        <td>第 3、4 題</td>
+        <td>直徑兩個條件字卡：通過圓心、兩端在圓上（<a href="udl.html#g2">G2 ★</a>）；以視覺組合取代倍數除法，直徑由兩條半徑接成（<a href="udl.html#g3">G3 ★</a>）；弦與直徑互動作圖。</td></tr>
+      <tr class="hl"><th scope="row">類型 3<br>認為兩個圓要完全疊合才算一樣大</th>
+        <td>要求把圖剪下來疊疊看；說「沒有放在一起，所以不一樣」；用位置高低或「看起來」判斷大小；比較兩個圓時不去量半徑。</td>
+        <td>第 5、6 題</td>
+        <td>圓規兩腳綁繩使半徑可見可觸（<a href="udl.html#g1">G1</a>）；「半徑等長即為圓」的本質建構與兩圓等大互動作圖（<a href="udl.html#g3">G3 ★</a>）；兩人一組互測（<a href="udl.html#g8">G8</a>）。</td></tr>
+      <tr><th scope="row">學習重點後半<br>能使用圓規畫指定半徑的圓</th>
+        <td>針尖滑動，圓心留下好幾個洞；圓沒有封閉；圓規張開的長度不是題目要的半徑。這一列不是報告歸納的錯誤類型，是 S-3-3 條目本身的要求。</td>
+        <td>第 7 題（實作）</td>
+        <td>綁繩圓規（<a href="udl.html#g1">G1</a>）；實體圓規、綁繩圓規、電子圓規 App 三選一（<a href="udl.html#g4">G4</a>）；描圓、圓規畫圓、同心圓三層挑戰（<a href="udl.html#g8">G8</a>）；自我檢核表（<a href="udl.html#g6">G6</a>）。</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="box note"><p class="tag">七題共同遵守的規則</p>
+    <p>只考本單元：認識圓（圓心、圓周、半徑、直徑）與使用圓規。不出現圓周長、圓面積、圓周率。</p>
+    <p>半徑與直徑的關係一律用加法說：\( \text{直徑}=\text{半徑}+\text{半徑} \)。不用「2 倍」，也不用 \( 10\div5=2 \) 這類除法算式當入口，依報告第 70 頁教學建議（二）之 3 所建議的方法二。</p>
+    <p>題圖中的線段一律同一種顏色，不用顏色暗示答案；半徑只用 2 到 5 公分的整數。六題選擇題的正答分散在四個位置，避免學生靠位置猜；正答也不比其他選項明顯長，避免學生挑最長、理由最完整的那一個。</p>
+    <p>題數少，是為了讓前測在 10 分鐘內做完、後測放得進第 5 節 9 分鐘的檢核題時段，也讓特教教師有時間為需要口述作答的學生逐一施測。</p>
+  </div>
+</section>
+
+<section id="items" aria-labelledby="h-items">
+  <p class="eyebrow">自編檢核題</p>
+  <h2 id="h-items">七題檢核題：六題選擇、一題實作</h2>
+  <p>七題都是本計畫自編，未取材自任何學力檢測的正式試題。第 1 至 6 題為選擇題，前測與後測都做；第 7 題為圓規實作，只在後測評，因為前測時學生還沒學過用圓規畫圓；它不另外發卷，直接評第 5 節三層挑戰任務第二層的作品（見<a href="#q7">檢核題 7</a>）。</p>
+  <ul>
+    <li>前測與後測的每一題選擇題，都另加一個選項「⑤ 我還沒學過，不知道」。選 ⑤ 不算錯，也不算誘答，讓還沒學過名詞的學生不必亂猜，資料也比較乾淨。</li>
+    <li>第 5、6 題的題幹附上「半徑」的白話說明（從圓的中心點到圓的邊的線）。這兩題要測的是比較大小的依據，不是認不認得這個詞，所以前測時也能作答。</li>
+    <li>第 1 至 4 題不附說明，因為認識名詞本身就是這幾題要測的內容。</li>
+    <li>視覺障礙學生使用觸覺版題圖，做法見<a href="#ethics">施測與資料處理</a>。</li>
+  </ul>
+
+  <div class="tw"><table>
+    <caption>計分與歸類：什麼情況算「已排除這種錯誤」</caption>
+    <thead><tr><th scope="col">題組</th><th scope="col">題號</th><th scope="col">判定為已排除的條件</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">類型 1</th><td>第 1、2 題</td><td>兩題都答對。</td></tr>
+      <tr><th scope="row">類型 2</th><td>第 3、4 題</td><td>兩題都答對。</td></tr>
+      <tr class="hl"><th scope="row">類型 3</th><td>第 5、6 題</td><td>第 5 題得 2 分（判斷對，而且依據是半徑），同時第 6 題答對。</td></tr>
+      <tr><th scope="row">圓規畫圓</th><td>第 7 題</td><td>評分表第 1 至 3 項都達成為「基本達成」；五項都達成為「達成」。</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tw"><table>
+    <caption>誘答選項歸類表（A 卷）：每個錯誤選項歸哪一種類型</caption>
+    <thead><tr><th scope="col">題號</th><th scope="col">正答</th><th scope="col">類型 1 誘答</th><th scope="col">類型 2 誘答</th><th scope="col">類型 3 誘答</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">第 1 題</th><td>③</td><td>①②④</td><td>無</td><td>無</td></tr>
+      <tr><th scope="row">第 2 題</th><td>④</td><td>①②③</td><td>無</td><td>無</td></tr>
+      <tr><th scope="row">第 3 題</th><td>②</td><td>③</td><td>①④</td><td>無</td></tr>
+      <tr><th scope="row">第 4 題</th><td>③</td><td>④</td><td>①②</td><td>無</td></tr>
+      <tr class="hl"><th scope="row">第 5 題</th><td>④，且依據是半徑（2 分）</td><td>無</td><td>無</td><td>①②③，或意思相同的口述、指認、操作（0 分）</td></tr>
+      <tr class="hl"><th scope="row">第 6 題</th><td>①</td><td>無</td><td>無</td><td>②③④</td></tr>
+    </tbody>
+  </table></div>
+
+  <article class="item" id="q1">
+    <div class="item-h"><span class="no">檢核題 1</span><span class="tg">對應錯誤類型 1．G2 ★</span></div>
+    <div class="item-b">
+      <p>下面四個圖，黑點 O 都是圓心。哪一個圖裡畫的線段是半徑？</p>
+      <figure class="fig">
+        <svg viewBox="0 0 620 190" width="620" height="190" role="img" aria-labelledby="fq1-t fq1-d">
+          <title id="fq1-t">檢核題 1 題圖：四個圓各畫一條線段</title>
+          <desc id="fq1-d">四個一樣大的圓由左到右並排，下方依序標示甲、乙、丙、丁，每個圓的圓心都有一個黑點，標示 O。甲：線段從圓內一個不是圓心的點出發，往右上方畫到圓上，沒有經過圓心。乙：線段從圓心 O 出發往左上方畫，終點超出圓外。丙：線段從圓心 O 出發往右下方畫，終點剛好落在圓上。丁：線段從圓心 O 出發往右上方畫，終點停在圓的裡面，沒有碰到圓。</desc>
+          <g fill="none" stroke="var(--ink)" stroke-width="2.2">
+            <circle cx="80" cy="90" r="55"/>
+            <circle cx="235" cy="90" r="55"/>
+            <circle cx="390" cy="90" r="55"/>
+            <circle cx="545" cy="90" r="55"/>
+          </g>
+          <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+            <line x1="70" y1="125" x2="135" y2="90"/>
+            <line x1="235" y1="90" x2="167.45" y2="51"/>
+            <line x1="390" y1="90" x2="432.13" y2="125.35"/>
+            <line x1="545" y1="90" x2="560" y2="64.02"/>
+          </g>
+          <g fill="var(--ink)">
+            <circle cx="80" cy="90" r="3.5"/><circle cx="235" cy="90" r="3.5"/><circle cx="390" cy="90" r="3.5"/><circle cx="545" cy="90" r="3.5"/>
+            <circle cx="70" cy="125" r="3"/><circle cx="135" cy="90" r="3"/><circle cx="167.45" cy="51" r="3"/><circle cx="432.13" cy="125.35" r="3"/><circle cx="560" cy="64.02" r="3"/>
+          </g>
+          <g fill="var(--ink)" font-size="14">
+            <text x="86" y="84">O</text><text x="241" y="108">O</text><text x="370" y="86">O</text><text x="525" y="106">O</text>
+          </g>
+          <g fill="var(--ink)" font-size="16" text-anchor="middle">
+            <text x="80" y="176">甲</text><text x="235" y="176">乙</text><text x="390" y="176">丙</text><text x="545" y="176">丁</text>
+          </g>
+        </svg>
+        <figcaption>四個圓一樣大，四條線段同一種顏色。只有一條同時符合「一端在圓心、另一端在圓上」。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li>① 甲</li>
+        <li>② 乙</li>
+        <li class="ans">③ 丙（正答）</li>
+        <li>④ 丁</li>
+      </ol>
+      <p class="why"><b>設計意圖</b>　半徑要同時符合兩個條件：一端在圓心，另一端在圓上。四個圖各缺一部分，學生必須兩端都檢查才選得出來。只記得「半徑是圓裡面的一條線」的學生，會在這一題露出來。<br>
+      <b>正答理由</b>　丙的線段從圓心 O 出發，另一端剛好落在圓上。教師端的說法：若把圓上那一點記為 A，半徑就是 \( \overline{OA} \)，而 A 一定要在圓上。<br>
+      <b>誘答對應的迷思</b>　選 ①（甲）：只看線有沒有碰到圓，沒看起點是不是圓心。選 ②（乙）：知道要從圓心出發，卻沒注意終點已經超出圓外，以為越長越像半徑。選 ④（丁）：把「從中心往外畫的線」都當成半徑，沒注意終點還沒到圓上。三者都屬類型 1。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q2">
+    <div class="item-h"><span class="no">檢核題 2</span><span class="tg">對應錯誤類型 1．G2 ★ 區分圓與圓區域</span></div>
+    <div class="item-b">
+      <p>小華以 O 為圓心，用圓規畫了一個圓，再把圓的裡面塗上顏色。A 是圓上的一點。下面哪一句話是對的？</p>
+      <figure class="fig">
+        <svg viewBox="0 0 300 225" width="300" height="225" role="img" aria-labelledby="fq2-t fq2-d">
+          <title id="fq2-t">檢核題 2 題圖：裡面塗了顏色的圓</title>
+          <desc id="fq2-d">以 O 為圓心畫了一個圓，外框是一圈深色的線，圓的裡面整片塗上淡藍色。從圓心 O 畫一條線段到圓的右上方，終點 A 在那一圈線上。</desc>
+          <circle cx="150" cy="112" r="90" fill="var(--blue-soft)" stroke="var(--ink)" stroke-width="3"/>
+          <line x1="150" y1="112" x2="227.94" y2="67" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="150" cy="112" r="3.5" fill="var(--ink)"/>
+          <circle cx="227.94" cy="67" r="3.5" fill="var(--ink)"/>
+          <g fill="var(--ink)" font-size="15"><text x="132" y="131">O</text><text x="237" y="62">A</text></g>
+        </svg>
+        <figcaption>淡藍色是小華塗上去的顏色，是題目情境的一部分，不是提示。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li>① 塗了顏色的那一整片，都是圓周。</li>
+        <li>② 圓心 O 也在圓周上。</li>
+        <li>③ 從 O 到 A 的線段，是這個圓的直徑。</li>
+        <li class="ans">④ 圓規的筆尖畫出來的那一圈線，是圓周。（正答）</li>
+      </ol>
+      <p class="why"><b>設計意圖</b>　把報告教學建議（二）之 1「區分圓與圓區域」轉成學生看得到的情境：圓規畫出來的是一圈線，塗色之後多出來的那一片是圓區域。四個選項各檢查一個名詞：圓周（①④）、圓心（②）、半徑與直徑（③）。<br>
+      <b>正答理由</b>　圓周就是圓規筆尖畫過的那一圈線。教師端的形式定義：圓 \( C=\{\, P \mid \overline{OP}=r \,\},\ r>0 \)，塗色後的整片是圓區域 \( D=\{\, P \mid \overline{OP}\le r \,\} \)。對學生只說「圓是筆尖畫出來的那一圈線」。<br>
+      <b>誘答對應的迷思</b>　選 ①：把圓和圓區域混為一談，以為圓周是一個面。選 ②：以為圓心屬於圓。S-3-3 條目備註（報告第 67 頁）寫明「圓心並不屬於圓」，因為 \( O\notin C \)：\( \overline{OO}=0\neq r \)；對學生可以說「圓心在圓的裡面，不在那一圈線上」。選 ③：半徑與直徑互換，\( \overline{OA} \) 一端在圓心、一端在圓上，是半徑。三者都屬類型 1。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q3">
+    <div class="item-h"><span class="no">檢核題 3</span><span class="tg">對應錯誤類型 2．G2 ★．G3 ★</span></div>
+    <div class="item-b">
+      <p>下圖的圓心是 O。甲、乙、丙三條線段中，哪一條是直徑？</p>
+      <figure class="fig">
+        <svg viewBox="0 0 320 250" width="320" height="250" role="img" aria-labelledby="fq3-t fq3-d">
+          <title id="fq3-t">檢核題 3 題圖：圓內的三條線段</title>
+          <desc id="fq3-d">以 O 為圓心的一個圓，裡面有三條線段。甲是一條橫的線段，在圓心上方，兩端都在圓上，沒有經過圓心。乙是一條斜的線段，從圓的左上方經過圓心 O 到圓的右下方，兩端都在圓上。丙從圓心 O 畫到圓的左下方，一端在圓心，一端在圓上。甲和乙在圓心的左上方交叉。</desc>
+          <circle cx="160" cy="125" r="90" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+            <line x1="85.17" y1="75" x2="234.83" y2="75"/>
+            <line x1="115" y1="47.06" x2="205" y2="202.94"/>
+            <line x1="160" y1="125" x2="75.43" y2="155.78"/>
+          </g>
+          <g fill="var(--ink)">
+            <circle cx="160" cy="125" r="3.5"/>
+            <circle cx="85.17" cy="75" r="3"/><circle cx="234.83" cy="75" r="3"/>
+            <circle cx="115" cy="47.06" r="3"/><circle cx="205" cy="202.94" r="3"/>
+            <circle cx="75.43" cy="155.78" r="3"/>
+          </g>
+          <g fill="var(--ink)" font-size="15">
+            <text x="171" y="122">O</text>
+            <text x="246" y="80">甲</text>
+            <text x="211" y="228">乙</text>
+            <text x="64" y="172" text-anchor="end">丙</text>
+          </g>
+        </svg>
+        <figcaption>甲是水平的，但沒有經過圓心；乙是斜的，經過圓心。題圖依半徑 3 公分等比例繪製，三條線段的端點都在圓上。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li>① 甲</li>
+        <li class="ans">② 乙（正答）</li>
+        <li>③ 丙</li>
+        <li>④ 甲和乙都是</li>
+      </ol>
+      <p class="why"><b>設計意圖</b>　刻意放一條水平但不通過圓心的線段（甲），再把真正的直徑（乙）畫成斜的。用「看方向」判斷的學生會選甲，用「看圓心」判斷的學生會選乙，兩種判斷方式在這一題給出不同的答案。<br>
+      <b>正答理由</b>　乙通過圓心 O，兩端都在圓上，是直徑。直徑可以朝任何方向，只要通過圓心、兩端在圓上。<br>
+      <b>誘答對應的迷思</b>　選 ①：以方向判斷，認為橫的線段才是直徑，屬類型 2。選 ④：同時接受「通過圓心」與「水平」兩種條件，正是報告所說「過圓心及水平的弦都是直徑」，屬類型 2。選 ③：丙一端在圓心、一端在圓上，是半徑；選它表示半徑與直徑混淆，屬類型 1。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q4">
+    <div class="item-h"><span class="no">檢核題 4</span><span class="tg">對應錯誤類型 2．G3 ★</span></div>
+    <div class="item-b">
+      <p>下圖的圓心是 O，半徑是 3 公分。甲、乙兩條線段都是橫的，兩端也都在圓上。哪一句話是對的？</p>
+      <figure class="fig">
+        <svg viewBox="0 0 320 250" width="320" height="250" role="img" aria-labelledby="fq4-t fq4-d">
+          <title id="fq4-t">檢核題 4 題圖：兩條橫的線段</title>
+          <desc id="fq4-d">以 O 為圓心、半徑 3 公分的圓，裡面有兩條橫的線段，彼此平行。甲在中間，經過圓心 O，兩端都在圓上。乙在甲的上方，距離圓心 2 公分，兩端也在圓上，但沒有經過圓心，長度比甲短。</desc>
+          <circle cx="160" cy="130" r="90" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+            <line x1="70" y1="130" x2="250" y2="130"/>
+            <line x1="92.92" y1="70" x2="227.08" y2="70"/>
+          </g>
+          <g fill="var(--ink)">
+            <circle cx="160" cy="130" r="3.5"/>
+            <circle cx="70" cy="130" r="3"/><circle cx="250" cy="130" r="3"/>
+            <circle cx="92.92" cy="70" r="3"/><circle cx="227.08" cy="70" r="3"/>
+          </g>
+          <g fill="var(--ink)" font-size="15">
+            <text x="160" y="152" text-anchor="middle">O</text>
+            <text x="60" y="135" text-anchor="end">甲</text>
+            <text x="82" y="75" text-anchor="end">乙</text>
+          </g>
+        </svg>
+        <figcaption>兩條線段方向相同、兩端都在圓上，唯一的差別是有沒有經過圓心。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li>① 甲和乙都是直徑，因為它們都是橫的，兩端也都在圓上。</li>
+        <li>② 甲是直徑，因為它是橫的；如果把甲轉成斜的，它就不是直徑了。</li>
+        <li class="ans">③ 甲是直徑，因為它通過圓心；它是兩條半徑接起來的，長 6 公分。（正答）</li>
+        <li>④ 甲是直徑，因為它通過圓心；直徑和半徑一樣長，所以甲長 3 公分。</li>
+      </ol>
+      <p class="why"><b>設計意圖</b>　學生只能用「有沒有通過圓心」來判斷。正答同時要用「兩條半徑接起來」說出直徑的長度，對應報告第 70 頁「建議教師利用方法二說明半徑與直徑的關係」。四個選項用同一種句型、長度相近，學生不能靠「最長、理由最完整的就是正答」猜中。選 ③ 的學生可以再口頭追問「6 公分是怎麼來的？」，當作課堂回饋，不影響計分。<br>
+      <b>正答理由</b>　甲通過圓心，由圓心左右各一條半徑接成：\( \text{直徑}=\text{半徑}+\text{半徑}=3\ \text{公分}+3\ \text{公分}=6\ \text{公分} \)。教師端可以寫成 \( d=2r \)，但不以此作為對學生的說法。<br>
+      <b>誘答對應的迷思</b>　選 ①：兩端在圓上的橫線段都當成直徑，屬類型 2。選 ②：把「水平」當成直徑的條件，對應報告所說的「水平的弦」，屬類型 2。選 ④：知道直徑要通過圓心，卻把直徑和半徑的長度混在一起，屬類型 1。<br>
+      <b>教師核對題圖</b>　乙與圓心的距離是 2 公分，長度為 \( 2\sqrt{3^2-2^2}=2\sqrt{5}\approx 4.47 \) 公分，確實比 6 公分短。此式只供教師核對題圖，不對學生說。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q5">
+    <div class="item-h"><span class="no">檢核題 5．多元作答</span><span class="tg">對應錯誤類型 3．G3 ★．G4</span></div>
+    <div class="item-b">
+      <p>甲、乙兩個圓分開放著，沒有疊在一起。圖中各畫了一條半徑（半徑：從圓的中心點到圓的邊的線）。這兩個圓一樣大嗎？請先用圓規或紙條比比看，再回答。</p>
+      <figure class="fig">
+        <svg viewBox="0 0 440 225" width="440" height="225" role="img" aria-labelledby="fq5-t fq5-d">
+          <title id="fq5-t">檢核題 5 題圖：分開放的甲、乙兩個圓</title>
+          <desc id="fq5-d">左右兩個圓分開放，沒有重疊。左邊是甲，位置較低；右邊是乙，位置較高。甲從圓心往正右方畫了一條半徑，乙從圓心往左上方畫了一條半徑。兩條半徑都沒有標長度，實際上一樣長，所以兩個圓一樣大。</desc>
+          <g fill="none" stroke="var(--ink)" stroke-width="2.4">
+            <circle cx="110" cy="130" r="60"/>
+            <circle cx="330" cy="95" r="60"/>
+          </g>
+          <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+            <line x1="110" y1="130" x2="170" y2="130"/>
+            <line x1="330" y1="95" x2="287.57" y2="52.57"/>
+          </g>
+          <g fill="var(--ink)">
+            <circle cx="110" cy="130" r="3.5"/><circle cx="170" cy="130" r="3"/>
+            <circle cx="330" cy="95" r="3.5"/><circle cx="287.57" cy="52.57" r="3"/>
+          </g>
+          <g fill="var(--ink)" font-size="16" text-anchor="middle">
+            <text x="110" y="216">甲</text>
+            <text x="330" y="182">乙</text>
+          </g>
+        </svg>
+        <figcaption>半徑不標長度，學生要自己比。比的是兩條線的長短，所以不受列印縮放影響。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li>① 不一樣大，因為兩個圓沒有疊在一起。</li>
+        <li>② 現在還不知道，要把乙剪下來疊到甲上面，完全疊合才算一樣大。</li>
+        <li>③ 乙比較大，因為乙放得比較高。</li>
+        <li class="ans">④ 一樣大，因為甲的半徑和乙的半徑一樣長。（正答）</li>
+      </ol>
+
+      <h4>四種作答方式，同一把尺</h4>
+      <p>這一題的目標是「用半徑判斷圓的大小」。讀題、寫字、手部精細動作都不是這一題要測的能力。依 Ketterlin-Geller（2005）目標技能與取用技能之分，只替換取用的方式，不改評分標準，四種方式的分數因此可以直接合併計算。作答方式由學生自己選，不依身分指定。</p>
+      <div class="tw"><table>
+        <caption>第 5 題的四種作答方式與共同的評分證據</caption>
+        <thead><tr><th scope="col">作答方式</th><th scope="col">學生怎麼做</th><th scope="col">「判斷」的證據</th><th scope="col">「依據」的證據</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">書寫</th><td>圈選選項，並在圖上把自己比較的兩條線描粗。</td><td>圈選的選項</td><td>描粗的是兩條半徑，不是圓周，也不是兩圓之間的距離。</td></tr>
+          <tr><th scope="row">口述</th><td>對老師說出答案和理由，教師逐字記下關鍵詞。</td><td>說出「一樣大」或「不一樣大」</td><td>說出「半徑一樣長」，或「從中間到邊一樣長」等意思相同的話。</td></tr>
+          <tr><th scope="row">指認</th><td>四個選項做成字卡，每張配簡圖。學生指出一張，再用手指沿兩條半徑各畫一次。</td><td>指出的字卡</td><td>手指畫過的是兩條半徑。</td></tr>
+          <tr><th scope="row">操作</th><td>用綁繩圓規或紙條量甲的半徑，保持長度移到乙的半徑上比對，再把「一樣大」或「不一樣大」字卡放在兩圓之間。</td><td>放下的字卡</td><td>量的是兩條半徑，比對後表示「一樣長」。</td></tr>
+        </tbody>
+      </table></div>
+      <ul>
+        <li><strong>2 分</strong>：判斷「一樣大」，而且依據的證據是半徑。</li>
+        <li><strong>1 分</strong>：判斷「一樣大」，但依據不是半徑，或說不出、指不出、量不出依據。</li>
+        <li><strong>0 分</strong>：判斷「不一樣大」、主張「要疊合才知道」，或以位置判斷大小。</li>
+      </ul>
+      <p>不論用哪一種方式作答，每位學生都記一個依據代碼：<strong>R</strong> 半徑、<strong>O</strong> 疊合、<strong>V</strong> 看起來、<strong>P</strong> 位置、<strong>N</strong> 無法表示。後測時看 R 是否成為多數、O 是否消失。</p>
+      <div class="box ok"><p class="tag">評分一致性檢查</p><p>正式計分前，特教教師與任課教師各自評同一批 5 份口述或操作紀錄。兩人給分不同的超過 1 份，就先一起修改上表「依據的證據」一欄的寫法，再正式計分。</p></div>
+      <p class="why"><b>設計意圖</b>　這是對抗 46% 迷思的核心題。兩個圓分開放、位置一高一低、半徑方向不同，讓「疊合」與「位置」兩種依據都有機會出現。半徑不標長度，學生必須用圓規或紙條比較，這也是本單元「用圓規比較長度」的能力。<br>
+      <b>正答理由</b>　兩條半徑一樣長，兩個圓就一樣大，不需要搬動或疊合。教師端：半徑相等的兩個圓全等，確實可以經由移動而完全疊合；但「可以疊合」是結果，判斷的依據是半徑。<br>
+      <b>誘答對應的迷思</b>　選 ①：沒有疊在一起就不一樣大，記代碼 O，屬類型 3。選 ②：報告所述「要完全疊合才算一樣大」的直接說法，記代碼 O，屬類型 3。選 ③：用位置判斷大小，同樣沒有用半徑，記代碼 P，歸入類型 3。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q6">
+    <div class="item-h"><span class="no">檢核題 6</span><span class="tg">對應錯誤類型 3．G3 ★</span></div>
+    <div class="item-b">
+      <p>甲、乙兩個圓有一部分疊在一起，圓心也靠得很近。甲的半徑是 4 公分，乙的半徑是 3 公分（半徑：從圓的中心點到圓的邊的線）。哪一句話是對的？</p>
+      <figure class="fig">
+        <svg viewBox="0 0 340 225" width="340" height="225" role="img" aria-labelledby="fq6-t fq6-d">
+          <title id="fq6-t">檢核題 6 題圖：部分重疊的甲、乙兩個圓</title>
+          <desc id="fq6-d">甲、乙兩個圓有一部分重疊，圓心靠得很近，乙的圓心在甲的圓心右下方不遠處。甲的圓比較大，從圓心往正左方畫了一條半徑，旁邊標示 4 公分。乙的圓比較小，從圓心往右下方畫了一條半徑，旁邊標示 3 公分。</desc>
+          <g fill="none" stroke="var(--ink)" stroke-width="2.4">
+            <circle cx="170" cy="120" r="80"/>
+            <circle cx="215" cy="130" r="60"/>
+          </g>
+          <g stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round">
+            <line x1="170" y1="120" x2="90" y2="120"/>
+            <line x1="215" y1="130" x2="245" y2="181.96"/>
+          </g>
+          <g fill="var(--ink)">
+            <circle cx="170" cy="120" r="3.5"/><circle cx="90" cy="120" r="3"/>
+            <circle cx="215" cy="130" r="3.5"/><circle cx="245" cy="181.96" r="3"/>
+          </g>
+          <g fill="var(--ink)" font-size="14">
+            <text x="130" y="111" text-anchor="middle">4 公分</text>
+            <text x="254" y="198">3 公分</text>
+          </g>
+          <g fill="var(--ink)" font-size="16">
+            <text x="102" y="56" text-anchor="end">甲</text>
+            <text x="282" y="104">乙</text>
+          </g>
+        </svg>
+        <figcaption>題圖依比例繪製：甲的半徑 4 公分，乙的半徑 3 公分，兩個圓心相距約 2.3 公分。</figcaption>
+      </figure>
+      <ol class="opts">
+        <li class="ans">① 甲比較大，因為甲的半徑比乙的半徑長。（正答）</li>
+        <li>② 一樣大，因為兩個圓疊在一起了。</li>
+        <li>③ 一樣大，因為兩個圓的圓心靠得很近。</li>
+        <li>④ 看不出來，要把兩個圓完全疊合才能比。</li>
+      </ol>
+      <p class="why"><b>設計意圖</b>　第 5 題的反向對照。學生如果只是記住「分開的圓也一樣大」，而把所有兩個圓都答成一樣大，第 5 題會答對、本題會答錯。兩題都對，才表示他真的用半徑判斷，所以類型 3 的「已排除」要求兩題同時答對。<br>
+      <b>正答理由</b>　4 公分比 3 公分長，甲的半徑比較長，甲比較大。位置靠不靠近、有沒有疊在一起，都和大小無關。<br>
+      <b>誘答對應的迷思</b>　選 ②：把「有疊在一起」當成一樣大，是疊合依據反過來用，記代碼 O。選 ③：用圓心位置判斷大小，記代碼 P。選 ④：報告所述「要完全疊合才算一樣大」，記代碼 O。三者都屬類型 3。</p>
+    </div>
+  </article>
+
+  <article class="item" id="q7">
+    <div class="item-h"><span class="no">檢核題 7．實作</span><span class="tg">學習重點 S-3-3 後半．G4．G8</span></div>
+    <div class="item-b">
+      <p>本題不另外發卷，也不另占時間，直接評第 5 節三層挑戰任務第二層的作品（第 6 至 22 分鐘）。第二層的任務是以 O 為圓心，用圓規畫一個半徑 5 公分的圓，再畫一條直徑，寫出直徑有多長、是怎麼來的，並標出四個名詞；本題只評圓與直徑。為了評第 1 項，第二層的作答區先印好圓心 O，底紙為每格 1 公分的方格。</p>
+      <p>可以用一般圓規、綁繩圓規或電子圓規 App 作答，用哪一種由學生自己選，教師記下使用的工具。</p>
+      <figure class="fig">
+        <svg viewBox="0 0 560 320" width="560" height="320" role="img" aria-labelledby="fq7-t fq7-d">
+          <title id="fq7-t">檢核題 7：作答區與評分參照</title>
+          <desc id="fq7-d">左右兩張方格圖，每格代表 1 公分。左邊是三層挑戰任務第二層的作答區，方格中央只印一個圓心 O。右邊是評分參照：以 O 為圓心畫一個半徑 5 公分的圓，圓上每一點到 O 都是 5 公分；從圓心往右上、左上、正下三個方向各畫一條黃銅色的半徑，三條都是 5 公分；另畫一條通過圓心、左右橫向的藍色直徑，由左右兩條半徑接成，長 10 公分。</desc>
+          <g stroke="var(--rule)" stroke-width="0.8" fill="none">
+            <path d="M20 32V272M40 32V272M60 32V272M80 32V272M100 32V272M120 32V272M140 32V272M160 32V272M180 32V272M200 32V272M220 32V272M240 32V272M260 32V272M20 32H260M20 52H260M20 72H260M20 92H260M20 112H260M20 132H260M20 152H260M20 172H260M20 192H260M20 212H260M20 232H260M20 252H260M20 272H260"/>
+            <path d="M300 32V272M320 32V272M340 32V272M360 32V272M380 32V272M400 32V272M420 32V272M440 32V272M460 32V272M480 32V272M500 32V272M520 32V272M540 32V272M300 32H540M300 52H540M300 72H540M300 92H540M300 112H540M300 132H540M300 152H540M300 172H540M300 192H540M300 212H540M300 232H540M300 252H540M300 272H540"/>
+          </g>
+          <circle cx="420" cy="152" r="100" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+          <g stroke="var(--brass)" stroke-width="2.8" stroke-linecap="round">
+            <line x1="420" y1="152" x2="506.6" y2="102"/>
+            <line x1="420" y1="152" x2="333.4" y2="102"/>
+            <line x1="420" y1="152" x2="420" y2="252"/>
+          </g>
+          <line x1="320" y1="152" x2="520" y2="152" stroke="var(--blue)" stroke-width="2.8" stroke-linecap="round"/>
+          <g fill="var(--ink)"><circle cx="140" cy="152" r="3.5"/><circle cx="420" cy="152" r="3.5"/></g>
+          <g fill="var(--ink)" font-size="14"><text x="146" y="147">O</text><text x="404" y="171">O</text></g>
+          <g fill="var(--ink)" font-size="13" text-anchor="middle"><text x="140" y="22">作答區</text><text x="420" y="22">評分參照</text></g>
+          <g fill="var(--graphite)" font-size="12" text-anchor="middle">
+            <text x="140" y="292">只印圓心 O，每格 1 公分</text>
+            <text x="420" y="292">圓上每一點到 O 都是 5 公分</text>
+            <text x="420" y="310">直徑由兩條半徑接成，10 公分</text>
+          </g>
+        </svg>
+        <figcaption><b>左</b>　第二層任務單上的作答區。<b>右</b>　教師評分時的參照：黃銅色是量過的三條半徑，藍色是直徑。</figcaption>
+      </figure>
+      <div class="tw"><table>
+        <caption>第 7 題評分表</caption>
+        <thead><tr><th scope="col">檢核點與達成的樣子</th><th scope="col">教師怎麼檢查</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">第 1 項．圓心：針孔落在 O 點上。</th><td>針孔和 O 的距離不超過 1 毫米。</td></tr>
+          <tr><th scope="row">第 2 項．半徑：往三個不同方向量，半徑都是 5 公分。</th><td>任選三個方向，用尺從針孔量到圓的線，三次都在 49 到 51 毫米之間。</td></tr>
+          <tr><th scope="row">第 3 項．封閉：起點和終點接上，沒有缺口，也沒有畫成兩圈。</th><td>用筆尖沿著圓走一圈檢查。</td></tr>
+          <tr><th scope="row">第 4 項．直徑：線段通過 O，兩端都碰到圓。</th><td>用尺檢查線段是否經過針孔。</td></tr>
+          <tr><th scope="row">第 5 項．說明：寫出或說出「10 公分」，並指出直徑是 O 兩邊各一條半徑接起來的。</th><td>口述、書寫、指認都可以，看的是有沒有指出兩條半徑。</td></tr>
+        </tbody>
+      </table></div>
+      <p>判定方式：五項全部達成為「達成」；第 1 至 3 項達成為「基本達成」，表示會用圓規畫指定半徑的圓；第 1 至 3 項有任何一項未達成為「未達成」。使用電子圓規 App 的學生，第 2 項改看「是否把半徑拉到 5 公分」，第 3 項改看「是否畫滿一整圈」，分析時與實體圓規分開列。</p>
+      <p class="why"><b>設計意圖</b>　選擇題只能測名詞與判斷。這一題測學生能不能把「半徑」變成圓規兩腳之間的長度，對應 S-3-3 的「能使用圓規畫指定半徑的圓」。會背定義卻畫不出來的學生，要靠這一題找出來（見<a href="#criteria">無效判定</a>第 2 條）。<br>
+      <b>正答理由</b>　圓規張開 5 公分、針尖固定在 O，畫出的圓上每一點到 O 都是 5 公分，也就是對圓上任一點 A，\( \overline{OA}=5\ \text{公分} \)。直徑由 O 兩邊各一條半徑接成，\( 5\ \text{公分}+5\ \text{公分}=10\ \text{公分} \)。<br>
+      <b>容許誤差的理由</b>　容許 1 毫米，是為了不把筆芯粗細與紙張伸縮算成學生的錯。若班上尚未學到毫米，第 2 項改為「筆尖落在 5 公分刻度線上，偏差不超過一小格」。</p>
+    </div>
+  </article>
+
+  <h3>答錯之後：回到作圖訂正</h3>
+  <p>檢核題不只用來計分。前測或課堂中答錯的學生，依錯誤類型回到對應的互動作圖，由學生自己拖動、自己說出看到什麼。教師只問兩個問題：「你看到什麼變了？」「什麼沒有變？」</p>
+
+  <div class="ggb-block" data-ggb="chord">
+    <div class="ggb-head"><p class="t">互動作圖：弦與直徑<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+    <div class="ggb-body">
+      <figure class="ggb-still">
+        <svg viewBox="0 0 470 250" width="470" height="250" role="img" aria-labelledby="fch-t fch-d">
+          <title id="fch-t">弦與直徑：同一條橫弦停在三個位置</title>
+          <desc id="fch-d">以 O 為圓心、半徑 3 公分的圓。圓心上下有一條淡灰色虛線，是紅點可以移動的範圍，圓的上方寫著「紅點可上下拖動」。圖中畫出同一條橫弦停在三個位置：上方的弦沒有通過圓心，標示「沒通過圓心：比 6 公分短」，弦的中點有一個紅點；中間的弦通過圓心 O，標示「通過圓心：直徑 6 公分」；下方的弦沒有通過圓心，標示「沒通過圓心：比 6 公分短」。</desc>
+          <line x1="170" y1="41" x2="170" y2="209" stroke="var(--faint)" stroke-width="1.4" stroke-dasharray="4 4"/>
+          <circle cx="170" cy="125" r="90" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <g stroke="var(--red)" stroke-width="3" stroke-linecap="round">
+            <line x1="102.92" y1="65" x2="237.08" y2="65"/>
+            <line x1="120.25" y1="200" x2="219.75" y2="200"/>
+          </g>
+          <line x1="80" y1="125" x2="260" y2="125" stroke="var(--blue)" stroke-width="3.6" stroke-linecap="round"/>
+          <circle cx="170" cy="65" r="5.5" fill="var(--red)"/>
+          <circle cx="170" cy="125" r="3.5" fill="var(--ink)"/>
+          <g fill="var(--ink)" font-size="14">
+            <text x="177" y="144">O</text>
+            <text x="250" y="70">沒通過圓心：比 6 公分短</text>
+            <text x="272" y="130">通過圓心：直徑 6 公分</text>
+            <text x="234" y="205">沒通過圓心：比 6 公分短</text>
+          </g>
+          <text x="170" y="24" font-size="13" text-anchor="middle" fill="var(--red)">紅點可上下拖動</text>
+        </svg>
+        <figcaption>給第 3、4 題選了類型 2 誘答的學生（A 卷為第 3 題 ①④、第 4 題 ①②）。同一條橫弦停在三個位置，只有經過圓心的那一條是直徑，長 6 公分。</figcaption>
+      </figure>
+      <div class="ggb-stage"></div>
+      <p class="ggb-how"><b>操作方式</b>　上下拖動紅點，橫的弦跟著移動，長度跟著改變。請學生在三個位置停下來，各回答一次：「這一條有沒有經過圓心？」「它和直徑比，哪一條長？」學生要自己發現：一樣是橫的，只有經過圓心的那一條最長，也只有那一條是直徑。</p>
+    </div>
+  </div>
+
+  <div class="ggb-block" data-ggb="two-circles">
+    <div class="ggb-head"><p class="t">互動作圖：兩個圓一樣大嗎<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+    <div class="ggb-body">
+      <figure class="ggb-still">
+        <svg viewBox="0 0 460 250" width="460" height="250" role="img" aria-labelledby="ftc-t ftc-d">
+          <title id="ftc-t">兩個半徑一樣長的圓</title>
+          <desc id="ftc-d">左右兩個分開、沒有重疊的圓。左邊是甲，右邊是乙，乙的位置稍高。甲從圓心往正右方畫一條黃銅色的半徑，終點是紅點 A，旁邊寫「甲的半徑」；乙從圓心往右方稍微偏上畫一條黃銅色的半徑，旁邊寫「乙的半徑」。兩條半徑一樣長。圖的最下方寫著「半徑一樣長，兩個圓就一樣大」。</desc>
+          <g fill="none" stroke="var(--ink)" stroke-width="2.4">
+            <circle cx="120" cy="120" r="70"/>
+            <circle cx="330" cy="105" r="70"/>
+          </g>
+          <g stroke="var(--brass)" stroke-width="3.6" stroke-linecap="round">
+            <line x1="120" y1="120" x2="190" y2="120"/>
+            <line x1="330" y1="105" x2="399.45" y2="96.23"/>
+          </g>
+          <g fill="var(--ink)"><circle cx="120" cy="120" r="3.5"/><circle cx="330" cy="105" r="3.5"/></g>
+          <circle cx="190" cy="120" r="5.5" fill="var(--red)"/>
+          <g fill="var(--ink)" font-size="12" text-anchor="middle"><text x="152" y="142">甲的半徑</text><text x="362" y="126">乙的半徑</text></g>
+          <g fill="var(--ink)" font-size="16" text-anchor="middle"><text x="120" y="214">甲</text><text x="330" y="199">乙</text></g>
+          <text x="199" y="116" font-size="14" fill="var(--red)">A</text>
+          <text x="230" y="240" font-size="13" text-anchor="middle" fill="var(--graphite)">半徑一樣長，兩個圓就一樣大</text>
+        </svg>
+        <figcaption>給第 5 題得 0 或 1 分、或第 6 題選了類型 3 誘答的學生（A 卷為 ②③④）。甲、乙分開放，半徑一樣長，所以一樣大。</figcaption>
+      </figure>
+      <div class="ggb-stage"></div>
+      <p class="ggb-how"><b>操作方式</b>　兩個圓心都可以拖到任何位置；拖動紅點 A，甲的半徑改變，乙的半徑同步跟著變。請學生每拖一次就回答：「現在兩個圓一樣大嗎？你怎麼知道？」一直到他的理由從「位置」「疊起來」換成「半徑一樣長」。本作圖的兩個圓永遠一樣大，第 6 題答錯的學生另外拿兩片半徑不同的實物圓片放在一起比，再回到本圖。</p>
+    </div>
+  </div>
+</section>
+
+<section id="self" aria-labelledby="h-self">
+  <p class="eyebrow">G6 策略發展</p>
+  <h2 id="h-self">學生自我檢核表</h2>
+  <p>這份表是學生自己用的，不是老師的評分表。第 3 節練習用圓規畫圓時，學生每畫完一個圓就對照一次；第 5 節的自我檢核與夥伴檢核時段（第 22 至 28 分鐘）再完整填一次，當作後測的一部分。每一項都用學生的話寫，並附圖示。讀字有困難的學生可以看圖，或請同學、老師念給他聽，用手指或貼紙回答。</p>
+  <figure class="fig">
+    <svg viewBox="0 0 560 178" width="560" height="178" role="img" aria-labelledby="fself-t fself-d">
+      <title id="fself-t">自我檢核圖示：有沒有封起來、半徑是不是一樣長</title>
+      <desc id="fself-d">四個小圖由左到右排列。第一個是一個頭尾接起來的完整圓，下方寫「有封起來」「這樣對」。第二個是一個沒畫完的圓，右邊留了一個缺口，缺口兩端各有一個紅點，下方寫「沒有封起來」「要再修」。第三個是一個圓，從圓心往右、往上、往左下各畫一條半徑，三條一樣長，下方寫「每條半徑一樣長」「這樣對」。第四個是一個扁扁的形狀，不是圓，從中心往右、往上、往左下各畫一條線段，三條長短不同，下方寫「到中心不一樣長」「要再修」。</desc>
+      <g fill="none" stroke="var(--ink)" stroke-width="2.4">
+        <circle cx="70" cy="75" r="50"/>
+        <path d="M256.98 57.9A50 50 0 1 0 256.98 92.1"/>
+        <circle cx="350" cy="75" r="50"/>
+        <ellipse cx="490" cy="75" rx="56" ry="38"/>
+      </g>
+      <g fill="var(--red)"><circle cx="256.98" cy="57.9" r="3.5"/><circle cx="256.98" cy="92.1" r="3.5"/></g>
+      <g stroke="var(--brass)" stroke-width="2.6" stroke-linecap="round">
+        <line x1="350" y1="75" x2="400" y2="75"/>
+        <line x1="350" y1="75" x2="350" y2="25"/>
+        <line x1="350" y1="75" x2="314.64" y2="110.36"/>
+      </g>
+      <g stroke="var(--red)" stroke-width="2.6" stroke-linecap="round">
+        <line x1="490" y1="75" x2="546" y2="75"/>
+        <line x1="490" y1="75" x2="490" y2="37"/>
+        <line x1="490" y1="75" x2="458.56" y2="106.44"/>
+      </g>
+      <g fill="var(--ink)"><circle cx="350" cy="75" r="3"/><circle cx="490" cy="75" r="3"/></g>
+      <g font-size="13" text-anchor="middle" fill="var(--ink)">
+        <text x="70" y="150">有封起來</text><text x="210" y="150">沒有封起來</text><text x="350" y="150">每條半徑一樣長</text><text x="490" y="150">到中心不一樣長</text>
+      </g>
+      <g font-size="13" text-anchor="middle" font-weight="600">
+        <text x="70" y="170" fill="var(--green)">這樣對</text><text x="210" y="170" fill="var(--red)">要再修</text><text x="350" y="170" fill="var(--green)">這樣對</text><text x="490" y="170" fill="var(--red)">要再修</text>
+      </g>
+    </svg>
+    <figcaption>印在檢核表最上方。對錯同時用文字與顏色表示，不只靠顏色。</figcaption>
+  </figure>
+
+  <div class="tw"><table>
+    <caption>畫完圓，我來檢查（學生版）</caption>
+    <thead><tr><th scope="col">我要檢查的事</th><th scope="col">我怎麼檢查</th><th scope="col">做到了</th><th scope="col">還在練習</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">1. 我畫的圓有沒有封起來？</th><td>用手指從起點沿著線走一圈，看有沒有斷掉的地方。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">2. 我的針尖有沒有一直留在圓心？</th><td>看圓心是不是只有一個小洞，不是好幾個洞。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">3. 我量的每一條半徑是不是一樣長？</th><td>從圓心往三個不同方向畫三條半徑，用尺量，看是不是一樣長。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">4. 我的半徑是不是題目要的長度？</th><td>畫之前，先把圓規放在尺上：針尖對 0，筆尖對題目的數字。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">5. 我能不能說出直徑是怎麼來的？</th><td>畫一條經過圓心的線，指出它是兩條半徑接起來的。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">6. 我找直徑時，有沒有看它經過圓心？</th><td>用手指按住圓心，看這條線有沒有碰到手指，不是只看它是不是橫的。</td><td>□</td><td>□</td></tr>
+      <tr><th scope="row">7. 我比兩個圓一不一樣大時，是比半徑嗎？</th><td>用圓規或紙條量兩個圓的半徑，不是把它們疊起來看。</td><td>□</td><td>□</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>我的目標和我的嘗試</h3>
+  <ul class="check">
+    <li>我今天從這一格開始（圈一個）：描圓．用圓規畫圓．加做挑戰。不管從哪一格開始，都要做到用圓規畫圓。</li>
+    <li>我試了＿＿次，才畫出自己滿意的圓。</li>
+    <li>今天最難的地方是：＿＿＿＿＿＿</li>
+    <li>畫圓對我重要嗎？我在哪裡會用到它：＿＿＿＿＿＿</li>
+  </ul>
+
+  <h3>畫不出來時，我可以怎麼做</h3>
+  <ul>
+    <li><strong>圓規一直滑掉：</strong>把針尖壓深一點，紙下面墊一塊厚紙板。</li>
+    <li><strong>手轉不過去：</strong>轉紙，不轉手。一隻手輕輕壓住紙，另一隻手只捏住圓規頭。</li>
+    <li><strong>圓沒有接起來：</strong>不要改變圓規張開的大小，把針尖放回原來的洞，從缺口接著畫。</li>
+    <li><strong>圓規張開的長度跑掉了：</strong>放回尺上重新對好，再畫一次。</li>
+    <li><strong>手很累或一直抖：</strong>換綁繩圓規或電子圓規，也可以請同學幫忙壓住紙。</li>
+    <li><strong>試了好幾次還是不行：</strong>舉起「我需要幫忙」卡，或跟老師說「我卡在＿＿」。</li>
+    <li><strong>看到同學畫不出來：</strong>先問「你要我幫忙嗎？」，對方說要，再幫他壓紙或念檢核表給他聽。</li>
+  </ul>
+
+  <div class="box note"><p class="tag">教師怎麼用這份表</p>
+    <p>不計分，不和同學比較，也不收進成績。</p>
+    <p>收回後，數一數每一項勾「還在練習」的人數。人數最多的那一項，就是下一節開頭要再示範一次的地方。</p>
+    <p>後測時對照第 7 題實作：自評「做到了」但實作沒有達成的學生，表示他還不會檢查自己，下一次先陪他練第 3 項「量三條半徑」。自評「還在練習」但實作已經達成的學生，讓他看自己量出來的三條半徑，知道自己其實做到了（<a href="udl.html#g9">G9</a>）。</p>
+    <p>「我試了幾次」一欄不比多少，只看同一位學生前後的變化。次數多代表他願意一直試，不代表能力差。</p>
+  </div>
+</section>
+
+<section id="prepost" aria-labelledby="h-prepost">
+  <p class="eyebrow">前後測設計</p>
+  <h2 id="h-prepost">前後測：什麼時候測、測誰、看什麼</h2>
+  <p>學生端用本頁的自編檢核題，教師端用計畫書所載的兩份量表。分組方式與判定門檻都在教學開始前決定，後測結果出來後不再更動。</p>
+  <div class="tw"><table>
+    <caption>前後測時程</caption>
+    <thead><tr><th scope="col">時點</th><th scope="col">工具</th><th scope="col">對象</th><th scope="col">要看的指標</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">第 1 節前一週內</th><td>三年級上學期數學學期成績，只用來分組</td><td>全班學生</td><td>排序後取前 27% 為高分組、後 27% 為低分組，其餘為中間組。分析檔只記「高、中、低」，不記分數。</td></tr>
+      <tr><th scope="row">第 1 節前<br>晨光時間或前一天，約 10 分鐘</th><td>檢核題 A 卷第 1 至 6 題，每題附「⑤ 我還沒學過，不知道」</td><td>全班學生</td><td>類型 3 誘答比例與排除率；第 5 題依據代碼；類型 1、2 的已知比例，只當起點；選 ⑤ 的比例。</td></tr>
+      <tr><th scope="row">第 1 節前<br>協同教學開始前一週內</th><td>普特合作教師教學效能量表 15 題（林羿汝、陳奕安，2025；工作坊問卷第二部分）<br>跨域合作焦慮量表 4 題（問卷第四部分第 20 至 23 題，第 23 題為反向題）</td><td>本單元協同教學的特教教師與任課教師</td><td>兩份量表各自的個人平均分數。</td></tr>
+      <tr><th scope="row">第 2 至 4 節</th><td>課堂觀察紀錄、學習單完成率、嘗試次數紀錄（<a href="udl.html#g9">G9</a>）</td><td>全班學生；資源班學生另由特教教師以代號追蹤</td><td>學生在哪一個步驟又回到疊合判斷；學習單完成率的變化。</td></tr>
+      <tr class="hl"><th scope="row">第 5 節<br>分三個時段收</th><td>第 7 題實作：評三層挑戰任務第二層的作品，即半徑 5 公分的圓與直徑（第 6 至 22 分鐘，屬課堂任務，不另占時間）<br>學生自我檢核表與夥伴檢核（第 22 至 28 分鐘，6 分鐘）<br>檢核題 B 卷第 1 至 6 題（第 28 至 37 分鐘，9 分鐘）</td><td>全班學生</td><td>與前測相同的各項指標；另加第 7 題的基本達成率與達成率，以及自評與實作是否一致。</td></tr>
+      <tr><th scope="row">第 5 節後一週內</th><td>與前測相同的兩份教師量表</td><td>與前測相同的教師</td><td>個人前後差：效能量表看是否上升，焦慮量表看是否下降。</td></tr>
+      <tr><th scope="row">選做：第 5 節後兩週</th><td>C 卷第 5、6 題，約 4 分鐘</td><td>全班學生</td><td>類型 3 誘答是否回升。回升表示學生在單元結束後，又回到疊合判斷。</td></tr>
+    </tbody>
+  </table></div>
+  <p>第 5 節檢核題時段（第 28 至 37 分鐘），需要口述、指認或操作作答的學生，由特教教師在教室後方同時個別施測，每人約 2 分鐘，不另占用其他節次。</p>
+
+  <h3>為什麼分組用上學期成績</h3>
+  <p>報告的高分組與低分組，是用同一份測驗的總分排序。本頁要回答的是「教學之後誰進步了」，分組必須在教學前固定；若用後測總分來分，進步的學生會自動被排進高分組，就看不出低分組有沒有進步。因此改用三年級上學期數學學期成績排序，比例仍比照報告取 27%。人數取整數，例如 25 人的班級，前 7 人為高分組、後 7 人為低分組。</p>
+
+  <h3>課堂觀察紀錄要記什麼</h3>
+  <p>計畫書以資源班學生的課堂觀察紀錄與學習單完成率，檢驗教材轉化的成效。每節由當節沒有主教的那一位教師記錄，格式固定為五欄：</p>
+  <ol>
+    <li>時間：第幾節、第幾分鐘。</li>
+    <li>學生代號。</li>
+    <li>當時的活動，例如兩人互測、GeoGebra 拖動、畫同心圓。</li>
+    <li>學生實際說了或做了什麼，盡量逐字記下，例如「要疊起來才知道」。</li>
+    <li>是否回到疊合或位置判斷：是或否。</li>
+  </ol>
+  <p>學習單完成率的算法是 \( \text{學習單完成率}=\dfrac{\text{已完成的題數}}{\text{應完成的題數}} \)。學生以口述或操作完成、由教師代記的題目，也算完成。</p>
+
+  <h3>平行卷：外觀不同，測的東西相同</h3>
+  <p>前測和後測用同一份題目，學生可能記住答案；完全換題，又無法比較。做法是出 A、B、C 三份平行卷：每一題考的概念、每個誘答選項對應的迷思都不變，只換外觀。本頁第 1 至 6 題即為 A 卷。選項順序會換，所以每份平行卷都附自己的誘答選項歸類表，計分與比較一律依歸類表，不依選項編號。</p>
+  <div class="tiles c3">
+    <div><p class="lab">保留</p><h4>概念與迷思的對應</h4><p>每題考的概念；每個誘答選項對應的迷思；第 3 題的「水平但不過圓心」線段與斜放的直徑；第 5 題兩圓分開、半徑方向不同、不標長度；第 6 題兩圓部分重疊、半徑不同。</p></div>
+    <div><p class="lab">可換</p><h4>外觀與數值</h4><p>圖的方向與位置；甲乙丙丁的配置；半徑數值，只用 2 到 5 公分的整數；選項順序與正答位置。</p></div>
+    <div><p class="lab">不可換</p><h4>難度與範圍</h4><p>不可讓題目變簡單，例如把第 6 題的兩個圓拉開到很遠；不可加入圓周長、圓面積、圓周率；不可改用倍數或除法說明直徑。</p></div>
+  </div>
+  <div class="prompt">
+    <div class="prompt-h"><span class="nm">產生平行卷</span><button class="copy" type="button">複製指令</button></div>
+<pre>你是國小三年級數學的出題助手。請依照我提供的 A 卷，產生一份平行的〔<span class="fill">B 卷或 C 卷</span>〕。
+
+【A 卷題目與誘答對照】
+〔<span class="fill">貼上 A 卷第 1 至 6 題的題幹、選項、正答，以及誘答選項歸類表</span>〕
+
+【一定要保留】
+1. 每一題考的概念不變，每個錯誤選項對應的迷思不變。
+2. 第 3 題一定要有一條「水平但不通過圓心」的線段，真正的直徑要畫成斜的。
+3. 第 5 題的兩個圓一定分開放、不重疊，兩條半徑畫的方向不同，半徑不標長度。
+4. 第 6 題的兩個圓一定部分重疊或圓心靠近，半徑不同，並標出兩個半徑的長度。
+5. 第 5、6 題題幹保留「半徑：從圓的中心點到圓的邊的線」這句說明。
+
+【可以改】
+圖的方向與位置、甲乙丙丁的配置、半徑數值（只用 2 到 5 公分的整數）、選項順序與正答位置。
+
+【不可以】
+1. 不可出現圓周長、圓面積、圓周率。
+2. 說明直徑的長度時，只能用「兩條半徑接起來」的加法說法，不可用「2 倍」、乘法或除法。
+3. 不可模仿、改寫或引用任何學力檢測的正式試題。
+4. 題圖的線段一律同一種顏色，不可用顏色暗示答案。
+5. 不可讓題目變簡單，例如把第 6 題的兩個圓拉開到很遠。
+6. 正答不可比其他選項明顯長，理由也不可明顯比較完整。
+
+【輸出格式】
+每一題依序列出：題幹、四個選項、正答、每個錯誤選項對應的迷思、圖形座標清單。
+座標清單要寫出每個圓的圓心座標與半徑，以及每條線段兩端的座標，讓我核對等長與是否通過圓心。
+最後附一張誘答選項歸類表，格式與 A 卷相同：每一題的正答，以及每個錯誤選項歸類型 1、2 或 3。</pre>
+    <p class="use">AI 給的座標要逐一驗算再用：每條半徑兩端的距離都要等於半徑；直徑的中點必須剛好是圓心；「不通過圓心」的線段，中點與圓心的距離要明顯大於 0。任何一題沒通過驗算就整題重出，不要手動微調後直接用。</p>
+  </div>
+
+  <h3>怎麼比較</h3>
+  <p>類型 3 是主要指標，用兩個比例描述，前測、後測各算一次：</p>
+  <p>\[ \text{類型 3 誘答比例}=\frac{\text{第 5 題得 0 分的人數}+\text{第 6 題選誘答的人數}}{2\times\text{作答人數}} \]</p>
+  <p>\[ \text{類型 3 排除率}=\frac{\text{第 5 題得 2 分且第 6 題答對的人數}}{\text{作答人數}} \]</p>
+  <ol class="steps">
+    <li><div><p class="t">類型 3：誘答比例要下降，排除率要上升</p>
+      <p>用上面兩個式子比較前後測。選 ⑤ 的人次不算誘答，但留在分母，另外單獨列出。若前測選 ⑤ 的比例超過三成，前測的誘答比例會被低估，這時類型 3 改以「排除率是否上升」為主要比較。</p></div></li>
+    <li><div><p class="t">高分組與低分組分開算</p><p>比照報告的呈現方式，高分組、低分組各算一次類型 3 誘答比例，並算出各自下降了幾個百分點。報告中高分組選 ④ 的比例高於低分組，所以兩組都要看，不能只看全班平均。</p></div></li>
+    <li><div><p class="t">每位學生的轉變</p><p>類型 3 以四格計人數：前錯後對、前對後對、前錯後錯、前對後錯。「前對後錯」的學生要個別回看作答與觀察紀錄，他可能在課堂上聽到了「疊起來看看」這類說法。</p></div></li>
+    <li><div><p class="t">第 5 題的依據代碼</p><p>前測、後測各數一次 R、O、V、P、N 的人數。這一項直接對應 115 上續期計畫書的質化指標：學生判斷兩個圓是否一樣大時，改以半徑是否等長為依據，不再回到疊合。</p></div></li>
+    <li><div><p class="t">類型 1、類型 2 與第 7 題</p><p>名詞與直徑在前測時多半還沒學過，前測只當起點，不做下降比較。後測看類型 1、2 的排除率，以及第 7 題的基本達成率與達成率，再與<a href="#criteria">無效判定</a>所列的門檻對照。</p></div></li>
+    <li><div><p class="t">教師端量表</p><p>跨域合作焦慮量表第 23 題為反向題，計分前先轉換：\( \text{轉換後分數}=6-\text{原始分數} \)。一個班級通常只有兩到三位教師參與，本頁只做個人前後對照，寫進議課紀錄。統計比較併入計畫整體樣本，依 115 上續期計畫書所訂：問卷前測回收率 80% 以上、前後測配對 15 份以上，並報告效果量。</p></div></li>
+  </ol>
+  <div class="box warn"><p class="tag">不做的比較</p>
+    <p>不把前測或後測的比例拿來和 Q20 的 46% 相比。Q20 是十縣市學生在 112 年 5 月 25 日作答同一題的結果；本頁是一個班級作答不同的題目，兩者題目、對象、時點都不同。</p>
+    <p>單一班級人數少，本頁不做顯著性檢定，只報人數與比例，並把「前對後錯」的人數一併寫出，不只報好的一面。</p>
+  </div>
+
+  <div class="tw"><table>
+    <caption>結果記錄表（空白範本，後測完成後填寫）</caption>
+    <thead><tr><th scope="col">指標</th><th scope="col" class="num">前測</th><th scope="col" class="num">後測</th><th scope="col" class="num">差</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">類型 1 排除率</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr><th scope="row">類型 2 排除率</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr class="hl"><th scope="row">類型 3 誘答比例．全班</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr class="hl"><th scope="row">類型 3 誘答比例．高分組</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr class="hl"><th scope="row">類型 3 誘答比例．低分組</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr><th scope="row">類型 3 排除率</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr><th scope="row">第 5 題依據代碼為 R 的比例</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr><th scope="row">選 ⑤ 的比例</th><td class="num">＿＿</td><td class="num">＿＿</td><td class="num">＿＿</td></tr>
+      <tr><th scope="row">第 7 題基本達成率</th><td class="num">不施測</td><td class="num">＿＿</td><td class="num">不適用</td></tr>
+      <tr><th scope="row">第 7 題達成率</th><td class="num">不施測</td><td class="num">＿＿</td><td class="num">不適用</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="prompt">
+    <div class="prompt-h"><span class="nm">整理前後測結果（只貼代號）</span><button class="copy" type="button">複製指令</button></div>
+<pre>下面是一個國小三年級班級的檢核題作答資料。資料只有代號、組別與選項，沒有姓名，也沒有任何障礙或健康資訊。請你只做計算，不要推論原因，也不要給教學建議。
+
+【作答資料】
+〔<span class="fill">貼上表格：代號、組別（高、中、低）、前測或後測、第 1 至 6 題的選項、第 5 題得分（0、1、2）與依據代碼（R、O、V、P、N）</span>〕
+
+【正答】
+〔<span class="fill">A 卷：第 1 題③、第 2 題④、第 3 題②、第 4 題③、第 5 題④、第 6 題①；B 卷請改填 B 卷正答</span>〕
+
+【誘答歸類】
+以下為 A 卷的歸類；B 卷、C 卷請改貼該卷的誘答選項歸類表。
+類型 1：第 1 題選①②④、第 2 題選①②③、第 3 題選③、第 4 題選④。
+類型 2：第 3 題選①④、第 4 題選①②。
+類型 3：第 5 題得 0 分、第 6 題選②③④。
+選⑤一律不算誘答。
+
+【請計算並列表】
+1. 三種錯誤類型的排除率：類型 1 看第 1、2 題都對，類型 2 看第 3、4 題都對，類型 3 看第 5 題得 2 分且第 6 題答對。前測、後測各一欄。
+2. 類型 3 誘答比例：第 5 題得 0 分的人數加上第 6 題誘答的人數，除以作答人數的 2 倍。全班、高分組、低分組各算一次。
+3. 選⑤的人次與比例，前測、後測各一欄。
+4. 第 5 題依據代碼 R、O、V、P、N 各有幾人，前測、後測各一欄。
+5. 類型 3 的個人轉變：前錯後對、前對後對、前錯後錯、前對後錯各幾人，並列出「前對後錯」的代號。
+6. 這份表只給教師內部使用。另外產生一份對外報告版：任何一格人數少於 3 人時，只寫「少於 3 人」，不寫確切人數與比例，也不列代號。</pre>
+    <p class="use">貼上之前再檢查一次：表格裡不可有姓名、座號、生日或任何障礙資訊。AI 算出的數字，至少抽三位學生手算核對，對得上才寫進結果記錄表。</p>
+  </div>
+</section>
+
+<section id="criteria" aria-labelledby="h-criteria">
+  <p class="eyebrow">事先寫明</p>
+  <h2 id="h-criteria">什麼情況判定為無效</h2>
+  <p>效果檢核最常見的問題，是看到結果之後才決定什麼叫「有效」。本節的條件在第 1 節上課前寫定，由特教教師與任課教師共同簽名並記下日期；後測結果出來後，門檻一律不改。門檻是本計畫自訂的，不是官方標準。團隊若認為門檻要調整，只能在下一輪教學開始前改，並寫明理由。</p>
+  <div class="box key"><p class="tag">判定規則</p>
+    <p>下列六條中，任何一條成立，這次調整就判定為無效，回頭修對應的鷹架後再教、再測。第 6 條成立時，其他各條的結果一律不採計。</p>
+    <p>六條都不成立，才寫「本次調整在這個班級有效」。這句話只代表這個班級、這一次，不直接推論到其他班級。</p>
+  </div>
+  <ol class="steps">
+    <li><div><p class="t">類型 3 沒有鬆動</p>
+      <p><strong>判定條件</strong>　後測的類型 3 誘答比例沒有低於前測；或後測第 5 題依據代碼為 R 的學生不到全班四分之三。</p>
+      <p><strong>回頭修</strong>　<a href="udl.html#g3">G3 ★</a>「半徑等長即為圓」的本質建構，以及兩圓等大作圖。檢查三件事：課堂上是否真的讓學生比較「分開放、半徑方向不同」的兩個圓；是否每位學生都親手用綁繩圓規把甲的半徑搬到乙上；教師或同學是否說過「疊起來看看」，無意間強化了疊合依據。</p></div></li>
+    <li><div><p class="t">會背定義，卻不會用圓規畫指定半徑的圓</p>
+      <p><strong>判定條件</strong>　後測第 1、2 題都答對的學生中，第 7 題未達「基本達成」的超過三分之一。</p>
+      <p><strong>回頭修</strong>　<a href="udl.html#g1">G1</a> 綁繩圓規與 <a href="udl.html#g8">G8</a> 三層挑戰。這表示定義教學和圓規操作脫節，學生沒有把「半徑」和「圓規兩腳之間的長度」連起來。下一輪在用圓規畫圓之前，加入「先在尺上張開 3 公分，再看綁在兩腳之間的繩子」這一步，讓半徑先看得見。</p></div></li>
+    <li><div><p class="t">只有高分組進步，低分組沒有</p>
+      <p><strong>判定條件</strong>　低分組的類型 3 誘答比例沒有下降；或下降的百分點不到高分組的一半。</p>
+      <p><strong>回頭修</strong>　獲取層的 <a href="udl.html#g1">G1</a> 感知、<a href="udl.html#g4">G4</a> 互動與 <a href="udl.html#g7">G7</a> 接納興趣與身份。檢查低分組學生在第 2 至 4 節是否拿到實物與操作材料、是否只聽講沒有動手、第 5 題是否真的提供了口述、指認、操作三種作答方式。問題出在知識傳遞的路徑，不是內容太難，所以不降低題目。</p></div></li>
+    <li><div><p class="t">判斷直徑仍然看方向</p>
+      <p><strong>判定條件</strong>　後測第 3、4 題中選了類型 2 誘答的學生，合計超過全班五分之一；同一人兩題都選錯只算一人。是否為誘答，依該份平行卷的誘答選項歸類表判斷，不看選項編號。</p>
+      <p><strong>回頭修</strong>　<a href="udl.html#g2">G2 ★</a> 語言與符號。把「直徑的兩個條件：通過圓心、兩端在圓上」做成字卡，找直徑時先用手指按住圓心；並讓學生自己操作弦與直徑作圖，在三個高度停下來比長短。</p></div></li>
+    <li><div><p class="t">說不出直徑是怎麼來的</p>
+      <p><strong>判定條件</strong>　後測第 7 題第 5 項未達成的學生超過三分之一。</p>
+      <p><strong>回頭修</strong>　鷹架「以視覺組合取代倍數除法」與直徑由兩條半徑組成的作圖。檢查教學時是否又回到「6 除以 3 等於 2」或「2 倍」當入口；報告教學建議（二）之 3 指出，三年級學生較無法掌握這種倍數說法。</p></div></li>
+    <li><div><p class="t">學科標準被降低</p>
+      <p><strong>判定條件</strong>　出現以下任一情況：後測題目被刪減或換成較簡單的版本，例如只留指認題、刪掉第 6 題；口述、指認或操作作答用了比書寫寬鬆的評分標準；部分學生只做部分題目，卻按全對計算。</p>
+      <p><strong>回頭修</strong>　回到課程調整的順序：優先替代，其次重整或分解，最後才考慮簡化或減量。檢查是否跳過前兩步直接減量。這一條對應徐道寧教授「不因弱勢標籤而降低學科標準」的精神：改變的是知識傳遞的路徑，不是學生必須學會的內容。</p></div></li>
+  </ol>
+  <div class="box note"><p class="tag">教師端量表沒有變化時</p><p>若普特合作教師教學效能量表後測沒有高於前測，或跨域合作焦慮量表後測沒有低於前測，要修的不是學生鷹架，而是協作方式。檢查「AI 協作轉化」這一段是否由教師親手把學生的認知障礙點寫成限制語法（見 <a href="ai.html">AI 協作指令</a>），以及議課時兩位教師是否都有發言與決定權。</p></div>
+  <h3>判定無效之後的四個步驟</h3>
+  <ol>
+    <li>在議課紀錄寫明哪一條成立，附上對應的數字與觀察紀錄。</li>
+    <li>修改對應的鷹架，寫明改了什麼、為什麼這樣改。</li>
+    <li>把修改寫回 AI 協作指令的限制語法。這是模組四段運作的最後一段「迭代精進」：依課堂實踐的資料，反向修正 AI 鷹架。</li>
+    <li>下一次施教，用同一套條件與另一份平行卷再測一次。</li>
+  </ol>
+</section>
+
+<section id="ethics" aria-labelledby="h-ethics">
+  <p class="eyebrow">倫理與資料</p>
+  <h2 id="h-ethics">施測與資料處理</h2>
+  <p>檢核的對象是教材，不是學生。以下規則在發家長通知單之前就定好，所有參與的教師都照同一套做。</p>
+  <div class="tiles c2">
+    <div><p class="lab">代號</p><h4>學生以代號表示</h4><p>代號由任課教師隨機編成 S01、S02 依序往下，不用座號，因為座號在班上一看就知道是誰。代號對照表只有紙本一份，由任課教師保管，不拍照、不上傳、不輸入任何 AI 工具。</p></div>
+    <div><p class="lab">不記錄</p><h4>不記錄障礙類別</h4><p>分析檔不出現障礙類別、診斷名稱、鑑定資料與個別化教育計畫內容，也不標記誰是資源班學生。資源班學生的觀察紀錄與學習單完成率，由特教教師在自己的紀錄中另用代號追蹤，兩份檔案不合併。</p></div>
+    <div><p class="lab">用途</p><h4>資料只用於改進教學</h4><p>檢核題與自我檢核表不列入學期成績，不作為安置或鑑定的依據，不公布排名。高分組、低分組只用於分析，不告訴學生自己在哪一組。</p></div>
+    <div><p class="lab">知情</p><h4>家長知情，可以不參與</h4><p>單元開始前一週發通知單，說明收什麼、不收什麼、怎麼用。家長選擇不列入分析時，孩子照常上課與作答，只是資料不列入。教師問卷已附研究參與說明與知情同意，並載明可隨時退出。</p></div>
+  </div>
+
+  <h3>施測時的調整</h3>
+  <p>以下調整不看身分，誰需要誰用。</p>
+  <ul>
+    <li><strong>報讀</strong>：題幹與選項可以念給學生聽，題圖不念。網頁上每張圖的口述文字是寫給教師看的，對學生念出來會洩漏答案，例如「甲沒有經過圓心」。</li>
+    <li><strong>觸覺版題圖</strong>：視覺障礙學生改用觸覺版，以膠線沿圓周貼出凸起的線，線段用剪短的吸管黏貼，圓心貼一顆小圓貼紙。第 5 題的半徑比較，可以直接用手指或紙條量兩段吸管的長度。</li>
+    <li><strong>作答方式</strong>：第 5 題與第 7 題依前面的說明，書寫、口述、指認、操作都可以，評分標準不變。其他選擇題可以口述選項編號，由教師代圈。</li>
+    <li><strong>時間與地點</strong>：不催促，前測以 15 分鐘為上限，沒作答的題目記為「未作答」，不記為錯。需要口述作答的學生，由特教教師在教室後方個別施測，不帶離教室。</li>
+  </ul>
+
+  <h3>資料怎麼存、怎麼報告</h3>
+  <ul>
+    <li>依 114 下工作坊整理的四種風險來源逐項檢查：<strong>特種個資</strong>（障礙、健康資料）一律不收；<strong>準識別符</strong>（座號、性別、生日合起來就認得出是誰）不放進分析檔；<strong>資料集存在本身</strong>（例如另建一份「資源班學生作答」檔案，檔名本身就洩漏身分）不另外建立；<strong>夾帶第三人</strong>（學生在作答紙上寫到同學名字）先塗掉再掃描。</li>
+    <li>對外報告時，任何一格人數少於 3 人，只寫「少於 3 人」，不寫確切人數與比例。資源班學生人數少，只做個別代號的文字描述，不算百分比。</li>
+    <li>用 AI 整理結果時，只貼代號、組別與選項，使用<a href="#prepost">前後測設計</a>中的第二份指令。</li>
+    <li>學生拍短影片教同學畫圓（<a href="udl.html#g5">G5</a>）時，只拍手、圓規與紙，不拍臉與名牌。影片只在班上播放，不上傳公開平臺。</li>
+    <li>資料的保存與銷毀依個人資料保護法與計畫的研究倫理規範辦理；代號對照表於計畫結案後銷毀，分析檔只留代號。</li>
+  </ul>
+
+  <div class="box note"><p class="tag">給家長的通知單（範本）</p>
+    <p>親愛的家長您好：本學期數學第六單元「圓」，本班將由任課教師與特教教師一起上課，並試用新設計的教材。為了知道教材哪裡要修改，孩子會在單元開始前做一次約 10 分鐘的小檢核，單元最後一節課再做一次約 9 分鐘的小檢核，並填寫自己畫圓的檢核表；老師也會看孩子當堂畫的圓。</p>
+    <p>我們會收集：孩子的作答選項、畫的圓、自我檢核表。我們不會收集：孩子的障礙或健康資料。所有資料以代號處理，不列入成績，只用來改進教學。</p>
+    <p>如果您不希望孩子的資料列入分析，請在回條勾選「不列入」，孩子仍會照常上課與作答，不會受到任何影響。有任何問題，歡迎與任課教師聯絡。</p>
+  </div>
+  <div class="box ok"><p class="tag">施測前對學生說的話</p>
+    <p class="say">這不是考試，不會算成績。老師想知道新的教材哪裡講得不夠清楚。不會的題目可以選「我還沒學過」，這樣老師才知道要多教哪裡。</p>
+  </div>
+</section>
+
+<nav class="pager" aria-label="上下頁"><a href="ai.html"><span class="k">上一頁</span><span class="v">AI 協作</span></a><span class="empty"></span></nav>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>資料來源　國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測：數學三年級施測結果報告。</p>
+    <p>設計框架　CAST (2024). Universal Design for Learning Guidelines version 3.0.</p>
+    <p>春耕未來・數造共好｜在知識翻新環境下以 AI 協作之教師專業增能計畫．徐道寧教授數學教育與人文關懷實踐獎助．國立清華大學教育與學習科技學系</p>
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="window.spmRenderMath&&spmRenderMath()"></script>
+<script src="assets/site.js?v=4"></script>
+</body>
+</html>

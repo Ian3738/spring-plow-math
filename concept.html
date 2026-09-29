@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>數學本質｜圓的概念</title>
+<meta name="description" content="課程調整的第一道關卡是把數學講對。本頁依官方試題分析之教學建議，界定圓、圓區域與半徑的意義，並區分給學生的說法與教師該知道的形式定義。">
+<meta name="color-scheme" content="light dark">
+<script>
+(function(){var d=document.documentElement,t,f;
+try{t=localStorage.getItem('spm-theme');f=localStorage.getItem('spm-fs');}catch(e){}
+if(t)d.setAttribute('data-theme',t);d.setAttribute('data-fs',f||'m');})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="topbar">
+  <div class="wrap row1">
+    <a class="brand" href="index.html">春耕未來・數造共好<small>圓的概念</small></a>
+    <div class="ctrls">
+      <span class="lbl" id="fsl">文字大小</span>
+      <button class="tog" type="button" data-fs-set="m" aria-describedby="fsl">標準</button>
+      <button class="tog" type="button" data-fs-set="l" aria-describedby="fsl">大</button>
+      <button class="tog" type="button" data-fs-set="xl" aria-describedby="fsl">特大</button>
+      <button class="tog" type="button" id="themeBtn" aria-pressed="false">深色</button>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="頁面導覽">
+    <div class="wrap"><ol>
+      <li><a href="index.html"><span class="n">01</span>總覽</a></li>
+      <li><a href="concept.html" aria-current="page"><span class="n">02</span>數學本質</a></li>
+      <li><a href="udl.html"><span class="n">03</span>UDL 設計</a></li>
+      <li><a href="lesson.html"><span class="n">04</span>教學流程</a></li>
+      <li><a href="scaffold.html"><span class="n">05</span>教學鷹架</a></li>
+      <li><a href="ai.html"><span class="n">06</span>AI 協作</a></li>
+      <li><a href="assessment.html"><span class="n">07</span>評量檢核</a></li>
+    </ol></div>
+  </nav>
+</header>
+<header class="ph">
+  <div class="wrap">
+    <p class="kicker">學科本質把關</p>
+    <h1>圓是一圈線，不是一個面</h1>
+    <p class="lede">課程調整的第一道關卡是把數學講對。本頁依官方試題分析之教學建議，界定圓、圓區域與半徑的意義，並區分給學生的說法與教師該知道的形式定義。</p>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<section id="definition" aria-labelledby="h-definition">
+  <p class="eyebrow">01　定義</p>
+  <h2 id="h-definition">圓的定義：到圓心一樣遠的所有點</h2>
+  <p>課程調整的第一步是確認數學沒有講錯。替代說法、視覺鷹架、AI 產出的易讀版教材，每一句都要能對回本節的定義。對不回去的說法，換掉的就不只是路徑，連內容也一起換掉了。</p>
+  <p>本頁八節依序處理：定義、圓心、圓與圓區域、四個名詞、半徑的四種描述、弦與直徑、半徑與直徑的關係、符號與用語。Q20 試題分析列出的三種錯誤類型，分別落在下列各節：</p>
+  <ul>
+    <li><strong>錯誤類型 1</strong>　不認識圓心、圓周、半徑與直徑的意義：見<a href="#terms">四個名詞</a>、<a href="#radius">半徑的四種描述</a>。</li>
+    <li><strong>錯誤類型 2</strong>　認為過圓心及水平的弦都是直徑：見<a href="#chord">弦與直徑</a>。</li>
+    <li><strong>錯誤類型 3</strong>　認為兩個圓要完全疊合才算一樣大：見本節末「圓心決定位置，半徑決定大小」與<a href="#disc">圓與圓區域</a>。</li>
+  </ul>
+
+  <blockquote class="official">
+    <p>S-3-3 圓：「圓心」、「圓周」、「半徑」與「直徑」。能使用圓規畫指定半徑的圓。</p>
+    <cite>十二年國民基本教育課程綱要數學領域學習重點 S-3-3。引自國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，Q20 對應學習重點，第 67 至 70 頁。</cite>
+  </blockquote>
+
+  <blockquote class="official">
+    <p>圓：在平面上選定一定點 O，在平面上與定點 O 的距離是 r（\( r&gt;0 \)）的所有點所成的集合稱為圓，該定點 O 稱為圓心，r 稱為半徑。</p>
+    <cite>同上報告，Q20 教學建議（二）核心概念與本題的教學重點之 1，第 67 至 70 頁。</cite>
+  </blockquote>
+
+  <div class="def">
+    <p class="def-h">定義　圓<span class="aud">教師端</span></p>
+    <div class="def-b">
+      <p>給定平面上一點 \( O \) 與正數 \( r \)：</p>
+      \[ C=\{\, P \mid \overline{OP}=r \,\},\ r&gt;0 \]
+      <p>讀法：平面上與 \( O \) 的距離恰好是 \( r \) 的點 \( P \)，全部收集起來，這個集合 \( C \) 就是圓。\( O \) 稱為圓心，\( r \) 稱為半徑。</p>
+      <p>這一句定義裡有四個條件，缺一個就不是圓：</p>
+      <ol>
+        <li>同一平面：不限平面時，到定點等距的點會形成球面。三年級一律在紙上、桌面上操作，這個條件自然成立，不必對學生說。</li>
+        <li>定點 \( O \)：少了參考點，「一樣遠」無從比起。</li>
+        <li>\( r&gt;0 \)：\( r=0 \) 時集合只剩 \( O \) 一點。這個條件也是下一節「圓心不屬於圓」的根據。</li>
+        <li>所有點：只挑出 8 個或 24 個等距的點，還不是圓，要全部的點才是。這個「所有」就是<a href="#radius">半徑第四種描述</a>（集合）的來源。</li>
+      </ol>
+    </div>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 520 236" width="560" role="img" aria-labelledby="def-t def-d">
+      <title id="def-t">從幾個點到所有的點</title>
+      <desc id="def-d">三個並排的圖，每個圖正中間都有一個圓心 O。左圖在與 O 距離相同的位置上畫了 8 個點，並用虛線把 O 和每個點連起來，8 條虛線一樣長，但這 8 個點彼此分開，還不是圓。中圖畫了 24 個與 O 距離相同的點，點變密了，仍然是一顆一顆分開的點，還不是圓。右圖把所有與 O 距離相同的點都畫出來，連成一條完整、沒有缺口的曲線，這才是圓。</desc>
+      <g stroke="var(--faint)" stroke-width="1" stroke-dasharray="3 3">
+        <line x1="100" y1="100" x2="170" y2="100"/>
+        <line x1="100" y1="100" x2="149.5" y2="149.5"/>
+        <line x1="100" y1="100" x2="100" y2="170"/>
+        <line x1="100" y1="100" x2="50.5" y2="149.5"/>
+        <line x1="100" y1="100" x2="30" y2="100"/>
+        <line x1="100" y1="100" x2="50.5" y2="50.5"/>
+        <line x1="100" y1="100" x2="100" y2="30"/>
+        <line x1="100" y1="100" x2="149.5" y2="50.5"/>
+      </g>
+      <g fill="var(--ink)">
+        <circle cx="170" cy="100" r="3.4"/><circle cx="149.5" cy="149.5" r="3.4"/>
+        <circle cx="100" cy="170" r="3.4"/><circle cx="50.5" cy="149.5" r="3.4"/>
+        <circle cx="30" cy="100" r="3.4"/><circle cx="50.5" cy="50.5" r="3.4"/>
+        <circle cx="100" cy="30" r="3.4"/><circle cx="149.5" cy="50.5" r="3.4"/>
+      </g>
+      <g fill="var(--ink)" transform="translate(-40 0)">
+        <circle cx="370" cy="100" r="2.6"/><circle cx="367.61" cy="118.12" r="2.6"/>
+        <circle cx="360.62" cy="135" r="2.6"/><circle cx="349.5" cy="149.5" r="2.6"/>
+        <circle cx="335" cy="160.62" r="2.6"/><circle cx="318.12" cy="167.61" r="2.6"/>
+        <circle cx="300" cy="170" r="2.6"/><circle cx="281.88" cy="167.61" r="2.6"/>
+        <circle cx="265" cy="160.62" r="2.6"/><circle cx="250.5" cy="149.5" r="2.6"/>
+        <circle cx="239.38" cy="135" r="2.6"/><circle cx="232.39" cy="118.12" r="2.6"/>
+        <circle cx="230" cy="100" r="2.6"/><circle cx="232.39" cy="81.88" r="2.6"/>
+        <circle cx="239.38" cy="65" r="2.6"/><circle cx="250.5" cy="50.5" r="2.6"/>
+        <circle cx="265" cy="39.38" r="2.6"/><circle cx="281.88" cy="32.39" r="2.6"/>
+        <circle cx="300" cy="30" r="2.6"/><circle cx="318.12" cy="32.39" r="2.6"/>
+        <circle cx="335" cy="39.38" r="2.6"/><circle cx="349.5" cy="50.5" r="2.6"/>
+        <circle cx="360.62" cy="65" r="2.6"/><circle cx="367.61" cy="81.88" r="2.6"/>
+      </g>
+      <circle cx="420" cy="100" r="70" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      <g fill="var(--ink)">
+        <circle cx="100" cy="100" r="4"/><circle cx="260" cy="100" r="4"/><circle cx="420" cy="100" r="4"/>
+      </g>
+      <g font-size="13" fill="var(--ink)">
+        <text x="111" y="110">O</text><text x="271" y="110">O</text><text x="431" y="110">O</text>
+      </g>
+      <g font-size="15" text-anchor="middle">
+        <text x="100" y="202" fill="var(--ink)" font-weight="600">8 個點</text>
+        <text x="260" y="202" fill="var(--ink)" font-weight="600">24 個點</text>
+        <text x="420" y="202" fill="var(--ink)" font-weight="600">所有的點</text>
+        <text x="100" y="226" fill="var(--graphite)">還不是圓</text>
+        <text x="260" y="226" fill="var(--graphite)">還不是圓</text>
+        <text x="420" y="226" fill="var(--green)" font-weight="600">這才是圓</text>
+      </g>
+    </svg>
+    <figcaption>定義中的<b>所有點</b>：點再多，只要還是一顆一顆分開的，就還不是圓。這張圖可以直接改成學生活動：從紙上一點出發，用尺往不同方向各量 3 公分並做記號，再討論「要點幾個才夠」。</figcaption>
+  </figure>
+
+  <div class="dual">
+    <div class="stu">
+      <p class="who">給學生的說法</p>
+      <p>第一步，先不用名詞（依 UDL G7 的設計，暫不引入「半徑」）：</p>
+      <p class="say">從中間這一點走到邊邊，往哪個方向走都一樣遠。</p>
+      <p>第二步，接上名詞：</p>
+      <p class="say">中間這一點叫做圓心。從圓心到圓周的直直的線，叫做半徑。</p>
+      <p>第三步，說出核心句，再用反例檢查：</p>
+      <p class="say">圓周上的每一點，到圓心都一樣遠。如果有一個點到圓心比較近，它還在圓周上嗎？</p>
+      <p>預期回答：「不在，它在圓的裡面。」答得出來，表示學生是用「一樣遠」在判斷，不是看形狀像不像。</p>
+    </div>
+    <div class="tch">
+      <p class="who">教師要知道的</p>
+      <p>圓是點的集合 \( C \)，是一條封閉曲線，只有線，沒有面。學生說的「邊邊」「圓周」，在形式定義裡就是 \( C \) 本身。</p>
+      <p>「每一點」「往哪個方向都」對應定義中的「所有點」，是全稱敘述：\( \overline{OP}=r \) 必須對 \( C \) 裡的每一個 \( P \) 成立。學生實際只量了三、四條，要靠教師追問「其他地方也是嗎」，把結論推到全部。</p>
+      <p>學生說法保留了定點、所有點、等距三個條件，只把「集合」換成「每一點」，把「距離是 \( r \)」換成「一樣遠」。這是課程調整順序中的「替代」：換了說法，沒有刪掉條件。</p>
+    </div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <caption>學生說法與形式定義逐項對照</caption>
+      <thead><tr><th scope="col">學生說法裡的詞</th><th scope="col">對應的定義元素</th><th scope="col">少了它會出什麼問題</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">中間這一點、圓心</th><td>定點 \( O \)</td><td>沒有參考點，「一樣遠」無從比起。</td></tr>
+        <tr><th scope="row">邊邊、圓周</th><td>集合 \( C \) 本身</td><td>學生容易把整張圓形紙片當成圓，見<a href="#disc">圓與圓區域</a>。</td></tr>
+        <tr><th scope="row">每一點、往哪個方向都</th><td>所有點</td><td>量了兩三條就下結論；點了 8 個點就以為畫好了圓。</td></tr>
+        <tr><th scope="row">一樣遠</th><td>\( \overline{OP}=r \)</td><td>只憑外形判斷。蛋形、橢圓看起來圓圓的，但從中心到邊不一樣遠，不是圓。</td></tr>
+        <tr><th scope="row">（在紙上，不必說）</th><td>同一平面</td><td>三年級的操作都在紙上，自然成立。</td></tr>
+        <tr><th scope="row">（不必說）</th><td>\( r&gt;0 \)</td><td>\( r=0 \) 時只剩一點。教師要知道，這是圓心不在圓上的原因。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>圓心決定位置，半徑決定大小</h3>
+  <p>定義只用到兩樣東西：圓心 \( O \) 與半徑 \( r \)。兩者分工清楚：\( O \) 決定圓畫在哪裡，把圓心移到別處，圓跟著搬家，大小不變；\( r \) 決定圓有多大，\( r \) 一樣，圓就一樣大，不論畫在紙上哪個位置。</p>
+  <div class="box key">
+    <p class="tag">與 Q20 選 ④ 的 46% 有關</p>
+    <p>Q20 十縣市全體學生有 46% 選 ④。試題分析說明，這些學生知道沒有過圓心的弦不是直徑，但誤認為畫出來的兩個圓要完全疊合才算一樣大。他們把位置和大小綁在一起判斷。高分組選 ④ 的比例是 47%，還高於低分組的 35%，這個誤解在能力較好的學生身上一樣普遍。教學時至少要安排一次：兩個圓分開畫在紙的兩端，不疊，只量半徑，就判斷它們一樣大。</p>
+  </div>
+  <div class="box note">
+    <p class="tag">教師端補充</p>
+    <p>數學上，兩個圓一樣大（全等）的意思是：可以把其中一個搬過去，和另一個完全疊合。半徑相等時，把一個圓的圓心平移到另一個圓心上，兩圓必定重合。所以疊合本身沒有錯，它是半徑相等的結果；錯在學生以為要真的疊在一起，或畫在同一個位置，才算一樣大。判斷時比半徑就夠了，不必搬動。</p>
+  </div>
+
+  <h3>學習重點的前後位置</h3>
+  <div class="tiles c3">
+    <div>
+      <p class="lab">先備　S-2-1</p>
+      <h4>物體之幾何特徵</h4>
+      <p>以操作活動為主，藉由實際物體認識簡單幾何形體，並連結長、短、大、小等概念。課綱備註說明，幾何特徵指「非嚴格定義的頂點、角、邊、面、周界、內外」。</p>
+      <p>對本單元的意義：學生帶著「圓圓的東西」「外面一圈」「裡面」這些非嚴格的經驗進來。三年級要把它們換成以圓心與半徑為依據的說法。</p>
+    </div>
+    <div>
+      <p class="lab">本單元　S-3-3</p>
+      <h4>圓</h4>
+      <p>圓心、圓周、半徑、直徑四個名詞，並能使用圓規畫指定半徑的圓。課綱備註：圓心不屬於圓。</p>
+      <p>康軒版三下第六單元只含認識圓與使用圓規（畫圓、複製線段、比較長度）。圓周長、圓面積、圓周率屬高年級，本頁不談。</p>
+    </div>
+    <div>
+      <p class="lab">延伸　S-5-3</p>
+      <h4>扇形</h4>
+      <p>扇形的定義、圓心角，扇形可視為圓的一部分，並與分數結合。</p>
+      <p>對本單元的意義：扇形是一塊區域，是圓區域的一部分。三年級若先分清楚圓與圓區域，五年級讀到「扇形可視為圓的一部分」時，學生知道這裡的圓指整塊區域。</p>
+    </div>
+  </div>
+</section>
+
+<section id="center" aria-labelledby="h-center">
+  <p class="eyebrow">02　圓心</p>
+  <h2 id="h-center">圓心不屬於圓</h2>
+  <blockquote class="official">
+    <p>備註：知道圓心是認識圓的重要定義元素，但是圓心並不屬於圓。</p>
+    <cite>十二年國民基本教育課程綱要數學領域學習重點 S-3-3 之備註。引自前揭報告，Q20 對應學習重點，第 67 至 70 頁。</cite>
+  </blockquote>
+  <p>這條備註講了兩件事。前半句：沒有圓心就無法定義圓，圓心是定義的材料。後半句：圓心不是圓的成員。用定義檢查一次：</p>
+  \[ O \text{ 到 } O \text{ 的距離}=0\neq r \quad\Longrightarrow\quad O\notin C \]
+  <p>圓上每一點到 \( O \) 的距離都是 \( r \)，而 \( O \) 到自己的距離是 \( 0 \)。定義要求 \( r&gt;0 \)，所以 \( 0\neq r \)，圓心不滿足條件，不在集合 \( C \) 裡。圓心位在圓的內部，卻不在圓上。</p>
+
+  <figure class="fig">
+    <svg viewBox="0 0 440 428" width="440" role="img" aria-labelledby="ctr-t ctr-d">
+      <title id="ctr-t">圓心在圓的內部，不在圓上</title>
+      <desc id="ctr-d">上方畫一個圓，圓心 O 以黑色實心點標在正中間。圓周上有三個綠色實心點，各用虛線連到 O，三條虛線一樣長，都等於半徑 r。圓的內部另有一個空心小圓點，代表圓內部的其他點，它到 O 比 r 近。圓外右下方有一個叉號，代表圓外部的點，它到 O 比 r 遠。圓的下方有圖例，說明：圓上的點到 O 剛好是 r；圓心 O 到自己是 0，在圓的內部，不在圓上；圓內部其他點比 r 近；圓外部的點比 r 遠。圖例最後一行寫著：只有圓上的點屬於圓 C。</desc>
+      <circle cx="220" cy="140" r="110" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      <g stroke="var(--faint)" stroke-width="1.2" stroke-dasharray="4 4">
+        <line x1="220" y1="140" x2="275.0" y2="44.74"/>
+        <line x1="220" y1="140" x2="111.67" y2="159.1"/>
+        <line x1="220" y1="140" x2="257.62" y2="243.37"/>
+      </g>
+      <g fill="var(--green)">
+        <circle cx="275.0" cy="44.74" r="5.5"/><circle cx="111.67" cy="159.1" r="5.5"/><circle cx="257.62" cy="243.37" r="5.5"/>
+      </g>
+      <circle cx="220" cy="140" r="5.5" fill="var(--ink)"/>
+      <text x="208" y="130" font-size="15" fill="var(--ink)" text-anchor="end" font-weight="600">O</text>
+      <circle cx="168" cy="98" r="5" fill="none" stroke="var(--graphite)" stroke-width="1.8"/>
+      <g stroke="var(--graphite)" stroke-width="2"><line x1="354" y1="226" x2="366" y2="238"/><line x1="354" y1="238" x2="366" y2="226"/></g>
+      <line x1="40" y1="272" x2="400" y2="272" stroke="var(--hair)" stroke-width="1"/>
+      <circle cx="62" cy="295" r="5.5" fill="var(--green)"/>
+      <circle cx="62" cy="325" r="5.5" fill="var(--ink)"/>
+      <circle cx="62" cy="355" r="5" fill="none" stroke="var(--graphite)" stroke-width="1.8"/>
+      <g stroke="var(--graphite)" stroke-width="2"><line x1="56" y1="379" x2="68" y2="391"/><line x1="56" y1="391" x2="68" y2="379"/></g>
+      <g font-size="14" fill="var(--ink)">
+        <text x="80" y="300">圓上的點：到 O 剛好是 r</text>
+        <text x="80" y="330">圓心 O：到 O 是 0，在內部，不在圓上</text>
+        <text x="80" y="360">圓內部其他點：比 r 近</text>
+        <text x="80" y="390">圓外部的點：比 r 遠</text>
+        <text x="54" y="420" font-weight="600">只有圓上的點屬於圓 C</text>
+      </g>
+    </svg>
+    <figcaption>四種標記用<b>形狀</b>區分（實心綠點、實心黑點、空心點、叉號），不只靠顏色。圓心畫成實心點是為了讓人看得見它的位置，不表示它是圓的一部分。</figcaption>
+  </figure>
+
+  <h3>三個教學意涵</h3>
+  <ol class="steps">
+    <li><div>
+      <p class="t">圓規針尖扎的點不是圓的一部分</p>
+      <p>用圓規畫圓時，針尖留下一個小洞，筆尖留下一圈線。那一圈線是圓，小洞是圓心。請學生用手指沿著畫好的圓走一圈，再問：「手指有經過針洞嗎？」沒有經過，所以針洞不在圓上。這個動作同時提供觸覺與視覺線索（UDL G1）。</p>
+      <p class="say">針尖扎的地方是圓心。它幫我們把圓畫出來，但它不在我們畫的這一圈上。</p>
+    </div></li>
+    <li><div>
+      <p class="t">圓心屬於圓區域</p>
+      <p>剪下圓形紙片時，圓心在紙片上，摸得到。這時圓心屬於圓區域 \( D \)（見下一節），因為 \( O \) 到 \( O \) 的距離是 \( 0 \)，而 \( 0\le r \)。同一個點，對圓來說不在上面，對圓區域來說在裡面：\( O\notin C \)，\( O\in D \)。學生用紙片找到圓心之後，要把話說回來：</p>
+      <p class="say">圓心在紙片上，但不在圓周上。</p>
+    </div></li>
+    <li><div>
+      <p class="t">說「圓心在圓的中間」，不說「圓心在圓上」</p>
+      <p>「圓上」在本單元專指圓周上的點。說「圓心在圓上」會和這個用法衝突。建議統一說「圓心在圓的正中間」或「圓心在圓的裡面」。學習單、板書與 AI 產出的易讀版教材，都要檢查這一句。</p>
+    </div></li>
+  </ol>
+
+  <div class="box ok">
+    <p class="tag">課堂檢核</p>
+    <p>請學生在自己畫的半徑 3 公分的圓上，用綠筆點出三個在圓上的點，再用紅筆點出圓心，然後問：「紅點在圓上嗎？」能說出「不在，它就是圓心，離圓心 0 公分，不是 3 公分」的學生，已經用距離在判斷。只說「不在，因為它在裡面」的學生，答案正確但停在位置描述，可以再追問：「它離圓心有多遠？圓上的點離圓心有多遠？」</p>
+  </div>
+</section>
+
+<section id="disc" aria-labelledby="h-disc">
+  <p class="eyebrow">03　圓與圓區域</p>
+  <h2 id="h-disc">圓是一圈線，圓區域是一整塊</h2>
+  <blockquote class="official">
+    <p>教師應區分「圓(circle)」和「圓區域(disc)」的意義：</p>
+    <p>圓區域：圓和圓內部合起來稱為圓區域。利用圓規畫圓時，畫出來的圖形是圓，利用摺紙找出圓的直徑時，所摺的圖形是圓區域。</p>
+    <p>教師應區分圓或圓區域使用的時機及其限制。</p>
+    <cite>前揭報告，Q20 教學建議（二）之 1，第 67 至 70 頁。原文在「圓區域」之前另有圓的定義一段，已引於第 01 節，此處從略。</cite>
+  </blockquote>
+
+  <div class="def">
+    <p class="def-h">定義　圓與圓區域<span class="aud">教師端</span></p>
+    <div class="def-b">
+      <p>圓：</p>
+      \[ C=\{\, P \mid \overline{OP}=r \,\} \]
+      <p>圓區域：</p>
+      \[ D=\{\, P \mid \overline{OP}\le r \,\} \]
+      <p>兩個集合只差一個符號：把 \( = \) 換成 \( \le \)。圓區域把距離小於 \( r \) 的點，也就是圓的內部，一起收進來：</p>
+      \[ D=C\cup\{\, P \mid \overline{OP}&lt;r \,\} \]
+      <p>這正是原文「圓和圓內部合起來」的意思。圓 \( C \) 是一條曲線，只有線；圓區域 \( D \) 是一塊平面區域。圓心 \( O \) 在 \( D \) 裡，不在 \( C \) 裡。</p>
+    </div>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 480 296" width="500" role="img" aria-labelledby="dsc-t dsc-d">
+      <title id="dsc-t">圓與圓區域對照</title>
+      <desc id="dsc-d">左右兩個一樣大的圖形。左邊是圓 C：只有一圈黑色曲線，裡面沒有塗色，圓內寫著「裡面是空的」，中間的圓心 O 只是位置記號。右邊是圓區域 D：同樣一圈曲線，但曲線和裡面整塊都塗上淡藍色，圓內寫著「裡面也算」，圓心 O 在這一塊裡面。左圖下方寫「圓 C，只有這一圈曲線」，右圖下方寫「圓區域 D，這一圈線加上裡面整塊」。</desc>
+      <circle cx="120" cy="125" r="95" fill="none" stroke="var(--ink)" stroke-width="2.8"/>
+      <circle cx="360" cy="125" r="95" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="2.8"/>
+      <circle cx="120" cy="125" r="3.5" fill="var(--graphite)"/>
+      <circle cx="360" cy="125" r="3.5" fill="var(--ink)"/>
+      <g font-size="14" fill="var(--ink)">
+        <text x="128" y="144">O</text>
+        <text x="368" y="144">O</text>
+      </g>
+      <g font-size="14" text-anchor="middle">
+        <text x="120" y="184" fill="var(--graphite)">裡面是空的</text>
+        <text x="360" y="184" fill="var(--blue)">裡面也算</text>
+      </g>
+      <g font-size="15" text-anchor="middle" font-weight="600" fill="var(--ink)">
+        <text x="120" y="254">圓 C</text>
+        <text x="360" y="254">圓區域 D</text>
+      </g>
+      <g font-size="14" text-anchor="middle" fill="var(--graphite)">
+        <text x="120" y="280">只有這一圈曲線</text>
+        <text x="360" y="280">這一圈線加上裡面整塊</text>
+      </g>
+    </svg>
+    <figcaption>左：用圓規畫出來的是這一種。右：剪下的紙片、塗滿的色塊是這一種。</figcaption>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <caption>點的位置與兩個集合</caption>
+      <thead><tr><th scope="col">點的位置</th><th scope="col">到圓心 O 的距離</th><th scope="col">屬於圓 C</th><th scope="col">屬於圓區域 D</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">圓心 O</th><td>\( 0 \)</td><td>否</td><td>是</td></tr>
+        <tr><th scope="row">圓內部的其他點</th><td>大於 \( 0 \)，小於 \( r \)</td><td>否</td><td>是</td></tr>
+        <tr class="ok"><th scope="row">圓上的點</th><td>等於 \( r \)</td><td>是</td><td>是</td></tr>
+        <tr><th scope="row">圓外部的點</th><td>大於 \( r \)</td><td>否</td><td>否</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tw">
+    <table>
+      <caption>使用時機：這個操作得到的是圓，還是圓區域</caption>
+      <thead><tr><th scope="col">操作或情境</th><th scope="col">得到的是</th><th scope="col">理由</th><th scope="col">限制與教學提醒</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">用圓規畫圓</th><td>圓</td><td>筆尖留下的只有一圈軌跡，內部沒有畫到任何東西。</td><td>看不到半徑：學生只看到針尖和筆尖兩點，看不到連接兩點的線段。依官方建議，在兩腳間綁繩子或橡皮筋。</td></tr>
+        <tr><th scope="row">兩腳綁繩的圓規；繩子固定一端繞一圈</th><td>圓</td><td>繩子末端走過的軌跡是一圈線，繩子本身就是半徑。</td><td>繩子要一直拉直。繩子一鬆，末端到中心的距離就變了，畫出來的不是圓。</td></tr>
+        <tr><th scope="row">描杯底、描錢幣的外緣</th><td>圓</td><td>筆沿著物體邊緣走，留下的是邊線。</td><td>描出來的圓看不到圓心，要另外找。物體本身是一塊（甚至是立體的），描下來的那一圈線才是圓。</td></tr>
+        <tr><th scope="row">剪下的圓形紙片</th><td>圓區域</td><td>紙片是一整塊，包含圓與圓的內部。</td><td>手上拿的不是「一個圓」。說「圓形紙片」，並用手指沿紙片邊緣描一圈，指出「圓是這一圈邊」。</td></tr>
+        <tr><th scope="row">對摺紙片找直徑、找圓心</th><td>圓區域</td><td>摺的是紙片。兩次對摺的摺痕交點就是圓心。</td><td>摺痕落在直徑的位置上，兩端碰到紙片邊緣。摺紙無法呈現「圓心不屬於圓」，因為圓心就在紙片上。</td></tr>
+        <tr><th scope="row">著色、塗滿</th><td>圓區域</td><td>塗到的是圓和內部。</td><td>塗完之後問「圓在哪裡」。學生若指著整片顏色，帶回「圓是外面那一圈線」。</td></tr>
+        <tr><th scope="row">用毛線或跳繩在地上圍一圈</th><td>圓</td><td>圍出的是一圈線，中間是空的。</td><td>圍出來的形狀要真的「每一點到中心一樣遠」才是圓。請一位學生站在中心，拉一條繩子繞一圈檢查。</td></tr>
+        <tr class="hl"><th scope="row">疊兩張紙片比大小</th><td>比的是圓區域</td><td>疊合是比較兩塊區域的方法。</td><td>若課堂只用這一種比法，學生可能把「疊合」當成判斷一樣大的唯一方法。本計畫推測這與 Q20 選 ④ 的 46% 有關，待課堂觀察檢驗。要補上「分開畫、只量半徑」的比法。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>「區分使用時機及其限制」具體要做什麼</h3>
+  <ol class="steps">
+    <li><div>
+      <p class="t">用詞跟著操作走</p>
+      <p>畫出來、描出來、圍出來的叫「圓」；剪下來、塗滿、拿在手上的叫「圓形紙片」「塗滿的圓形」。「圓區域」是教師端的詞，三年級學生不必會說，但教師自己的用詞要一致：同一節課裡，不要一下把紙片叫「圓」，一下又說「圓是一圈線」。</p>
+    </div></li>
+    <li><div>
+      <p class="t">知道每種操作適合教什麼、不適合教什麼</p>
+      <p>圓規適合讓學生經驗「每一點到圓心一樣遠」與畫指定半徑的圓，但半徑看不見，要綁繩補上。摺紙適合找圓心、找直徑，看出直徑把紙片分成完全一樣的兩半，但不適合談圓心不屬於圓。疊紙片能比較兩塊一樣大，但不能當成唯一的比法。</p>
+    </div></li>
+    <li><div>
+      <p class="t">換操作時把轉換說出來</p>
+      <p>從紙片回到圓時，做一個固定的動作：手指沿紙片邊緣描一圈。每次都做，學生會把這個動作和「圓」這個字連在一起。</p>
+      <p class="say">這張紙片是一整塊。我們說的圓，是我手指現在走過的這一圈。</p>
+    </div></li>
+  </ol>
+</section>
+
+<section id="terms" aria-labelledby="h-terms">
+  <p class="eyebrow">04　四個名詞</p>
+  <h2 id="h-terms">圓心、圓周、半徑、直徑</h2>
+  <p>Q20 的評量目標正是這四個名詞：</p>
+  <blockquote class="official">
+    <p>本題給定半徑 3 公分的圓及圓上標示半徑、直徑及兩條弦的圖像，要求學生選出正確的敘述，評量學生是否認識「圓心」、「圓周」、「半徑」與「直徑」的意義。</p>
+    <cite>前揭報告，Q20 評量目標，第 67 至 70 頁。</cite>
+  </blockquote>
+  <div class="box note">
+    <p class="tag">資料說明</p>
+    <p>報告未附 Q20 試題原文，本站不重構題目。下圖是本計畫自繪的教學用圖，不是 Q20 的試題圖。</p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 500 380" width="520" role="img" aria-labelledby="trm-t trm-d">
+      <title id="trm-t">圓的四個名詞標註圖</title>
+      <desc id="trm-d">一個圓，圓心 O 在正中間，以黑色實心點標示。從 O 往左上方畫到圓上的點 A，這條黃銅色線段標為半徑。一條藍色線段從左下方圓上的點 M 斜斜往右上穿過圓心 O，到達圓上的點 N，標為直徑；這條直徑刻意畫成斜的，不是水平的。OA、OM、ON 三條線段中間各有一道短刻痕，表示三條一樣長。圓的下半部有一條紅色虛線，水平地連接圓上的點 E 和 F，但沒有通過圓心，標為「弦 EF：沒有通過圓心，不是直徑」。右上方有一條引線指向圓的曲線本身，標為「圓周，就是圓本身」。</desc>
+      <circle cx="250" cy="200" r="150" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      <line x1="114.05" y1="263.39" x2="385.95" y2="136.61" stroke="var(--blue)" stroke-width="3.2"/>
+      <line x1="250" y1="200" x2="198.7" y2="59.05" stroke="var(--brass)" stroke-width="3.2"/>
+      <line x1="138.2" y1="300" x2="361.8" y2="300" stroke="var(--red)" stroke-width="2.4" stroke-dasharray="7 5"/>
+      <g stroke="var(--ink)" stroke-width="1.8">
+        <line x1="229.99" y1="127.47" x2="218.71" y2="131.58"/>
+        <line x1="320.51" y1="173.74" x2="315.44" y2="162.87"/>
+        <line x1="179.49" y1="226.26" x2="184.56" y2="237.13"/>
+      </g>
+      <line x1="336.04" y1="77.13" x2="362" y2="50" stroke="var(--faint)" stroke-width="1.2"/>
+      <circle cx="336.04" cy="77.13" r="2.6" fill="var(--faint)"/>
+      <circle cx="250" cy="200" r="4.8" fill="var(--ink)"/>
+      <circle cx="198.7" cy="59.05" r="4.6" fill="var(--brass)"/>
+      <circle cx="114.05" cy="263.39" r="4.6" fill="var(--blue)"/>
+      <circle cx="385.95" cy="136.61" r="4.6" fill="var(--blue)"/>
+      <circle cx="138.2" cy="300" r="4.2" fill="var(--red)"/>
+      <circle cx="361.8" cy="300" r="4.2" fill="var(--red)"/>
+      <g font-size="15" fill="var(--ink)" font-weight="600">
+        <text x="190" y="52" text-anchor="end">A</text>
+        <text x="394" y="132">N</text>
+        <text x="106" y="284" text-anchor="end">M</text>
+        <text x="130" y="320" text-anchor="end">E</text>
+        <text x="370" y="320">F</text>
+      </g>
+      <g font-size="14" font-weight="600">
+        <text x="210" y="136" text-anchor="end" fill="var(--brass)">半徑</text>
+        <text x="296" y="150" fill="var(--blue)">直徑</text>
+        <text x="262" y="224" fill="var(--ink)">圓心 O</text>
+        <text x="366" y="46" fill="var(--ink)">圓周，就是圓本身</text>
+      </g>
+      <text x="250" y="286" font-size="14" text-anchor="middle" fill="var(--red)" font-weight="600">弦 EF：沒有通過圓心，不是直徑</text>
+    </svg>
+    <figcaption>三道短刻痕表示 <b>OA、OM、ON 一樣長</b>。直徑刻意畫成斜的，弦刻意畫成水平的：教學用圖若總把直徑畫成水平，學生可能把「水平」當成直徑的特徵（錯誤類型 2）。板書、學習單、AI 產出的圖都建議照這個原則。</figcaption>
+  </figure>
+
+  <div class="tw">
+    <table>
+      <caption>四個名詞：給學生的說法、教師要知道的、常見的錯誤說法</caption>
+      <thead><tr><th scope="col">名詞</th><th scope="col">給學生的說法</th><th scope="col">教師要知道的</th><th scope="col">常見的錯誤說法</th></tr></thead>
+      <tbody>
+        <tr>
+          <th scope="row">圓心</th>
+          <td>圓正中間的那一點。用圓規畫圓時，針尖扎的地方。</td>
+          <td>定義圓的定點 \( O \)。\( O\notin C \)，\( O\in D \)。一個圓只有一個圓心。</td>
+          <td>「圓心在圓上」<br>「圓心是圓的一部分」</td>
+        </tr>
+        <tr>
+          <th scope="row">圓周</th>
+          <td>圍成圓的那一圈線。用手指沿著描一圈，摸到的就是圓周。</td>
+          <td>形式定義中，圓就是這一圈曲線，圓與圓周指同一個集合 \( C \)。國小口語常用「圓」指整塊區域，才另外用「圓周」強調那一圈線。本單元只談圓周是哪一條線，不談它的長度。</td>
+          <td>「圓周是圓的外框，圓是裡面那一塊」</td>
+        </tr>
+        <tr>
+          <th scope="row">半徑</th>
+          <td>從圓心到圓周上任何一點的直直的線。同一個圓的半徑有很多條，每一條都一樣長。</td>
+          <td>有線段、距離、長度數值、集合四種描述，見<a href="#radius">第 05 節</a>。所有半徑等長是圓的定義本身，不是另外要背的性質。</td>
+          <td>「半徑只有一條」<br>「半徑就是橫的那一條」</td>
+        </tr>
+        <tr>
+          <th scope="row">直徑</th>
+          <td>穿過圓心、兩頭都碰到圓周的直直的線。它是兩條半徑接起來的。</td>
+          <td>通過 \( O \) 且兩端在 \( C \) 上的線段，是圓中最長的弦。\( \overline{MN}=\overline{OM}+\overline{ON} \)。</td>
+          <td>「水平的線就是直徑」<br>「兩頭碰到圓就是直徑」</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>四個名詞的地位不同</h3>
+  <p>圓心與半徑是定義圓的材料：給了圓心和半徑，圓就完全決定了。圓周是定義出來的結果，也就是圓本身。直徑由半徑組成，是過圓心、方向相反的兩條半徑接起來的線段。</p>
+  <p>教材若先從外形介紹圓周，再介紹圓心與半徑，教完半徑之後要回頭補一句：「圓周就是到圓心一樣遠的那些點。」這一句把圓周從「看起來的外框」改成「由半徑決定的點」，後面談直徑、談兩圓一樣大才有依據。</p>
+  <div class="box key">
+    <p class="tag">關於「弦」</p>
+    <p>「弦」不在 S-3-3 列出的四個名詞之中。三年級學生不一定要會說「弦」，但一定要會判斷：一條兩端都碰到圓周的線段，是不是直徑。判斷只看它有沒有通過圓心。教師端使用「弦」這個詞，能把錯誤類型 2 說得更精確，見<a href="#chord">第 06 節</a>。</p>
+  </div>
+</section>
+
+<section id="radius" aria-labelledby="h-radius">
+  <p class="eyebrow">05　半徑</p>
+  <h2 id="h-radius">半徑的四種描述</h2>
+  <p>試題分析以一張標有圓心 O、圓上點 A 與點 P 的圖為例，列出四種描述半徑的方法：</p>
+  <blockquote class="official">
+    <p>(1) 稱 OA 線段為半徑，此時的半徑是一條線段。</p>
+    <p>(2) 稱 OP 兩點的距離為半徑，此時的半徑是兩點的距離。</p>
+    <p>(3) 稱 \( \text{半徑}=5\ \text{公分} \)，此時的 5 公分可能是 OA 線段的長度，也可能是 OP 兩點的距離。</p>
+    <p>(4) 半徑是集合，學生必須發現圓心 O 和圓上任意點連成的線段都一樣或發現圓心 O 和圓上任意點的距離都相等，才能掌握所有半徑都等長意義。</p>
+    <p>這四種描述的方法中，第一種是學生最容易接受的方法，但是用圓規畫圓時，學生看不到線段 OA，只能看到針尖和筆尖兩點的距離，建議在圓規兩腳之間綁上繩子或橡皮筋，讓學生在畫圓時，能看到針尖和筆尖的距離，也能看到連接針尖和筆尖的線段。</p>
+    <cite>前揭報告，Q20 教學建議（二）之 2，第 67 至 70 頁。</cite>
+  </blockquote>
+
+  <div class="tiles c4">
+    <div>
+      <p class="lab">描述 1</p>
+      <svg viewBox="0 0 200 170" role="img" aria-labelledby="r1-t r1-d">
+        <title id="r1-t">半徑是一條線段</title>
+        <desc id="r1-d">一個圓，圓心 O 在中間。從 O 往右上方畫一條黃銅色粗線段到圓上的點 A。下方文字：線段 OA。</desc>
+        <circle cx="100" cy="82" r="58" fill="none" stroke="var(--ink)" stroke-width="1.8"/>
+        <line x1="100" y1="82" x2="147.51" y2="48.73" stroke="var(--brass)" stroke-width="3.4" stroke-linecap="round"/>
+        <circle cx="100" cy="82" r="3.6" fill="var(--ink)"/>
+        <circle cx="147.51" cy="48.73" r="3.6" fill="var(--brass)"/>
+        <g font-size="12" fill="var(--ink)" font-weight="600"><text x="94" y="100" text-anchor="end">O</text><text x="154" y="42">A</text></g>
+        <text x="100" y="162" font-size="12" text-anchor="middle" fill="var(--brass)" font-weight="600">線段 OA</text>
+      </svg>
+      <h4>線段</h4>
+      <p>半徑是一條線段 OA：看得到、可以用色筆描、可以用紙條或吸管做出來。官方指出這是學生最容易接受的一種。</p>
+      <p>課堂形式：在圓上畫出 OA 並描色；用紙條貼在圓心與圓周之間。</p>
+    </div>
+    <div>
+      <p class="lab">描述 2</p>
+      <svg viewBox="0 0 200 170" role="img" aria-labelledby="r2-t r2-d">
+        <title id="r2-t">半徑是兩點的距離</title>
+        <desc id="r2-d">一個圓，上方架著一支圓規：兩隻腳從頂端的鉸鏈張開，一隻腳的針尖在圓心 O，另一隻腳的筆尖在圓上的點 P。O 和 P 之間沒有畫線段，只在下方畫了一條兩端有箭頭的量度線，表示 O 到 P 有多遠。下方文字：O 到 P 的距離。</desc>
+        <circle cx="100" cy="82" r="58" fill="none" stroke="var(--ink)" stroke-width="1.8"/>
+        <line x1="129" y1="18" x2="100" y2="82" stroke="var(--graphite)" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="129" y1="18" x2="158" y2="82" stroke="var(--graphite)" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="129" cy="18" r="4.4" fill="var(--sheet)" stroke="var(--graphite)" stroke-width="2"/>
+        <g stroke="var(--faint)" stroke-width="1" stroke-dasharray="2 2">
+          <line x1="100" y1="88" x2="100" y2="112"/><line x1="158" y1="88" x2="158" y2="112"/>
+        </g>
+        <line x1="104" y1="106" x2="154" y2="106" stroke="var(--blue)" stroke-width="1.4"/>
+        <path d="M100 106 l7 -3.5 v7 z M158 106 l-7 -3.5 v7 z" fill="var(--blue)"/>
+        <circle cx="100" cy="82" r="3.6" fill="var(--ink)"/>
+        <circle cx="158" cy="82" r="3.6" fill="var(--blue)"/>
+        <g font-size="12" fill="var(--ink)" font-weight="600"><text x="94" y="80" text-anchor="end">O</text><text x="164" y="78">P</text></g>
+        <text x="100" y="162" font-size="12" text-anchor="middle" fill="var(--blue)" font-weight="600">O 到 P 的距離</text>
+      </svg>
+      <h4>距離</h4>
+      <p>半徑是 O 與 P 兩點之間有多遠，紙上不一定畫出線段。用圓規畫圓時，學生看到的正是這一種：只有針尖和筆尖兩個點。</p>
+      <p>本單元的圓規「複製線段、比較長度」用的也是這一種：兩腳張開的距離被帶到別處去比。</p>
+    </div>
+    <div>
+      <p class="lab">描述 3</p>
+      <svg viewBox="0 0 200 170" role="img" aria-labelledby="r3-t r3-d">
+        <title id="r3-t">半徑是一個長度數值</title>
+        <desc id="r3-d">一個圓，圓心 O 在中間，從 O 到圓上的點 A 畫了一條灰色虛線，旁邊標著 5 公分。下方文字：半徑 = 5 公分。這個 5 公分可以指線段 OA 的長，也可以指 O 到圓上一點的距離，圖上刻意不說明是哪一種。</desc>
+        <circle cx="100" cy="82" r="58" fill="none" stroke="var(--ink)" stroke-width="1.8"/>
+        <line x1="100" y1="82" x2="147.51" y2="48.73" stroke="var(--graphite)" stroke-width="1.6" stroke-dasharray="4 3"/>
+        <circle cx="100" cy="82" r="3.6" fill="var(--ink)"/>
+        <circle cx="147.51" cy="48.73" r="3.2" fill="var(--graphite)"/>
+        <g font-size="12" fill="var(--ink)" font-weight="600"><text x="94" y="100" text-anchor="end">O</text><text x="154" y="42">A</text></g>
+        <text x="112" y="56" font-size="12" text-anchor="middle" fill="var(--ink)" font-weight="600">5 公分</text>
+        <text x="100" y="162" font-size="12" text-anchor="middle" fill="var(--ink)" font-weight="600">半徑 = 5 公分</text>
+      </svg>
+      <h4>長度數值</h4>
+      <p>「半徑 5 公分」的 5 公分是一個量，可以指 OA 線段的長，也可以指 O、P 兩點的距離。題目寫「畫一個半徑 5 公分的圓」時，用的是這一種。</p>
+      <p>學生要把數字還原成圓規張開的距離，才畫得出指定半徑的圓，這正是 S-3-3 的後半句。</p>
+    </div>
+    <div>
+      <p class="lab">描述 4</p>
+      <svg viewBox="0 0 200 170" role="img" aria-labelledby="r4-t r4-d">
+        <title id="r4-t">半徑是一個集合</title>
+        <desc id="r4-d">一個圓，從圓心 O 往八個方向各畫一條黃銅色線段到圓上，八條線段平均分布、一樣長。下方文字：每一條都一樣長。表示圓心到圓上任意一點連成的線段全部等長。</desc>
+        <circle cx="100" cy="82" r="58" fill="none" stroke="var(--ink)" stroke-width="1.8"/>
+        <g stroke="var(--brass)" stroke-width="2" stroke-linecap="round">
+          <line x1="100" y1="82" x2="158" y2="82"/><line x1="100" y1="82" x2="141.01" y2="123.01"/>
+          <line x1="100" y1="82" x2="100" y2="140"/><line x1="100" y1="82" x2="58.99" y2="123.01"/>
+          <line x1="100" y1="82" x2="42" y2="82"/><line x1="100" y1="82" x2="58.99" y2="40.99"/>
+          <line x1="100" y1="82" x2="100" y2="24"/><line x1="100" y1="82" x2="141.01" y2="40.99"/>
+        </g>
+        <circle cx="100" cy="82" r="3.6" fill="var(--ink)"/>
+        <text x="100" y="162" font-size="12" text-anchor="middle" fill="var(--brass)" font-weight="600">每一條都一樣長</text>
+      </svg>
+      <h4>集合</h4>
+      <p>半徑不只一條。圓心到圓上任意點連成的線段全部一樣長，這一整組線段（或這一整組距離）才是完整的半徑概念。</p>
+      <p>四種之中最難，也最重要，說明見本節最後。</p>
+    </div>
+  </div>
+
+  <h3>三年級的教學順序</h3>
+  <p>四種描述說的是同一個概念，只是看的角度不同。建議依下列順序把它們串起來，每一步都用前一步的東西當起點：</p>
+  <ol class="steps">
+    <li><div>
+      <p class="t">線段（描述 1）</p>
+      <p>在畫好的圓上，從圓心畫一條線到圓周，用色筆描出來。</p>
+      <p class="say">從圓心到圓周的這一條線，叫做半徑。</p>
+    </div></li>
+    <li><div>
+      <p class="t">綁繩圓規（描述 1 接到描述 2）</p>
+      <p>依官方建議，在圓規兩腳之間綁上繩子或橡皮筋。畫圓時，學生同時看到兩個點（針尖、筆尖）與連接兩點的線段（繩子）。畫一圈，繩子一直在，長度不變。</p>
+      <p class="say">針尖到筆尖有多遠，就是這條繩子有多長。這條繩子就是半徑。</p>
+    </div></li>
+    <li><div>
+      <p class="t">量出數字（描述 3）</p>
+      <p>用尺量繩子，得到「半徑 3 公分」。說清楚這個數字同時是兩件事的長度。</p>
+      <p class="say">3 公分是這條繩子的長，也是針尖到筆尖有多遠。</p>
+    </div></li>
+    <li><div>
+      <p class="t">轉一圈（描述 4）</p>
+      <p>在圓上再畫三、四條往不同方向的半徑，每條都量一量；或用下方互動作圖，拖動圓上的點。最後問一個全稱的問題：</p>
+      <p class="say">圓上有沒有哪一點，到圓心不是 3 公分？</p>
+    </div></li>
+    <li><div>
+      <p class="t">反過來用（描述 3 回到描述 2）</p>
+      <p>給「半徑 4 公分」，學生把圓規張開 4 公分畫圓，再任選圓上兩處量到圓心的長度，檢查是不是 4 公分。這一步就是 S-3-3「能使用圓規畫指定半徑的圓」。</p>
+    </div></li>
+  </ol>
+
+  <div class="ggb-block" data-ggb="radius-set">
+    <div class="ggb-head"><p class="t">互動作圖：圓上每一點到圓心都一樣遠<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+    <div class="ggb-body">
+      <figure class="ggb-still">
+        <svg viewBox="0 0 520 340" width="480" role="img" aria-labelledby="rs-t rs-d">
+          <title id="rs-t">三條半徑一樣長</title>
+          <desc id="rs-d">一個半徑 3 公分的圓，圓心 O 在中間。圓上有三個點：右邊的紅點 A、左上方的藍點 P、左下方的藍點 Q。從 O 分別畫黃銅色線段到 A、P、Q，三條線段旁邊都標著 3 公分，一樣長。下方文字：O 到圓上任何一點，都是 3 公分。</desc>
+          <circle cx="260" cy="165" r="120" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <g stroke="var(--brass)" stroke-width="3.2" stroke-linecap="round">
+            <line x1="260" y1="165" x2="380" y2="165"/>
+            <line x1="260" y1="165" x2="200" y2="61.08"/>
+            <line x1="260" y1="165" x2="182.87" y2="256.93"/>
+          </g>
+          <circle cx="260" cy="165" r="4.8" fill="var(--ink)"/>
+          <circle cx="380" cy="165" r="6" fill="var(--red)"/>
+          <circle cx="200" cy="61.08" r="5.2" fill="var(--blue)"/>
+          <circle cx="182.87" cy="256.93" r="5.2" fill="var(--blue)"/>
+          <g font-size="15" fill="var(--brass)" font-weight="600">
+            <text x="320" y="157" text-anchor="middle">3 公分</text>
+            <text x="240" y="106">3 公分</text>
+            <text x="234" y="232">3 公分</text>
+          </g>
+          <g font-size="16" fill="var(--ink)" font-weight="600">
+            <text x="268" y="186">O</text>
+            <text x="390" y="160">A</text>
+            <text x="190" y="54" text-anchor="end">P</text>
+            <text x="174" y="272" text-anchor="end">Q</text>
+          </g>
+          <text x="260" y="324" font-size="15" text-anchor="middle" fill="var(--ink)">O 到圓上任何一點，都是 3 公分</text>
+        </svg>
+        <figcaption>靜態圖：半徑 3 公分，OA、OP、OQ 三條一樣長。互動版另有第四個點 R，四條半徑都即時顯示長度。</figcaption>
+      </figure>
+      <div class="ggb-stage"></div>
+      <p class="ggb-how"><b>操作方式</b>　圓心 O 固定不動。拖動藍點 P、Q、R 沿著圓走，四條半徑的長度數字始終相同。拖動紅點 A 可以改變半徑，四個數字一起變，仍然彼此相等。建議先不拖，請學生預測：「把 P 拖到下面，這條線會變長還是變短？」再動手驗證。</p>
+    </div>
+  </div>
+
+  <h3>為什麼第四種最難，也最重要</h3>
+  <p>最難，原因有三。</p>
+  <ol>
+    <li>要從看得到的有限幾條，推到看不到的全部。學生手上的圓最多畫了幾條半徑，定義卻要求圓上每一點都成立。這個「所有」要靠推理，數不完。</li>
+    <li>要把線段與距離看成同一件事的兩面。官方原文的描述 4 同時寫了兩種發現方式：線段都一樣，或距離都相等。學生若只會其中一種，換成圓規操作（只有兩點）或換成圖（只有線段），就接不上。</li>
+    <li>S-2-1 的經驗以實際物體為主，學生習慣判斷「這一個東西」。集合要求同時考慮無數個點，是新的思考方式。</li>
+  </ol>
+  <p>最重要，因為描述 4 就是圓的定義。\( C=\{\, P \mid \overline{OP}=r \,\} \) 說的正是「圓上所有點到圓心的距離都是 \( r \)」。學生掌握了它，下面三件事都有了依據：</p>
+  <ul>
+    <li>圓規為什麼能畫圓：兩腳距離固定，筆尖走到哪裡，到針尖都是 \( r \)。</li>
+    <li>直徑為什麼等於兩條半徑：組成直徑的兩段，都是圓心到圓上一點，都是 \( r \)。</li>
+    <li>兩個半徑相等的圓為什麼一樣大：兩個圓上的點到各自圓心都是同一個 \( r \)，兩圓只差位置。這一條正是 Q20 選 ④ 的 46% 卡住的地方。</li>
+  </ul>
+  <div class="chips"><span class="chip star">G2 ★ 語言與符號</span><span class="chip star">G3 ★ 建構知識</span><span class="chip">G1 感知</span></div>
+</section>
+
+<section id="chord" aria-labelledby="h-chord">
+  <p class="eyebrow">06　弦與直徑</p>
+  <h2 id="h-chord">水平與通過圓心，是兩件事</h2>
+  <blockquote class="official">
+    <p>2. 學生可能認為過圓心及水平的弦都是直徑。</p>
+    <cite>前揭報告，Q20 教學建議（一）錯誤類型的可能原因之 2，第 67 至 70 頁。</cite>
+  </blockquote>
+
+  <div class="tiles c3">
+    <div class="stat">
+      <p class="k">Q20 選 ②．十縣市全體</p>
+      <p class="n">19%</p>
+      <p class="d">低分組 27%，高分組 11%。試題分析：可能不認識四個名詞的意義，可能認為過圓心及水平的弦都是直徑。</p>
+    </div>
+    <div class="stat">
+      <p class="k">Q20 選 ③．十縣市全體</p>
+      <p class="n">13%</p>
+      <p class="d">低分組 22%，高分組 8%。試題分析同樣指出：可能認為過圓心及水平的弦都是直徑。</p>
+    </div>
+    <div class="stat alert">
+      <p class="k">② 與 ③ 合計</p>
+      <p class="n">32%</p>
+      <p class="d">全體約三分之一。低分組合計 49%，將近一半；高分組合計 19%。</p>
+    </div>
+  </div>
+  <p>以上百分比是十縣市全體到考學生（49,031 人）的選答率，不是新竹市專屬資料。新竹市可對照的是向度層級的資料：201 個班級的班級答對率平均，空間與形狀為 42.4%，是四個向度中最低的（數與計算 71.1%、量與實測 81.2%、關係 78.0%）。</p>
+
+  <h3>迷思的結構</h3>
+  <p>原文「過圓心及水平的弦都是直徑」可以這樣讀：學生把「通過圓心」和「水平」都當成直徑的條件，只要符合其中一項，就叫它直徑。正確的判斷只看一件事：兩端在圓上的線段，有沒有通過圓心。水平與否，和是不是直徑無關。</p>
+
+  <figure class="fig">
+    <svg viewBox="0 0 520 400" width="520" role="img" aria-labelledby="cmb-t cmb-d">
+      <title id="cmb-t">水平與通過圓心的四種組合</title>
+      <desc id="cmb-d">四個一樣大的圓排成兩列兩行，每個圓中間都有圓心。左上：一條藍色實線水平地穿過圓心，兩端碰到圓，標示「水平，過圓心，是直徑」。右上：一條藍色實線斜斜地穿過圓心，兩端碰到圓，標示「不水平，過圓心，是直徑」。左下：一條紅色虛線水平，兩端碰到圓，但在圓心上方，沒有通過圓心，標示「水平，不過圓心，不是直徑」。右下：一條紅色虛線斜斜的，兩端碰到圓，沒有通過圓心，標示「不水平，不過圓心，不是直徑」。結論：上排兩條都是直徑，下排兩條都不是，決定的是有沒有通過圓心，和水平無關。</desc>
+      <g fill="none" stroke="var(--ink)" stroke-width="2">
+        <circle cx="130" cy="100" r="60"/><circle cx="390" cy="100" r="60"/>
+        <circle cx="130" cy="280" r="60"/><circle cx="390" cy="280" r="60"/>
+      </g>
+      <g stroke="var(--blue)" stroke-width="3.2" stroke-linecap="round">
+        <line x1="70" y1="100" x2="190" y2="100"/>
+        <line x1="340.85" y1="134.41" x2="439.15" y2="65.59"/>
+      </g>
+      <g stroke="var(--red)" stroke-width="2.6" stroke-dasharray="6 4">
+        <line x1="81.27" y1="245" x2="178.73" y2="245"/>
+        <line x1="370.15" y1="336.62" x2="450" y2="280.72"/>
+      </g>
+      <g fill="var(--ink)">
+        <circle cx="130" cy="100" r="4"/><circle cx="390" cy="100" r="4"/>
+        <circle cx="130" cy="280" r="4"/><circle cx="390" cy="280" r="4"/>
+      </g>
+      <g font-size="15" text-anchor="middle" fill="var(--ink)">
+        <text x="130" y="186">水平，過圓心</text>
+        <text x="390" y="186">不水平，過圓心</text>
+        <text x="130" y="366">水平，不過圓心</text>
+        <text x="390" y="366">不水平，不過圓心</text>
+      </g>
+      <g font-size="15" text-anchor="middle" font-weight="600">
+        <text x="130" y="207" fill="var(--blue)">是直徑</text>
+        <text x="390" y="207" fill="var(--blue)">是直徑</text>
+        <text x="130" y="389" fill="var(--red)">不是直徑</text>
+        <text x="390" y="389" fill="var(--red)">不是直徑</text>
+      </g>
+    </svg>
+    <figcaption>上排都是直徑，下排都不是。左右兩行只差<b>水平與否</b>，結果不變；上下兩列只差<b>是否通過圓心</b>，結果就變了。</figcaption>
+  </figure>
+
+  <p>「水平」是這條線和紙張邊緣（或看的人）之間的關係，不是圖形本身的性質。把學習單轉 30 度，原本水平的弦就不水平了，但它有沒有通過圓心不會改變。「通過圓心」屬於圖形本身，轉紙、翻面、搬位置都不變。</p>
+
+  <div class="box ok">
+    <p class="tag">課堂做法：轉紙測試</p>
+    <p>學生在紙上畫好圓與幾條兩端碰到圓的線段之後，請他把紙轉一個角度，再問：「現在哪幾條是直徑？」依通過圓心判斷的學生，轉紙前後答案一樣；依水平判斷的學生，答案會跟著紙轉。這個測試不必出新題，任何一張有直徑的學習單都能用。</p>
+  </div>
+  <div class="box ok">
+    <p class="tag">課堂做法：斜著摺</p>
+    <p>對摺圓形紙片時，不論從哪個方向摺，只要兩半完全重合，摺痕就一定通過圓心，落在直徑的位置上。請學生至少斜著摺兩次，打開後會看到幾條方向不同、都不水平的摺痕，交在同一點。這一點就是圓心，每一條摺痕都在直徑的位置。</p>
+  </div>
+
+  <div class="ggb-block" data-ggb="chord">
+    <div class="ggb-head"><p class="t">互動作圖：水平的弦，只有一條是直徑<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+    <div class="ggb-body">
+      <figure class="ggb-still">
+        <svg viewBox="0 0 530 330" width="530" role="img" aria-labelledby="chd-t chd-d">
+          <title id="chd-t">三條水平的弦</title>
+          <desc id="chd-d">一個半徑 3 公分的圓，圓心 O 在中間，一條淡灰色虛線從上到下通過圓心。圓裡有三條水平線段，兩端都碰到圓。上面一條是紅色虛線，在圓心上方 2 公分處，沒有通過圓心，長約 4.5 公分，標示「不過圓心，不是直徑」。中間一條是藍色實線，正好通過圓心 O，長 6 公分，標示「通過圓心，直徑」。下面一條是紅色虛線，在圓心下方 1.5 公分處，沒有通過圓心，長約 5.2 公分，標示「不過圓心，不是直徑」。圖下方寫著：三條都是水平的，只有一條是直徑。</desc>
+          <line x1="230" y1="35" x2="230" y2="295" stroke="var(--faint)" stroke-width="1" stroke-dasharray="3 4"/>
+          <circle cx="230" cy="165" r="120" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <g stroke="var(--red)" stroke-width="2.6" stroke-dasharray="7 5">
+            <line x1="140.56" y1="85" x2="319.44" y2="85"/>
+            <line x1="126.08" y1="225" x2="333.92" y2="225"/>
+          </g>
+          <line x1="110" y1="165" x2="350" y2="165" stroke="var(--blue)" stroke-width="3.2"/>
+          <g stroke="var(--faint)" stroke-width="1" stroke-dasharray="2 3">
+            <line x1="325" y1="85" x2="366" y2="85"/>
+            <line x1="355" y1="165" x2="366" y2="165"/>
+            <line x1="339" y1="225" x2="366" y2="225"/>
+          </g>
+          <circle cx="230" cy="85" r="4.2" fill="var(--red)"/>
+          <circle cx="230" cy="225" r="4.2" fill="var(--red)"/>
+          <circle cx="230" cy="165" r="4.8" fill="var(--ink)"/>
+          <text x="238" y="187" font-size="15" fill="var(--ink)" font-weight="600">O</text>
+          <g font-size="15">
+            <text x="372" y="82" fill="var(--red)" font-weight="600">不過圓心：不是直徑</text>
+            <text x="372" y="101" fill="var(--graphite)">長約 4.5 公分</text>
+            <text x="372" y="162" fill="var(--blue)" font-weight="600">通過圓心：直徑</text>
+            <text x="372" y="181" fill="var(--graphite)">長 6 公分</text>
+            <text x="372" y="222" fill="var(--red)" font-weight="600">不過圓心：不是直徑</text>
+            <text x="372" y="241" fill="var(--graphite)">長約 5.2 公分</text>
+          </g>
+          <text x="230" y="320" font-size="15" text-anchor="middle" fill="var(--ink)">三條都是水平的，只有一條是直徑</text>
+        </svg>
+        <figcaption>靜態圖：半徑 3 公分。三條弦都水平，長度分別約 4.5、6、5.2 公分，只有通過圓心的那一條等於直徑 6 公分。</figcaption>
+      </figure>
+      <div class="ggb-stage"></div>
+      <p class="ggb-how"><b>操作方式</b>　圓的半徑是 3，圓心 O 固定。上下拖動紅點，水平的弦跟著移動，長度數字隨之改變。只有拖到圓心時，長度才等於直徑 6；一離開圓心，弦就變短，也就不是直徑。可以問學生：「這條線一直都是水平的，為什麼有時候是直徑，有時候不是？」</p>
+    </div>
+  </div>
+
+  <p>教師可知：直徑是圓中最長的弦，弦離圓心越遠就越短。拖動時看得到這個現象，但它不是本單元要學生背的結論。本單元要學生掌握的，是「通過圓心」這個判斷依據。</p>
+  <div class="chips"><span class="chip star">G2 ★ 語言與符號</span><span class="chip star">G3 ★ 建構知識</span></div>
+</section>
+
+<section id="relation" aria-labelledby="h-relation">
+  <p class="eyebrow">07　半徑與直徑</p>
+  <h2 id="h-relation">直徑是兩條半徑接起來</h2>
+  <blockquote class="official">
+    <p>有兩種溝通半徑與直徑關係的方法：</p>
+    <p>方法一：分別量出半徑與直徑的長度，例如半徑長 5 公分，直徑長 10 公分，再利用除法算式 \( 10\div5=2 \)，說明直徑長是半徑長的 2 倍。</p>
+    <p>方法二：在圓上畫出直徑，幫助學生發現直徑是由兩條半徑組成的，所以 2 條半徑接起來的長度和直徑一樣長。</p>
+    <p>10 是 5 的 2 倍是基準量和比較量關係的描述，指的是以 5 為基準量 1 時，比較量 10 會是 2，三年級學生較無法掌握 10 是 5 的 2 倍的意義。建議教師利用方法二說明半徑與直徑的關係。</p>
+    <cite>前揭報告，Q20 教學建議（二）之 3，第 67 至 70 頁。</cite>
+  </blockquote>
+
+  <div class="dual">
+    <div class="stu">
+      <p class="who">給學生的說法</p>
+      \[ \text{直徑}=\text{半徑}+\text{半徑} \]
+      <p class="say">從圓心往這邊是一條半徑，往正對面又是一條半徑。兩條接起來，穿過圓心，就是直徑。</p>
+      <p>例：半徑 3 公分，直徑是 \( 3+3=6 \)，6 公分。</p>
+      <p>反過來：直徑 8 公分，半徑是多少？想「哪一個數加上自己是 8」：</p>
+      \[ \square+\square=8 \]
+      <p>試一試：\( 3+3=6 \) 太小，\( 4+4=8 \) 剛好，所以半徑是 4 公分。</p>
+    </div>
+    <div class="tch">
+      <p class="who">教師要知道的</p>
+      \[ d=2r \qquad r=d\div 2 \]
+      <p>教師端知道乘除關係即可。對學生，這個關係用加法和「組成」呈現：直徑這條線段被圓心分成兩段，每一段都是半徑，是部分與整體的關係。方法二讓學生直接看見這個組成；方法一要學生從量出來的兩個數，推回倍數關係。</p>
+      <p>\( \square+\square=8 \) 是加法的逆向思考，三年級學生用試數就能解決，不需要以除法算式為入口。到了學習倍數與基準量的年級，再把「兩條半徑接起來」接到「直徑是半徑的 2 倍」。</p>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <p class="tag">為什麼三年級不以 \( 10\div5=2 \) 或 \( d=2r \) 為入口</p>
+    <p>官方原文已說明核心理由：「10 是 5 的 2 倍」是基準量與比較量的關係，要以 5 為 1 去看 10 是多少，三年級學生較無法掌握。放到課堂上，會具體卡在三個地方：</p>
+    <ul>
+      <li>除法算式 \( 10\div5=2 \) 算出的 2，是「10 裡面有幾個 5」。學生算得出來，但不一定知道這個 2 說的是「兩條半徑」。算式與圖形之間，多了一步翻譯。</li>
+      <li>\( d=2r \) 用字母代表長度，又省略了乘號，兩層符號負擔都超出三年級。工作記憶受限的學生，要同時記住 \( d \)、\( r \)、\( 2 \) 三個符號各代表什麼。</li>
+      <li>方法一要先量兩次。手畫的圓量出來，可能是半徑 5 公分、直徑 9 公分 8 毫米，數字對不上 2 倍，學生反而懷疑關係不成立。方法二不必量，看得見就成立。</li>
+    </ul>
+    <p>改用方法二沒有降低標準。「直徑等於兩條半徑接起來」與「直徑是半徑的 2 倍」數學內容相同，差別只在表達路徑。</p>
+  </div>
+
+  <h3>用方法二教：五個步驟</h3>
+  <ol class="steps">
+    <li><div>
+      <p class="t">畫一條半徑</p>
+      <p>用黃銅色（或任一種顏色）的筆，從圓心畫到圓周。</p>
+    </div></li>
+    <li><div>
+      <p class="t">往正對面再畫一條</p>
+      <p>換藍色，從圓心往相反方向畫到圓周。兩條要接成一直線。</p>
+    </div></li>
+    <li><div>
+      <p class="t">看出直徑</p>
+      <p>兩條接成一條穿過圓心、兩端碰到圓周的線段。</p>
+      <p class="say">黃色這一段是半徑，藍色這一段也是半徑。兩段合起來，就是直徑。</p>
+    </div></li>
+    <li><div>
+      <p class="t">用圓規驗證</p>
+      <p>圓規張開到半徑的長。針尖放在直徑的一端，在直徑上截一次，剛好到圓心；針尖移到圓心，再截一次，剛好到另一端。這一步用到本單元的「用圓規複製線段」。</p>
+    </div></li>
+    <li><div>
+      <p class="t">換數字</p>
+      <p>半徑 4 公分，直徑 \( 4+4=8 \)，8 公分。直徑 10 公分，\( \square+\square=10 \)，半徑 5 公分。</p>
+    </div></li>
+  </ol>
+
+  <div class="box key">
+    <p class="tag">兩條半徑要接成一直線</p>
+    <p>\( \text{直徑}=\text{半徑}+\text{半徑} \) 說的是長度，也是組成。組成直徑的兩條半徑，方向必須相反，接起來直直穿過圓心。任意兩條夾著一個角的半徑，長度加起來雖然等於直徑的長，拼出來的卻是一條折線，不是直徑。學生用兩根等長的吸管拼直徑時，要檢查拼好之後是不是直直穿過圓心。五年級學的扇形（S-5-3），正是由兩條夾著角的半徑和一段圓弧圍成的。</p>
+  </div>
+
+  <div class="ggb-block" data-ggb="diameter-sum">
+    <div class="ggb-head"><p class="t">互動作圖：兩條半徑接成直徑<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+    <div class="ggb-body">
+      <figure class="ggb-still">
+        <svg viewBox="0 0 520 390" width="460" role="img" aria-labelledby="dsm-t dsm-d">
+          <title id="dsm-t">直徑等於兩條半徑</title>
+          <desc id="dsm-d">一個半徑 3 公分的圓，圓心 O 在中間。從 O 往右上方畫一條黃銅色線段到圓上的紅點 A，標著 3 公分；從 O 往左下方、正好相反的方向畫一條藍色線段到圓上的點 B，也標著 3 公分。兩條線段接成一條斜斜穿過圓心的直徑 AB。圓的下方把兩條半徑拉直並排：左邊一段黃銅色長條、右邊一段藍色長條，各標「半徑 3 公分」，兩段接起來的下方有一個括號，標著「直徑 6 公分 = 3 公分 + 3 公分」。</desc>
+          <circle cx="260" cy="150" r="120" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+          <line x1="260" y1="150" x2="372.76" y2="108.96" stroke="var(--brass)" stroke-width="3.6" stroke-linecap="round"/>
+          <line x1="260" y1="150" x2="147.24" y2="191.04" stroke="var(--blue)" stroke-width="3.6" stroke-linecap="round"/>
+          <circle cx="260" cy="150" r="4.8" fill="var(--ink)"/>
+          <circle cx="372.76" cy="108.96" r="6" fill="var(--red)"/>
+          <circle cx="147.24" cy="191.04" r="5.2" fill="var(--blue)"/>
+          <g font-size="16" fill="var(--ink)" font-weight="600">
+            <text x="266" y="172">O</text>
+            <text x="382" y="104">A</text>
+            <text x="138" y="208" text-anchor="end">B</text>
+          </g>
+          <g font-size="15" font-weight="600" text-anchor="middle">
+            <text x="311" y="116" fill="var(--brass)">3 公分</text>
+            <text x="210" y="196" fill="var(--blue)">3 公分</text>
+          </g>
+          <rect x="140" y="296" width="120" height="8" fill="var(--brass)"/>
+          <rect x="260" y="296" width="120" height="8" fill="var(--blue)"/>
+          <g stroke="var(--ink)" stroke-width="1.4">
+            <line x1="140" y1="289" x2="140" y2="311"/><line x1="260" y1="289" x2="260" y2="311"/><line x1="380" y1="289" x2="380" y2="311"/>
+          </g>
+          <g font-size="14" text-anchor="middle" font-weight="600">
+            <text x="200" y="328" fill="var(--brass)">半徑 3 公分</text>
+            <text x="320" y="328" fill="var(--blue)">半徑 3 公分</text>
+          </g>
+          <path d="M140 338 v8 h240 v-8" fill="none" stroke="var(--ink)" stroke-width="1.4"/>
+          <text x="260" y="370" font-size="15" text-anchor="middle" fill="var(--ink)" font-weight="600">直徑 6 公分 = 3 公分 + 3 公分</text>
+        </svg>
+        <figcaption>靜態圖：半徑 3 公分。OA（黃銅色）與 OB（藍色）方向相反，接成通過圓心的直徑 AB。下方把兩條半徑拉直並排：3 公分加 3 公分，是 6 公分。直徑刻意畫成斜的。</figcaption>
+      </figure>
+      <div class="ggb-stage"></div>
+      <p class="ggb-how"><b>操作方式</b>　圓的半徑是 3，圓心 O 固定。拖動紅點 A 沿著圓轉，對面的 B 跟著轉。不論轉到哪個方向，黃銅色的 OA 和藍色的 OB 都接成一條穿過圓心的線段，兩段一樣長。可以停在直徑不水平的位置，再問一次：「這還是直徑嗎？」順便處理錯誤類型 2。</p>
+    </div>
+  </div>
+  <div class="chips"><span class="chip star">G3 ★ 建構知識</span><span class="chip star">G2 ★ 語言與符號</span><span class="chip">G1 感知</span></div>
+</section>
+
+<section id="notation" aria-labelledby="h-notation">
+  <p class="eyebrow">08　符號與用語</p>
+  <h2 id="h-notation">符號規範</h2>
+  <p>臺灣教材習慣以 \( \overline{OA} \) 同時表示「線段 OA」與「線段 OA 的長度」。英語系國家的幾何教材常把兩者分開，以 \( \overline{OA} \) 表示線段、以 \( OA \) 表示長度。同一個符號身兼兩職，讀的人要從上下文判斷它當下是哪一個。</p>
+  <p>半徑的四種描述容易混淆，根源就在這裡。看下面兩句：</p>
+  \[ \overline{OA}\ \text{是半徑} \qquad\qquad \overline{OA}=3\ \text{公分} \]
+  <p>左邊的 \( \overline{OA} \) 是一條線段（描述 1），右邊的 \( \overline{OA} \) 是一個長度（描述 3）。再寫「圓上每一點 \( P \) 都有 \( \overline{OP}=3\ \text{公分} \)」，這裡的 \( \overline{OP} \) 是兩點的距離，而且是對所有的 \( P \) 而言（描述 2 與 4）。同一個記號在三句話裡換了三種身分。教師板書時，要把當下的身分說出口：「這裡指的是這一條線」，或「這裡指的是它有多長」。</p>
+  <div class="box note">
+    <p class="tag">學生端與教師端的分工</p>
+    <p>三年級學生不必書寫 \( \overline{OA} \)。學生端用口語分辨三種身分：「O 到 A 的線」（線段）、「O 到 A 有多遠」（距離）、「O 到 A 是 3 公分」（長度）。本站教師端一律以 \( \overline{OP} \) 表示兩點的距離，不用字母 \( d \) 加括號的寫法，因為 \( d \) 已經用來表示直徑。</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <caption>本單元的符號與用語</caption>
+      <thead><tr><th scope="col">符號或用語</th><th scope="col">意思</th><th scope="col">本單元怎麼用</th><th scope="col">要避免的寫法或說法</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">\( \overline{OA} \)</th><td>線段 OA，也表示它的長度</td><td>教師板書、教師手冊使用。學生口說「O 到 A 的線」「O 到 A 有多長」。</td><td>同一行裡一下指線、一下指長度，卻不說明。</td></tr>
+        <tr><th scope="row">\( r \)、\( d \)</th><td>半徑的長、直徑的長</td><td>若依 UDL G2 引入，先配實物：綁在圓規上的繩長是 \( r \)，兩條繩接起來是 \( d \)。</td><td>把 \( d=2r \) 寫給學生當公式；用 \( d \) 表示兩點距離。</td></tr>
+        <tr><th scope="row">圓</th><td>那一圈曲線</td><td>「用圓規畫一個圓」「沿著圓描一圈」</td><td>「圓形的面」；把塗滿的色塊、剪下的紙片叫做「一個圓」。</td></tr>
+        <tr><th scope="row">圓形紙片、圓區域</th><td>圓加上它的內部</td><td>「剪下一張圓形紙片」「把圓形紙片對摺」。「圓區域」只在教師端使用。</td><td>「剪下一個圓」之後又說「圓是一圈線」，前後不一致。</td></tr>
+        <tr><th scope="row">畫圓、描圓</th><td>得到一圈線</td><td>圓規畫圓；沿杯底、錢幣外緣描圓。</td><td>把「畫圓」和「剪下圓形紙片」當成同一件事。</td></tr>
+        <tr><th scope="row">圓心</th><td>定點 \( O \)</td><td>暖身時可先說「中心」「中間那一點」，引入名詞後統一說「圓心」。</td><td>「圓心在圓上」「圓心是圓上的一點」。</td></tr>
+        <tr><th scope="row">圓上、圓內、圓外</th><td>到圓心的距離等於、小於、大於 \( r \)</td><td>「在圓上」只指圓周上的點。</td><td>用「在圓上」指紙片上任何位置。</td></tr>
+        <tr><th scope="row">直徑</th><td>過圓心、兩端在圓上的線段</td><td>「直徑是兩條半徑接起來的」。</td><td>「直徑是一條直線」（直線沒有端點，會無限延伸）；「橫的那條是直徑」。</td></tr>
+        <tr><th scope="row">一樣大</th><td>半徑一樣長</td><td>「兩個圓的半徑一樣長，兩個圓就一樣大。」</td><td>把「疊起來剛好重合」當成判斷一樣大的唯一方法。</td></tr>
+        <tr><th scope="row">單位</th><td>長度要帶單位</td><td>\( r=3\ \text{公分} \)，數字與單位之間空一格。</td><td>只寫數字，不寫公分。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>上課前的用語自我檢核</h3>
+  <ul class="check">
+    <li>板書與學習單上的直徑，至少有一條不是水平的。</li>
+    <li>說「圓」的時候，手指指的是那一圈線，不是整塊紙片。</li>
+    <li>每次用完圓形紙片，都有帶學生用手指沿邊描一圈，說出「圓是這一圈」。</li>
+    <li>說「半徑」時，清楚當下指的是線段、距離，還是長度數字。</li>
+    <li>說「圓心在圓的中間」，沒有說「圓心在圓上」。</li>
+    <li>半徑與直徑的關係用加法說，沒有以「直徑是半徑的 2 倍」或除法算式當入口。</li>
+    <li>比較兩個圓的大小時，至少有一次是分開畫、只量半徑，不靠疊合。</li>
+    <li>教材中沒有出現圓周長、圓面積、圓周率。</li>
+  </ul>
+
+  <p>這些規範也是 AI 協作的限制條件。依計畫的模組運作，教師要把學生的認知障礙點轉寫成 AI 能遵守的限制語法（見 <a href="ai.html">AI 協作頁</a>）。下面這段指令把本頁的用語規範寫成可直接貼上的檢查條件，用來審 AI 或教師自己寫的學習單。</p>
+
+  <div class="prompt">
+    <div class="prompt-h"><span class="nm">教材用語檢查：圓的概念</span><button class="copy" type="button">複製指令</button></div>
+<pre>你是國小數學教材審稿者。以下是三年級「圓」單元的學習單文字。
+請逐句檢查是否違反下列規則。每一處違反，列出：原句、違反第幾條、建議改寫。
+不要改動數學內容，不要增加新題目，不要刪除任何題目。
+
+規則：
+1. 「圓」只指那一圈曲線。塗滿的區域、剪下的紙片，要稱為「圓形紙片」或「塗滿的圓形」。
+2. 圓心不在圓上。不可出現「圓心在圓上」「圓心是圓上的一點」或同義說法。
+3. 直徑必須通過圓心，兩端在圓上。不可用「水平」「橫的」描述直徑。
+4. 半徑與直徑的關係只用加法表達：直徑 = 半徑 + 半徑。
+   不可出現「直徑是半徑的 2 倍」、除法算式，或 d = 2r。
+5. 判斷兩個圓是否一樣大，依據是半徑是否一樣長，不以「疊起來重合」為唯一依據。
+6. 說到半徑時，要看得出指的是線、距離，還是長度數字。
+7. 不出現圓周長、圓面積、圓周率。
+8. 每句不超過〔<span class="fill">字數上限，例如 20</span>〕個字，一句只講一件事。
+9. 長度都要寫單位，例如「3 公分」。
+
+學習單文字：
+〔<span class="fill">貼上學習單全文</span>〕</pre>
+    <p class="use">使用說明：第 8 條的字數依班上學生的閱讀狀況調整。AI 的標記只是提示，可能誤判（例如把「圓形紙片」也當成違規），每一條都要由教師看過再決定改不改。檢查完的版本，可以作為計畫「迭代精進」階段的比對紀錄。</p>
+  </div>
+</section>
+
+<nav class="pager" aria-label="上下頁"><a href="index.html"><span class="k">上一頁</span><span class="v">總覽</span></a><a class="next" href="udl.html"><span class="k">下一頁</span><span class="v">UDL 設計</span></a></nav>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>資料來源　國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測：數學三年級施測結果報告。</p>
+    <p>設計框架　CAST (2024). Universal Design for Learning Guidelines version 3.0.</p>
+    <p>春耕未來・數造共好｜在知識翻新環境下以 AI 協作之教師專業增能計畫．徐道寧教授數學教育與人文關懷實踐獎助．國立清華大學教育與學習科技學系</p>
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="window.spmRenderMath&&spmRenderMath()"></script>
+<script src="assets/site.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>UDL 九項設計｜圓的概念</title>
+<meta name="description" content="每一格都寫到可以直接執行的程度：做什麼、準備什麼、花多久、怎麼知道有效，以及它對應哪一個認知障礙點。">
+<meta name="color-scheme" content="light dark">
+<script>
+(function(){var d=document.documentElement,t,f;
+try{t=localStorage.getItem('spm-theme');f=localStorage.getItem('spm-fs');}catch(e){}
+if(t)d.setAttribute('data-theme',t);d.setAttribute('data-fs',f||'m');})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="topbar">
+  <div class="wrap row1">
+    <a class="brand" href="index.html">春耕未來・數造共好<small>圓的概念</small></a>
+    <div class="ctrls">
+      <span class="lbl" id="fsl">文字大小</span>
+      <button class="tog" type="button" data-fs-set="m" aria-describedby="fsl">標準</button>
+      <button class="tog" type="button" data-fs-set="l" aria-describedby="fsl">大</button>
+      <button class="tog" type="button" data-fs-set="xl" aria-describedby="fsl">特大</button>
+      <button class="tog" type="button" id="themeBtn" aria-pressed="false">深色</button>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="頁面導覽">
+    <div class="wrap"><ol>
+      <li><a href="index.html"><span class="n">01</span>總覽</a></li>
+      <li><a href="concept.html"><span class="n">02</span>數學本質</a></li>
+      <li><a href="udl.html" aria-current="page"><span class="n">03</span>UDL 設計</a></li>
+      <li><a href="lesson.html"><span class="n">04</span>教學流程</a></li>
+      <li><a href="scaffold.html"><span class="n">05</span>教學鷹架</a></li>
+      <li><a href="ai.html"><span class="n">06</span>AI 協作</a></li>
+      <li><a href="assessment.html"><span class="n">07</span>評量檢核</a></li>
+    </ol></div>
+  </nav>
+</header>
+<header class="ph">
+  <div class="wrap">
+    <p class="kicker">UDL 3.0．三大原則 × 三個層次</p>
+    <h1>九項 Guideline 設計</h1>
+    <p class="lede">每一格都寫到可以直接執行的程度：做什麼、準備什麼、花多久、怎麼知道有效，以及它對應哪一個認知障礙點。</p>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<section id="overview" aria-labelledby="h-overview">
+  <p class="eyebrow">UDL 3.0．三大原則與三個層次</p>
+  <h2 id="h-overview">九宮格總覽</h2>
+  <p>UDL 3.0（CAST, 2024）用三大原則回答三個問題：多元參與回答「學生為什麼願意學、願意撐下去」，多元表徵回答「學生接收到的內容是什麼樣子」，多元行動與表達回答「學生用什麼方式操作，又用什麼方式把學會的東西表現出來」。每個原則再分三個層次：獲取層讓學生進得來，支持層讓學生在學習途中撐得住，執行功能層讓學生把做法變成自己管理得了的能力。三乘三共九項 Guideline，本頁依 UDL 3.0 的編號寫成 G1 到 G9，一格一張卡。</p>
+  <p>每張卡都寫到教師可以照著做的程度，固定有六個欄位：具體做法、準備材料、預估時間、對應障礙點、檢核方式、對應節次。另加兩欄：「調整類型」標明這一格用的是替代、重整分解，還是簡化減量；「UDL 檢核點」列出 UDL 3.0 的檢核點編號。本計畫的課程調整順序是先替代，其次重整分解，最後才考慮簡化減量。九張卡都沒有用到簡化減量，學生要學會的內容一項都沒有少。</p>
+
+  <h3>三種錯誤類型：各卡「對應障礙點」的編號來源</h3>
+  <blockquote class="official">
+    <p>1. 學生可能不認識「圓心」、「圓周」、「半徑」與「直徑」的意義。</p>
+    <p>2. 學生可能認為過圓心及水平的弦都是直徑。</p>
+    <p>3. 學生可能認為畫出來的兩個圓要完全疊合才算一樣大，而不是半徑一樣長的圓就是一樣大。</p>
+    <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 67 至 70 頁，Q20 教學建議（一）錯誤類型的可能原因。</cite>
+  </blockquote>
+  <p>卡片裡的「錯誤類型 1、2、3」就是上面三條。另外四種認知限制也會寫在「對應障礙點」：視覺（低視力、視知覺困難）、工作記憶（一次要記在腦中的東西太多）、符號解碼（詞與符號的意義讀不出來）、情意（挫折、怕錯、不願意改變原本的想法）。</p>
+
+  <h3>九格一覽</h3>
+  <div class="matrix">
+    <div class="mh" aria-hidden="true"></div><div class="mh">多元參與<small>WHY</small></div><div class="mh">多元表徵<small>WHAT</small></div><div class="mh">多元行動與表達<small>HOW</small></div>
+    <div class="rh">獲取<small>ACCESS</small></div>
+    <a class="cell" href="#g7"><span class="c">G7</span>
+      <span class="t">接納興趣與身份</span></a>
+    <a class="cell" href="#g1"><span class="c">G1</span>
+      <span class="t">感知</span></a>
+    <a class="cell" href="#g4"><span class="c">G4</span>
+      <span class="t">互動</span></a>
+    <div class="rh">支持<small>BUILD</small></div>
+    <a class="cell" href="#g8"><span class="c">G8</span>
+      <span class="t">鼓勵堅持</span></a>
+    <a class="cell star" href="#g2"><span class="c">★ G2</span>
+      <span class="t">語言與符號</span></a>
+    <a class="cell" href="#g5"><span class="c">G5</span>
+      <span class="t">表達與溝通</span></a>
+    <div class="rh">執行功能<small>EXECUTIVE FUNCTION</small></div>
+    <a class="cell star" href="#g9"><span class="c">★ G9</span>
+      <span class="t">培養情感能力</span></a>
+    <a class="cell star" href="#g3"><span class="c">★ G3</span>
+      <span class="t">建構知識</span></a>
+    <a class="cell" href="#g6"><span class="c">G6</span>
+      <span class="t">策略發展</span></a>
+  </div>
+
+  <h3>為什麼聚焦 ★ 這三格</h3>
+  <div class="tiles c4">
+    <div class="stat alert">
+      <p class="k">Q20 通過率．全體</p>
+      <p class="n">21%</p>
+      <p class="d">十縣市全體受測學生。高分組 34%，低分組 15%，鑑別度 0.19。</p>
+    </div>
+    <div class="stat alert">
+      <p class="k">選 ④．全體</p>
+      <p class="n">46%</p>
+      <p class="d">高分組 47%，低分組 35%，高分組反而較多。對應錯誤類型 3，由 G3 ★ 處理。</p>
+    </div>
+    <div class="stat alert">
+      <p class="k">選 ② 或 ③．全體</p>
+      <p class="n">32%</p>
+      <p class="d">② 19% 與 ③ 13% 合計。對應錯誤類型 1、2，由 G2 ★ 與 G3 ★ 處理。</p>
+    </div>
+    <div class="stat">
+      <p class="k">新竹市．空間與形狀</p>
+      <p class="n">42.4%</p>
+      <p class="d">新竹市 201 個班級的班級答對率平均，是整個向度的結果，不是 Q20 單題。</p>
+    </div>
+  </div>
+  <div class="box key">
+    <p class="tag">聚焦的理由</p>
+    <p>★ 三格直接對應 46% 的迷思與符號解碼。G2 處理符號解碼：學生不認識四個詞的意義（錯誤類型 1）；把橫著的弦當成直徑（錯誤類型 2）也可能和字面有關，例如以為任何直直穿過圓的線都是直徑（這個字面原因是本站推測，報告未分析）。G3 處理選 ④ 的 46%：以為兩個圓要疊合才算一樣大（錯誤類型 3）；錯誤類型 2 的分類卡也由 G3 和 G2 一起負責。G9 處理改變這個想法時的情緒：選 ④ 的比例高分組比低分組還高，可能表示這是學生有把握的想法，不是亂猜；要學生放下有把握的想法，先要讓他覺得「改答案」是安全的，所以 G9 和 G3 一起列為聚焦。</p>
+  </div>
+
+  <h3>九格在五節課中的位置</h3>
+  <div class="tw"><table>
+    <caption>本頁做法與教學流程頁各節的對應（每節 40 分鐘）</caption>
+    <thead><tr><th scope="col">節次</th><th scope="col">本頁在該節落實的做法</th><th scope="col">相關格</th></tr></thead>
+    <tbody>
+      <tr><th scope="row" class="num"><a href="lesson.html#p1">第 1 節</a></th><td>找圓遊戲；新竹在地照片與多元文化的圓；摺紙找中心，用紙條量從中心到邊；用毛根繞出摸得到的圓周，引入「圓心」「圓周」兩個詞；分清圓和圓形紙片</td><td>G7、G1、G2 ★、G3 ★</td></tr>
+      <tr><th scope="row" class="num"><a href="lesson.html#p2">第 2 節</a></th><td>目標卡；畫五條半徑、量五條，發現都一樣長（半徑描述（1）與（4））；三條進路（摺紙、紙條、互動作圖）接出直徑，\( \text{直徑}=\text{半徑}+\text{半徑} \)；直徑的例與非例分類卡；說寫做回應卡</td><td>G1、G2 ★、G3 ★、G4、G6</td></tr>
+      <tr><th scope="row" class="num"><a href="lesson.html#p3">第 3 節</a></th><td>徒手畫圓與圓規比較；綁橡皮筋看見半徑（半徑描述（2）與（3））；張、量、定、轉四步驟；練習階梯（描、用、自由）與嘗試紀錄卡；兩人互測；策略卡與自我提問</td><td>G4、G1、G2 ★、G6、G8、G5、G9 ★</td></tr>
+      <tr class="hl"><th scope="row" class="num"><a href="lesson.html#p4">第 4 節</a></th><td>用圓規複製線段、比較長度；兩個分開放的圓（對抗 46% 迷思）；預測與修正；用句型說理由；通過圓心的才是直徑；出場卡與互助約定</td><td>G3 ★、G9 ★、G2 ★、G4、G5</td></tr>
+      <tr><th scope="row" class="num"><a href="lesson.html#p5">第 5 節</a></th><td>四詞圖示對照；三層挑戰（含作品說明與圓的藝術展）；自我檢核與夥伴檢核；檢核題；回顧</td><td>G2 ★、G8、G5、G4、G6、G9 ★、G3 ★</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="engagement" aria-labelledby="h-engagement">
+  <p class="eyebrow">原則一．多元參與 WHY</p>
+  <h2 id="h-engagement">多元參與：讓學生進得來、撐得住、願意改想法</h2>
+  <p>「圓」這個單元有兩個情意關卡。第一個是工具：圓規是三年級學生第一次用的工具，第一次畫常常沒接起來或畫歪。第二個是想法：學生原本相信「疊起來才一樣大」，要他承認這個想法需要修改。G7 讓學生用自己熟悉的東西進入單元，G8 讓每個人都有下一步可以做，G9 ★ 處理畫圓失敗的挫折與改想法時的不舒服。</p>
+
+  <article class="gl" id="g7">
+    <div class="gl-h"><span class="gl-code">G7</span><h3>接納興趣與身份</h3><span class="axis">多元參與<br>獲取層</span></div>
+    <div class="gl-b">
+      <p>第一次上「圓」，先讓學生用自己的眼睛和生活經驗找圓，術語晚一點再來。這一格要做到的是：學生覺得這件事和自己有關，而且每個人都找得到答案。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">課前布置</p><p>把 6 件圓形物品放在教室各處看得到的位置：時鐘、膠帶捲、瓶蓋、圓形磁鐵、圓形杯墊、10 元硬幣。另外刻意混入 2 件「很像圓但不是圓」的東西：橢圓形的盤子或鏡子、圓角方形的便條紙。</p></div></li>
+            <li><div><p class="t">找圓遊戲（第 1 節 0～5 分，計時 1 分鐘）</p><p>兩人一組，每組 5 張便利貼，找到圓就貼一張。拿不到的東西，用手指沿著邊描一圈，說給夥伴聽「這是圓」。不方便走動或容易被走動干擾的學生，改拿「教室照片學習單」，在照片上圈出圓，任務相同。</p></div></li>
+            <li><div><p class="t">回座分兩欄（同一段，約 3 分鐘）</p><p>每組報告一件，教師在黑板畫兩欄：「確定是圓」「不確定」。橢圓盤子若被貼了，就放進「不確定」，這時不判對錯，留到本節後段用「從中心到邊都一樣遠嗎」來檢查。</p></div></li>
+            <li><div><p class="t">新竹在地照片（第 1 節 5～12 分）</p><p>這一段共投影 6 張照片：新竹在地 2 張、多元文化的圓 2 張（見 G1）、看起來圓圓但不是圓的非例 2 張。在地照片是教師自己拍的東門城、新竹車站照片各一張，問：「照片裡哪裡有圓？哪裡只有圓的一部分？」拍照時先確認畫面裡真的有圓形的部分，沒有把握的地方不要硬說是圓。</p></div></li>
+            <li><div><p class="t">先說「從中心到邊」（第 1 節 12～22 分）</p><p>接下來摺紙找中心、用紙條從中心量到邊時（見 G3），教師只用「中心」「邊」「一樣長」這類生活詞：「從中心到邊，這個方向和那個方向一樣長嗎？」「圓心」「圓周」在 22～30 分由 G2 引入，「半徑」留到第 2 節。</p></div></li>
+          </ol>
+          <p class="say">找到圓的時候，請你用手指從中心走到邊，走幾個不同的方向，感覺看看是不是一樣遠。</p>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>圓形物品 6 件：時鐘、膠帶捲、瓶蓋、圓形磁鐵、圓形杯墊、10 元硬幣</li>
+          <li>非例 2 件：橢圓形盤子或鏡子、圓角方形便條紙</li>
+          <li>便利貼，每組 5 張</li>
+          <li>教室照片學習單：教師事先拍教室四面牆，印在一張 A4 上</li>
+          <li>教師自拍的東門城、新竹車站照片各 1 張（投影用）</li>
+          <li>計時器</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 1 節：找圓遊戲與分欄 5 分鐘（0～5 分）；在地照片在 5～12 分，與多元文化照片、非例照片同一段，全段 7 分鐘。課前布置約 10 分鐘；在地照片可在學期初一次拍好。</dd>
+        <dt>對應障礙點</dt>
+        <dd>情意：數學課一開始就丟出新名詞，容易讓學生覺得「這不是我會的」。符號解碼：三年級學生若同時面對圓心、圓周、半徑、直徑四個新詞，語言負荷過重；先用生活詞累積經驗，術語才有東西可以貼上去。錯誤類型 1：學生不認識四個詞的意義，常是因為詞比經驗先到。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>每組至少貼對 2 件圓形物品。</li>
+          <li>教師拿座位表打勾：每位學生至少指出或說出一件圓，用照片學習單作答的學生也算。</li>
+          <li>節末抽 3 位學生，用「從中心到邊一樣遠」描述一件物品。</li>
+          <li>非例：至少有一組能說出橢圓盤子「從中心到邊不一樣遠」。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p1">第 1 節</a>：開頭暖身。<a href="lesson.html#p2">第 2 節</a>引入「半徑」時，回扣第 1 節的「從中心到邊」。</dd>
+        <dt>調整類型</dt>
+        <dd>重整：把「術語先、經驗後」的順序對調為「經驗先、術語後」。第 1 節結束前，學生仍要學會「圓心」「圓周」兩個詞。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>7.1 選擇與自主（貼便利貼、用手描、圈照片三種方式任選）；7.2 關聯、價值與真實性（新竹在地照片）；7.3 樂趣與遊戲（找圓遊戲）；7.4 處理干擾（照片學習單）。</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="gl" id="g8">
+    <div class="gl-h"><span class="gl-code">G8</span><h3>鼓勵堅持</h3><span class="axis">多元參與<br>支持層</span></div>
+    <div class="gl-b">
+      <p>用圓規畫圓要同時做三件事：固定針尖、維持張開的長度、旋轉。這一格讓每個學生都有下一步可以做，而且每個人都走得到課綱要求的「能使用圓規畫指定半徑的圓」。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">發三層挑戰卡（第 5 節 6～22 分）</p><p>第一層描圓：用有中心孔的圓形模板描一個圓，從中心孔點出圓心，畫一條半徑、一條直徑，貼上四個名詞標籤。第二層圓規畫圓：畫一個半徑 5 公分的圓，畫一條直徑，寫出直徑長 \( 5+5=10 \)，10 公分，並標出四個名詞。第三層自選：用同一個圓心畫半徑 2、3、4 公分的同心圓；或用同一個張開距離畫至少 3 個一樣大的圓排成圖案，並說明為什麼它們一樣大。</p></div></li>
+            <li><div><p class="t">起點自選，終點共同</p><p>學生可以從第一層開始，但本節結束前每個人都要通過第二層。第二層就是 S-3-3「能使用圓規畫指定半徑的圓」，不因任何學生取消。第一層是入口，不是降低後的終點。第 16 分鐘教師巡一次，還沒開始第二層的學生，請他直接從第二層做起。</p></div></li>
+            <li><div><p class="t">兩人互測（第 3 節 31～36 分；第 5 節 22～28 分再做一次）</p><p>畫好的人把紙交給夥伴，夥伴用直尺從圓心量到圓上四個不同位置（上、下、左、右），把四個長度寫在旁邊。第 3 節量練習階梯「用」那一格半徑 3 公分的圓，第 5 節量第二層半徑 5 公分的圓。事先公布容許範圍：四處都和指定長度差 1 毫米以內算通過，蓋「通過」章。</p></div></li>
+            <li><div><p class="t">用「哪裡」和「下次怎麼做」回饋</p><p>夥伴只說兩件事：哪裡不一樣，下次怎麼做。例如「右邊這裡量起來比較長，可能是轉的時候腳張開了，下次只握頭部轉」。不說「好醜」「好爛」這類評價。三句回饋範例寫成海報貼在黑板。</p></div></li>
+            <li><div><p class="t">圓的藝術展</p><p>第 5 節三層挑戰的作品收齊後，下週布置在教室後方的「圓的藝術展」；選第三層的學生，展出的是同心圓或一樣大的圓排成的圖案。每件作品旁寫「我用的半徑：＿公分」，展示卡上寫的是半徑，不寫分數。</p></div></li>
+          </ol>
+          <p class="say">先選你要從第幾層開始。不管從哪一層開始，今天我們每個人都要走到第二層。</p>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>三層挑戰卡，每人 1 張，每層有蓋章欄與四格量測紀錄</li>
+          <li>圓規每人 1 支，另備 3 支已鎖緊螺絲的備用圓規</li>
+          <li>短鉛筆芯、直尺、有中心孔的圓形模板（第一層）</li>
+          <li>瓦楞紙板或軟木墊，墊在紙下讓針尖不滑</li>
+          <li>印章或貼紙</li>
+          <li>四開圖畫紙（藝術展）、回饋句型海報</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 3 節：練習階梯 12 分鐘（19～31 分，與 G5 共用）、兩人互測 5 分鐘（31～36 分）。第 5 節：三層挑戰 16 分鐘（6～22 分，作品說明與藝術展作品都在這段內，與 G5 共用），夥伴檢核在 22～28 分（與 G6 共用）。布展利用下課時間。</dd>
+        <dt>對應障礙點</dt>
+        <dd>精細動作：三件事一起做，對手部協調較弱的學生負擔重，一次失敗就容易放棄。情意：看到別人一次就畫好，會覺得自己不行。錯誤類型 3：互測時量的是「半徑是不是都一樣長」，等於每畫一個圓就練習一次「半徑決定圓」。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>第 5 節結束時，每位學生的挑戰卡第二層都有章；第三層不強求。</li>
+          <li>互測紀錄：練習單與挑戰卡上有夥伴寫下的四個長度。</li>
+          <li>教師巡堂時聽三組的回饋，記下是否含「哪裡」與「下次怎麼做」。</li>
+          <li>第 5 節藝術展每件作品都寫出使用的半徑。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p3">第 3 節</a>：練習階梯與兩人互測。<a href="lesson.html#p5">第 5 節</a>：三層挑戰（主場）、夥伴檢核與圓的藝術展。</dd>
+        <dt>調整類型</dt>
+        <dd>分解：把「用圓規畫指定半徑的圓」拆成描圓、畫指定半徑的圓、同心圓或圓的藝術三個台階。目標仍是第二層。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>8.1 釐清目標的意義（第二層就是本節目標）；8.2 調配挑戰與支持（三層自選起點）；8.3 合作與共同學習（兩人互測）；8.4 歸屬感與社群（班級藝術展）；8.5 以行動為導向的回饋（「哪裡」和「下次怎麼做」）。</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="gl star" id="g9">
+    <div class="gl-h"><span class="gl-code">G9</span><h3>培養情感能力</h3><span class="axis">多元參與<br>執行功能層</span></div>
+    <div class="gl-b">
+      <p>這一格處理兩種情緒。第一種是畫圓失敗的挫折：學生知道要畫圓，手卻做不到。第二種是改想法的不舒服：選 ④ 的比例高分組 47%、低分組 35%，要改的往往是學生有把握的想法。兩者都要事先設計好，不能等學生哭了或放棄了才處理。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">自我提問：畫圓對我重要嗎（第 3 節 36～40 分，寫在策略卡背面）</p><p>策略卡背面的自我提問是：「畫圓對我重要嗎？除了數學課，我會在哪裡用到？」可寫可畫，不評分，第 5 節回顧時再翻出來看。想不出來的學生，可以看每組一套四張的「用得到圓的時候」圖卡：做一組一樣大的杯墊、畫班旗上的圖案、在操場畫一個大圓圈玩遊戲、做一個時鐘。選一張或自己說一個，寫或說「我想學畫圓，是因為＿＿」。</p></div></li>
+            <li><div><p class="t">公開說出畫壞的經驗（第 3 節 36～40 分）</p><p>請剛才重畫過的學生分享後來怎麼畫成功，教師把方法寫成策略卡。教師可以先說一次自己畫壞的經驗：「我轉到一半手換了位置，腳就張開了。」讓學生看見大人也會畫壞，也看見畫壞之後怎麼找原因。</p></div></li>
+            <li><div><p class="t">嘗試紀錄卡（第 3 節 19～31 分，融入練習階梯）</p><p>每畫一次就記一行：第幾次、哪裡不順（圈選：針滑掉、腳變開、沒接起來、紙歪了）、下次我要改什麼。畫壞的圓不擦不丟，留在紀錄卡旁邊，是「我有進步」的證據。</p></div></li>
+            <li><div><p class="t">心情溫度計（延伸建議，未排入五節課）</p><p>想用的教師可以在第 3 節練習階梯時使用，不另占時間。桌角貼三格小卡「還好／有點煩／想放棄」，學生把迴紋針夾在自己那一格，不必說出口。教師巡堂看到「想放棄」，先蹲下來指出一處已經對的地方（例如「起點和終點已經很近了」），再給三個選項：休息 1 分鐘、換紙條圓規畫一次再回來、請夥伴幫忙壓紙。</p></div></li>
+            <li><div><p class="t">看見同學卡住時可以怎麼幫（第 4 節 32～40 分的互助約定）</p><p>先做完出場卡的學生進入互助時間。先問「你卡在哪一步？」，再從三句幫忙話選一句：「要不要我幫你壓住紙？」「你想先看我畫一次嗎？」「你已經畫好一半了。」等對方自己試一次，再給下一個提示。同時說清楚兩件不做的事：不直接拿走圓規幫他畫完，不笑別人的圓。</p></div></li>
+            <li><div><p class="t">改想法的練習（第 4 節 12～24 分）</p><p>比較兩個圓之前，每個人先在預測欄寫下想法。用圓規驗證之後不擦掉原本的預測，在旁邊寫「我現在認為＿＿，因為＿＿」。教師公開說：「你改答案，是因為你找到了新證據。」</p></div></li>
+            <li><div><p class="t">節末反思（第 3 節 36～40 分、第 5 節 37～40 分）</p><p>第 3 節在策略卡上圈一個今天真的幫到自己的方法，寫下「今天我畫了＿次，最有用的方法是＿＿。」第 5 節回顧時翻開嘗試紀錄卡，比較第 3 節第一次畫圓與今天的次數，完成「我一開始⋯⋯，現在⋯⋯。」兩次都一定要寫出一個方法，只寫「我很棒」或「我很爛」的，請他補上一個方法再交。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>「用得到圓的時候」圖卡，每組一套 4 張</li>
+          <li>嘗試紀錄卡，每人 1 張（樣式見下圖）</li>
+          <li>心情溫度計小卡與迴紋針，每人 1 組（延伸建議用）</li>
+          <li>紙條圓規：厚紙條在 0 與 3 公分處各打一個孔，圖釘穿過 0 的孔，鉛筆尖插在 3 的孔；每組 2 條</li>
+          <li>策略卡、軟木墊、幫忙話海報、第 4 節出場卡</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 3 節：紀錄卡融入 19～31 分的練習階梯，每次記錄約 30 秒；36～40 分的策略卡時段 4 分鐘（與 G6 共用），含畫壞經驗分享、節末反思與自我提問。第 4 節：預測與修正 3 分鐘，在 12～24 分「分開放的兩個圓」段內；出場卡 8 分鐘（32～40 分，與 G3 共用）。第 5 節：回顧 3 分鐘（37～40 分）。</dd>
+        <dt>對應障礙點</dt>
+        <dd>情意：挫折、怕錯、連續失敗後的「反正我不會」。錯誤類型 3 的想法在高分組反而更常見，改變它時學生要面對「我原本很確定」的不舒服。工作記憶：畫壞之後，學生常記不得是哪一步出錯；紀錄卡把原因寫在紙上，不必放在腦中。精細動作：挫折的直接來源，所以處理挫折的第一步是處理工具與動作，不是再講一次定義。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>嘗試紀錄卡完成率（計畫書已將學習單完成率列為檢核項目）。</li>
+          <li>課堂觀察紀錄：學生卡住或說出「想放棄」之後，是否在 5 分鐘內回到任務（有用心情溫度計的班級，也看溫度計的變化）。</li>
+          <li>第 3 節策略卡與第 5 節回顧中寫出具體方法的人數，兩節比較。</li>
+          <li>第 4 節修正欄：「因為」後面寫的是半徑，而不是「看起來」。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p3">第 3 節</a>：嘗試紀錄卡、畫壞經驗分享、策略卡與自我提問（主場）。<a href="lesson.html#p4">第 4 節</a>：改想法的練習、互助約定。<a href="lesson.html#p5">第 5 節</a>：自我檢核與夥伴檢核、回顧。</dd>
+        <dt>調整類型</dt>
+        <dd>替代：連續失敗時，以紙條圓規替代一般圓規。紙條圓規讓半徑固定而且看得見，保留了「到圓心一樣遠」這個本質，所以不用描圓代替。不因挫折取消「畫指定半徑的圓」的目標。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>9.1 覺察期待、信念與動機（畫圓對我重要嗎）；9.2 覺察自己與他人（幫忙話；延伸的心情溫度計）；9.3 個人與群體的反思（嘗試紀錄卡、預測與修正、節末反思）；9.4 同理與修復（看見同學卡住時怎麼幫）。</dd>
+      </dl>
+
+      <h4>畫壞的時候，教師怎麼說</h4>
+      <div class="dual">
+        <div class="stu">
+          <p class="who">給學生的說法</p>
+          <ul>
+            <li>「這個圓哪裡已經對了？我們先找對的地方。」</li>
+            <li>「沒接起來，是哪一步？我們看紀錄卡上你圈了什麼。」</li>
+            <li>「畫三次才畫好，是因為前兩次你找到了原因。」</li>
+            <li>「你原本想疊起來比，現在你會量半徑了，這就是學會。」</li>
+          </ul>
+        </div>
+        <div class="tch">
+          <p class="who">教師要知道的</p>
+          <ul>
+            <li>挫折多半來自動作，不是概念。學生失敗時先處理工具（墊軟木墊、鎖緊螺絲、固定紙張），不要急著重講定義。</li>
+            <li>同一個學生連續三次失敗，就換工具，而不是減少題目。</li>
+            <li>不擅長口頭表達情緒的學生，用溫度計比被問「你還好嗎」更容易說出來。</li>
+            <li>不在全班面前比較誰先畫好；藝術展只展示作品與半徑，不排名。</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="fig">
+        <svg viewBox="0 0 560 380" role="img" aria-labelledby="u-rec-t u-rec-d">
+          <title id="u-rec-t">嘗試紀錄卡樣式</title>
+          <desc id="u-rec-d">一張學生用的畫圓紀錄卡。標題是我的畫圓紀錄，右上角寫目標半徑 3 公分。表格有三欄：第幾次、哪裡不順、下次我要。每一列都有針滑掉、腳變開、沒接起來、紙歪了四個選項可以圈。第 1 次圈了沒接起來，下次要捏住頂端一次轉完。第 2 次圈了腳變開，下次要先鎖緊再量 3 公分。第 3 次沒有圈任何選項，寫著成功了。表格下方寫著今天我畫了 3 次，最有用的方法是捏住頂端一次轉完。最下方是心情溫度計，分成還好、有點煩、想放棄三格，迴紋針夾在有點煩那一格。</desc>
+          <rect x="10" y="10" width="540" height="360" fill="var(--sheet)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="30" y="44" font-size="17" font-weight="600" fill="var(--ink)">我的畫圓紀錄</text>
+          <text x="530" y="44" font-size="13" fill="var(--graphite)" text-anchor="end">目標：半徑 3 公分</text>
+          <g stroke="var(--rule)" stroke-width="1" fill="none">
+            <rect x="24" y="60" width="512" height="164"/>
+            <line x1="24" y1="92" x2="536" y2="92"/>
+            <line x1="24" y1="136" x2="536" y2="136"/>
+            <line x1="24" y1="180" x2="536" y2="180"/>
+            <line x1="96" y1="60" x2="96" y2="224"/>
+            <line x1="372" y1="60" x2="372" y2="224"/>
+          </g>
+          <g font-size="13" font-weight="600" fill="var(--ink)" text-anchor="middle">
+            <text x="60" y="81">第幾次</text>
+            <text x="234" y="81">哪裡不順（圈起來）</text>
+            <text x="454" y="81">下次我要</text>
+          </g>
+          <g font-size="14" fill="var(--ink)" text-anchor="middle">
+            <text x="60" y="119">1</text>
+            <text x="60" y="163">2</text>
+            <text x="60" y="207">3</text>
+          </g>
+          <g font-size="13" fill="var(--graphite)">
+            <text x="108" y="119">針滑掉</text><text x="172" y="119">腳變開</text><text x="236" y="119">沒接起來</text><text x="312" y="119">紙歪了</text>
+            <text x="108" y="163">針滑掉</text><text x="172" y="163">腳變開</text><text x="236" y="163">沒接起來</text><text x="312" y="163">紙歪了</text>
+            <text x="108" y="207">針滑掉</text><text x="172" y="207">腳變開</text><text x="236" y="207">沒接起來</text><text x="312" y="207">紙歪了</text>
+          </g>
+          <g fill="none" stroke="var(--red)" stroke-width="1.8">
+            <ellipse cx="262" cy="114" rx="33" ry="14"/>
+            <ellipse cx="191.5" cy="158" rx="27" ry="14"/>
+          </g>
+          <g font-size="13" fill="var(--brass)" font-weight="600">
+            <text x="384" y="119">捏住頂端，一次轉完</text>
+            <text x="384" y="163">先鎖緊，再量 3 公分</text>
+            <text x="384" y="207" fill="var(--green)">成功了</text>
+          </g>
+          <text x="30" y="258" font-size="14" fill="var(--ink)">今天我畫了 3 次，最有用的方法是：</text>
+          <line x1="30" y1="292" x2="530" y2="292" stroke="var(--rule)" stroke-width="1"/>
+          <text x="40" y="286" font-size="14" fill="var(--brass)" font-weight="600">捏住頂端，一次轉完</text>
+          <text x="30" y="339" font-size="13" fill="var(--ink)" font-weight="600">心情溫度計</text>
+          <g fill="none" stroke="var(--rule)" stroke-width="1.2">
+            <rect x="150" y="318" width="100" height="30"/>
+            <rect x="370" y="318" width="100" height="30"/>
+          </g>
+          <rect x="260" y="318" width="100" height="30" fill="var(--brass-soft)" stroke="var(--brass)" stroke-width="2.2"/>
+          <rect x="300" y="310" width="20" height="14" rx="7" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <g font-size="13" fill="var(--ink)" text-anchor="middle">
+            <text x="200" y="338">還好</text>
+            <text x="310" y="338">有點煩</text>
+            <text x="420" y="338">想放棄</text>
+          </g>
+        </svg>
+        <figcaption><b>嘗試紀錄卡</b>　畫壞的原因寫在紙上，學生不必記在腦中。圈選的選項就是 G6 策略卡上的四種狀況，兩張卡用同一套說法。最下方的心情溫度計屬延伸建議，未排入五節課。</figcaption>
+      </figure>
+    </div>
+  </article>
+</section>
+
+<section id="representation" aria-labelledby="h-representation">
+  <p class="eyebrow">原則二．多元表徵 WHAT</p>
+  <h2 id="h-representation">多元表徵：把看不到的半徑變成看得到、摸得到、說得出</h2>
+  <p>這三格是本單元的主軸。G1 把「兩點之間的距離」變成一條可以看、可以摸的繩子；G2 ★ 把四個詞與符號一個一個拆開講清楚，尤其是「半徑」的四種描述與「圓」和「圓區域」的區分；G3 ★ 讓學生自己發現「到圓心一樣遠」，再用這個發現推翻「疊起來才一樣大」。</p>
+
+  <article class="gl" id="g1">
+    <div class="gl-h"><span class="gl-code">G1</span><h3>感知</h3><span class="axis">多元表徵<br>獲取層</span></div>
+    <div class="gl-b">
+      <p>同一個概念，至少用三種方式呈現，也至少讓學生用兩種感官進入。看不清楚的學生可以摸，記不住的學生可以一直看得到。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">同一件事三種呈現</p><p>介紹「圓心到圓上每一點都一樣遠」時，給三種呈現：實物（第 2 節 4～14 分在圓形紙片上畫五條半徑、量五條；第 3 節 6～13 分用綁繩的黑板圓規畫圓）、動畫（GeoGebra 半徑作圖，拖動圓上的點）、印刷（學習單上的圖）。三種呈現用同一套標示：半徑一律黃銅色粗實線並寫「半徑」二字，直徑一律藍色並寫「直徑」二字，不只靠顏色辨認。</p></div></li>
+            <li><div><p class="t">圓規兩腳綁繩</p><p>在圓規兩腳的最下端、盡量靠近針尖與筆尖處綁一條橡皮筋或棉繩。橡皮筋隨張開的大小伸縮，適合畫不同半徑；棉繩則綁成固定長度：綁好後把圓規張到繩子拉直，用直尺確認針尖到筆尖正好 3 公分，不對就調整繩長，適合第 3 節的指定半徑任務。畫圓時，學生看得到、摸得到這條繩子，繩子就是半徑。</p></div></li>
+            <li><div><p class="t">觸覺圓（第 1 節 22～30 分起）</p><p>全班在第 1 節 22～30 分用毛根沿圓形紙片的邊繞一圈，讓圓周摸得到（見教學流程）。視覺需求學生另備一張觸覺圓：用厚紙板剪一張半徑 5 公分的圓形紙板，沿邊緣用白膠貼一圈毛線（這一圈就是圓，也就是圓周），圓心貼一顆凸點貼紙（圓心）；第 2 節引入半徑時，再從凸點到毛線貼一根牙籤（半徑）。學生用手指沿毛線走一圈，再從凸點沿牙籤摸到毛線。視覺需求學生全程使用；其他學生在各組操作時輪流摸，不另占課堂時間。</p></div></li>
+            <li><div><p class="t">聽覺：固定的一句話</p><p>每一節的關鍵句由教師說、全班跟讀一次，寫在黑板左上角，寫上後整節不擦。第 1 節在 12～22 分學生說出後寫上：「圓從中心到邊，每一個方向都一樣長。」第 2 節：「直徑是兩條半徑接起來。」</p></div></li>
+            <li><div><p class="t">可以調整的呈現方式</p><p>學習單備 A4 與 A3 兩種版本，線條至少 1 毫米粗，圓心點至少 3 毫米寬。投影時允許學生走到前面看，或把平板放在座位上同步顯示。</p></div></li>
+            <li><div><p class="t">多元文化中的圓（第 1 節 5～12 分，併在照片判斷內）</p><p>從三張圖中挑兩張展示：中式建築的圓形門洞（月洞門）、伊斯蘭建築上以圓規與直尺作出的幾何紋樣、達悟族拼板舟船身上的圓形船眼紋。只問「這裡有圓嗎？中心在哪裡？」這時還沒引入「圓心」一詞。不附加沒有查證過的文化意義。選圖時先確認圖中確實有圓。班上若有相關文化背景的學生，邀請但不指派他分享。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>圓規綁繩用的橡皮筋或棉繩，每支圓規 1 條</li>
+          <li>觸覺圓：厚紙板、毛線、白膠、凸點貼紙、牙籤，每組 1 片</li>
+          <li>投影設備與 GeoGebra；實物投影機</li>
+          <li>A4 與 A3 兩種版本的學習單</li>
+          <li>多元文化圖片 2 張，從上述三張中挑選（投影或印成 A4）</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>課前：綁繩每支約 1 分鐘，可請小老師協助；觸覺圓做一套 6 片約 20 分鐘。課堂：第 1 節多元文化的圓 2 張，併入 5～12 分的照片判斷（全段 7 分鐘，與 G7 共用）；22～30 分用毛根繞出摸得到的圓周，約 3 分鐘，在命名圓心、圓周的同一段內。第 2 節三種呈現併在 4～14 分的半徑段內；第 3 節綁繩圓規在 6～13 分（與 G2 共用）。</dd>
+        <dt>對應障礙點</dt>
+        <dd>視覺：低視力或視知覺困難的學生，不容易從細線分辨半徑、直徑與弦。工作記憶：用圓規畫圓時，半徑只是針尖與筆尖兩點之間的距離，看不到也摸不到，學生要在腦中保持這段長度；綁繩把它變成實物。錯誤類型 1：四個詞的意義，要先有可以指認的東西。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>學生在三種呈現中都能指出半徑：實物指繩子、動畫指線段、學習單上描出線段。</li>
+          <li>視覺需求學生能獨立用觸覺圓指出圓心與圓周。</li>
+          <li>使用 A3 版學習單的學生能獨立完成，不需要旁人唸題。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p1">第 1 節</a>：觸覺圓、多元文化的圓。<a href="lesson.html#p2">第 2 節</a>：半徑的三種呈現。<a href="lesson.html#p3">第 3 節</a>：綁繩圓規畫指定半徑的圓。</dd>
+        <dt>調整類型</dt>
+        <dd>替代：以觸覺與實物替代部分視覺訊息，以固定的關鍵句替代要記在腦中的說明。內容不變。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>1.1 自訂資訊的呈現方式（A3 版、平板同步）；1.2 以多種方式感知資訊（實物、動畫、印刷、觸覺、聽覺）；1.3 真實呈現多元觀點與身分（多元文化中的圓）。</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="gl star" id="g2">
+    <div class="gl-h"><span class="gl-code">G2</span><h3>語言與符號</h3><span class="axis">多元表徵<br>支持層</span></div>
+    <div class="gl-b">
+      <p>「圓心、圓周、半徑、直徑」四個詞裡，至少有兩個可能帶著字面上的陷阱：「半徑」的「半」可能被聽成「圓的一半」；「直徑」的「直」可能被想成「直立的線」，或讓學生以為任何直直穿過圓的線都是直徑（這兩點是本站推測，報告未分析）。這一格把四個詞、符號與實物一一配對，並把「半徑」的四種描述、「圓」與「圓區域」的差別分開講清楚。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">分兩節引入四個詞</p><p>第 1 節只引入「圓心」「圓周」；第 2 節才引入「半徑」「直徑」。一次最多兩個新詞，四個詞不同時出現。</p></div></li>
+            <li><div><p class="t">字卡：詞、注音、圖示、一句話</p><p>每個詞做成 A5 字卡：正面寫詞並加注音，旁邊畫圖示（圓心是一個點，圓周是一圈線，半徑是從點連到線的一段，直徑是穿過點的一段）；背面寫給學生的一句話（見下表）。字卡貼在黑板固定位置，全單元不撤。</p></div></li>
+            <li><div><p class="t">實物配對</p><p>「圓心」字卡貼在圓規針尖扎出的小洞旁；「圓周」貼在筆尖畫出的那一圈線旁；「半徑」貼在綁繩上；「直徑」貼在圓形紙片對摺的摺痕上，這時要說明「我們摺的是圓形紙片」。若學生在課外讀物看過 \( r \)、\( d \)，教師把 \( r \) 貼在半徑字卡旁、\( d \) 貼在直徑字卡旁，只做配對，不要求學生書寫。</p></div></li>
+            <li><div><p class="t">半徑的四種描述分兩節出場</p><p>第 2 節 4～14 分先講線段（從圓心畫到圓周的線），接著讓學生畫五條、量五條，再用 GeoGebra 拖動圓上的點，自己發現「所有半徑都一樣長」。第 3 節 6～13 分綁上橡皮筋，再講距離（針尖與筆尖有多遠）與長度（用直尺量出 3 公分）。詳見下方「半徑的四種描述」。</p></div></li>
+            <li><div><p class="t">句型卡</p><p>「＿＿是圓心，因為它到圓上每一點都一樣遠。」「這條線是半徑，因為它從圓心連到圓上。」「這條線是直徑，因為它穿過圓心，兩頭都在圓上。」學生可以用說的、寫的，或指著圖說。</p></div></li>
+            <li><div><p class="t">直徑與半徑的關係只用加法說</p><p>第 2 節 14～26 分，沿圓形紙片對摺的摺痕，從一端到圓心塗黃色（黃銅色）、從圓心到另一端塗藍色，學生說出 \( \text{直徑}=\text{半徑}+\text{半徑} \)。不用「2 倍」，也不用 \( 10\div5=2 \) 當入口。</p></div></li>
+            <li><div><p class="t">直徑的例與非例分類</p><p>第 2 節 26～34 分，每組一套 6 張卡：橫的過圓心、斜的過圓心、直立過圓心、橫的不過圓心、從圓心到圓上、過圓心但一頭沒碰到圓。學生分到「半徑」「直徑」「都不是」三張分類板上，每張都用句型說理由。重點在打破「橫的、直的線就是直徑」。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>四詞字卡（A5，含注音、圖示、背面的一句話）</li>
+          <li>綁繩圓規（見 G1）</li>
+          <li>圓形紙片，半徑 6 公分，每人 2 張</li>
+          <li>直徑例與非例卡，6 張一套，每組 1 套</li>
+          <li>句型卡、兩色色筆（黃銅色與藍色）、GeoGebra</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 1 節：圓心、圓周 8 分鐘（22～30 分）；圓和圓形紙片 6 分鐘（30～36 分）。第 2 節：半徑描述（1）與（4）10 分鐘（4～14 分）；摺出直徑、\( \text{直徑}=\text{半徑}+\text{半徑} \) 12 分鐘（14～26 分）；直徑例與非例分類卡 8 分鐘（26～34 分）；這三段都與 G3 共用。第 3 節：半徑描述（2）與（3）在 6～13 分綁橡皮筋時出場（7 分鐘，與 G1、G3 共用）。第 4 節：12～24 分收理由時用句型說明兩圓一樣大，不另占時間；24～32 分找直徑時再用直徑句型。第 5 節：四詞圖示對照 6 分鐘（0～6 分）。</dd>
+        <dt>對應障礙點</dt>
+        <dd>符號解碼（主要）：「半」與「直」的字面意思可能誤導；\( \overline{OA} \) 同時表示線段與長度，也容易混。錯誤類型 1：不認識四個詞的意義。錯誤類型 2：把過圓心及水平的弦都當成直徑，可能與「直徑」字面上的「直」有關（本站推測，報告未分析）。工作記憶：四個新詞同時出現時，學生要同時記住詞、意義與圖；分兩節引入、字卡固定在黑板，減少要放在腦中的東西。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>字卡配對：四個詞配四張圖，全對。</li>
+          <li>直徑例與非例：6 張全對；特別記下誰把「橫的不過圓心」放進「直徑」，這是錯誤類型 2 的直接證據。</li>
+          <li>句型：每位學生至少說出或寫出一句含「因為」的句子。</li>
+          <li>GeoGebra 操作後，學生能說出「每一條半徑都一樣長」。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p1">第 1 節</a>：圓心、圓周，圓和圓形紙片。<a href="lesson.html#p2">第 2 節</a>：半徑、直徑（主場）。<a href="lesson.html#p3">第 3 節</a>：半徑描述（2）與（3）。<a href="lesson.html#p4">第 4 節</a>：用句型說明兩圓一樣大的理由；通過圓心的才是直徑。<a href="lesson.html#p5">第 5 節</a>：四詞圖示對照。</dd>
+        <dt>調整類型</dt>
+        <dd>分解：四個詞分兩節引入。替代：以實物配對、字卡與圖示替代只用口語下定義。四個詞一個都不少，單元結束時學生要能在圖上正確指出。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>2.1 釐清詞彙、符號與語言結構（字卡、句型卡）；2.2 支援數學符號的解碼（\( r \)、\( d \) 配對實物，半徑四種描述）；2.3 尊重不同語言背景（注音、允許用母語先說再轉成華語）；2.5 以多種媒材說明（實物、GeoGebra、學習單）。</dd>
+      </dl>
+
+      <h4>一、四個詞的對照</h4>
+      <div class="tw"><table>
+        <caption>四詞字卡內容與實物配對</caption>
+        <thead><tr><th scope="col">名詞與注音</th><th scope="col">給學生的一句話</th><th scope="col">實物配對</th><th scope="col">教師端符號</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">圓心<br>ㄩㄢˊ ㄒㄧㄣ</th><td>圓規針尖扎的那一點。它到圓上每一點都一樣遠。它在圓的裡面，不在圓上。</td><td>針尖扎出的小洞；觸覺圓紙板上的凸點</td><td>\( O \)，且 \( O\notin C \)</td></tr>
+          <tr><th scope="row">圓周<br>ㄩㄢˊ ㄓㄡ</th><td>圓規筆尖畫出來的那一圈線。</td><td>筆尖畫的線；觸覺圓紙板上的毛線</td><td>\( C \)（依定義，圓就是這一圈點）</td></tr>
+          <tr><th scope="row">半徑<br>ㄅㄢˋ ㄐㄧㄥˋ</th><td>從圓心連到圓上一點的線。</td><td>綁在圓規兩腳之間的繩子；觸覺圓紙板上的牙籤</td><td>\( r \)；線段 \( \overline{OA} \)</td></tr>
+          <tr><th scope="row">直徑<br>ㄓˊ ㄐㄧㄥˋ</th><td>穿過圓心、兩頭都碰到圓的線。直徑是兩條半徑接起來。</td><td>圓形紙片對摺的摺痕</td><td>\( d \)；教師端可寫 \( d=2r \)</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>二、半徑的四種描述</h4>
+      <blockquote class="official">
+        <p>這四種描述的方法中，第一種是學生最容易接受的方法，但是用圓規畫圓時，學生看不到線段 OA，只能看到針尖和筆尖兩點的距離，建議在圓規兩腳之間綁上繩子或橡皮筋，讓學生在畫圓時，能看到針尖和筆尖的距離，也能看到連接針尖和筆尖的線段。</p>
+        <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 67 至 70 頁，Q20 教學建議（二）之 2。</cite>
+      </blockquote>
+      <figure class="fig">
+        <svg viewBox="0 0 520 440" role="img" aria-labelledby="u-r4-t u-r4-d">
+          <title id="u-r4-t">半徑的四種描述</title>
+          <desc id="u-r4-d">四格圖，每一格都是同一個圓，圓心是 O，圓上有 A 與 P 兩點。第一格畫出從 O 到 A 的線段，說明半徑是一條線段。第二格沒有畫線段，只在 O 與 P 之間畫一條虛線，兩端各有一小段短橫，說明半徑是 O、P 兩點的距離。第三格從 O 到 A 的線段上方寫著 5 公分，說明半徑是一個帶單位的長度。第四格從 O 向圓上八個方向各畫一條線段，八條一樣長，說明圓心到圓上每一點都一樣遠，所有這樣的線段都是半徑。</desc>
+          <g stroke="var(--hair)" stroke-width="1" fill="none">
+            <line x1="260" y1="10" x2="260" y2="430"/>
+            <line x1="10" y1="220" x2="510" y2="220"/>
+          </g>
+          <!-- 第一格：線段 -->
+          <circle cx="130" cy="92" r="68" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="130" y1="92" x2="198" y2="92" stroke="var(--brass)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="130" cy="92" r="4" fill="var(--ink)"/>
+          <circle cx="198" cy="92" r="4" fill="var(--ink)"/>
+          <circle cx="86.29" cy="39.91" r="4" fill="var(--ink)"/>
+          <g font-size="14" fill="var(--ink)" font-weight="600">
+            <text x="114" y="112">O</text><text x="205" y="97">A</text><text x="68" y="36">P</text>
+          </g>
+          <g text-anchor="middle">
+            <text x="130" y="186" font-size="14" font-weight="600" fill="var(--brass)">（1）線段 OA</text>
+            <text x="130" y="206" font-size="12.5" fill="var(--graphite)">半徑是一條線段</text>
+          </g>
+          <!-- 第二格：距離 -->
+          <circle cx="390" cy="92" r="68" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="390" y1="92" x2="346.29" y2="39.91" stroke="var(--brass)" stroke-width="1.6" stroke-dasharray="4 4"/>
+          <line x1="386.17" y1="95.21" x2="393.83" y2="88.79" stroke="var(--brass)" stroke-width="2"/>
+          <line x1="342.46" y1="43.12" x2="350.12" y2="36.7" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="390" cy="92" r="4" fill="var(--ink)"/>
+          <circle cx="458" cy="92" r="4" fill="var(--ink)"/>
+          <circle cx="346.29" cy="39.91" r="4" fill="var(--ink)"/>
+          <g font-size="14" fill="var(--ink)" font-weight="600">
+            <text x="374" y="112">O</text><text x="465" y="97">A</text><text x="328" y="36">P</text>
+          </g>
+          <g text-anchor="middle">
+            <text x="390" y="186" font-size="14" font-weight="600" fill="var(--brass)">（2）O、P 的距離</text>
+            <text x="390" y="206" font-size="12.5" fill="var(--graphite)">沒有畫線，只看兩點有多遠</text>
+          </g>
+          <!-- 第三格：長度 -->
+          <circle cx="130" cy="312" r="68" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="130" y1="312" x2="198" y2="312" stroke="var(--brass)" stroke-width="2.4"/>
+          <circle cx="130" cy="312" r="4" fill="var(--ink)"/>
+          <circle cx="198" cy="312" r="4" fill="var(--ink)"/>
+          <circle cx="86.29" cy="259.91" r="4" fill="var(--ink)"/>
+          <text x="141" y="302" font-size="14" font-weight="600" fill="var(--brass)">5 公分</text>
+          <g font-size="14" fill="var(--ink)" font-weight="600">
+            <text x="114" y="332">O</text><text x="205" y="317">A</text><text x="68" y="256">P</text>
+          </g>
+          <g text-anchor="middle">
+            <text x="130" y="406" font-size="14" font-weight="600" fill="var(--brass)">（3）半徑是 5 公分</text>
+            <text x="130" y="426" font-size="12.5" fill="var(--graphite)">一個帶單位的長度</text>
+          </g>
+          <!-- 第四格：所有半徑 -->
+          <circle cx="390" cy="312" r="68" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <g stroke="var(--brass)" stroke-width="1.8">
+            <line x1="390" y1="312" x2="458" y2="312"/>
+            <line x1="390" y1="312" x2="438.08" y2="263.92"/>
+            <line x1="390" y1="312" x2="390" y2="244"/>
+            <line x1="390" y1="312" x2="341.92" y2="263.92"/>
+            <line x1="390" y1="312" x2="322" y2="312"/>
+            <line x1="390" y1="312" x2="341.92" y2="360.08"/>
+            <line x1="390" y1="312" x2="390" y2="380"/>
+            <line x1="390" y1="312" x2="438.08" y2="360.08"/>
+          </g>
+          <g fill="var(--brass)">
+            <circle cx="458" cy="312" r="3"/><circle cx="438.08" cy="263.92" r="3"/><circle cx="390" cy="244" r="3"/><circle cx="341.92" cy="263.92" r="3"/>
+            <circle cx="322" cy="312" r="3"/><circle cx="341.92" cy="360.08" r="3"/><circle cx="390" cy="380" r="3"/><circle cx="438.08" cy="360.08" r="3"/>
+          </g>
+          <circle cx="390" cy="312" r="4" fill="var(--ink)"/>
+          <g text-anchor="middle">
+            <text x="390" y="406" font-size="14" font-weight="600" fill="var(--brass)">（4）所有的半徑</text>
+            <text x="390" y="426" font-size="12.5" fill="var(--graphite)">圓心到圓上每一點都一樣遠</text>
+          </g>
+        </svg>
+        <figcaption><b>同一個詞，四種描述</b>　（1）最容易接受，所以最先教；（2）是學生用圓規時實際看到的東西，綁繩把它接回（1）；（4）要學生自己發現，才算掌握「所有半徑都等長」。</figcaption>
+      </figure>
+      <div class="tw"><table>
+        <caption>半徑四種描述的教學順序</caption>
+        <thead><tr><th scope="col">描述</th><th scope="col">教師端寫法</th><th scope="col">給學生的說法</th><th scope="col">課堂中怎麼出場</th><th scope="col">容易混淆的地方</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">（1）線段</th><td>稱線段 \( \overline{OA} \) 為半徑</td><td>「從圓心連到圓上的這條線，是半徑。」</td><td>第 2 節從圓心畫到圓周；第 3 節綁繩圓規的繩子</td><td>以為半徑只有「畫出來的那一條」</td></tr>
+          <tr><th scope="row">（2）距離</th><td>\( O \) 到 \( P \) 的距離 \( \overline{OP} \)</td><td>「針尖到筆尖有多遠。」</td><td>第 3 節畫圓時看針尖與筆尖；沒有畫線，距離也存在</td><td>用圓規時看不到線段，只看得到兩個點</td></tr>
+          <tr><th scope="row">（3）長度</th><td>半徑 \( =5\ \text{公分} \)</td><td>「半徑是 5 公分。」</td><td>第 3 節用直尺量；圓規對準直尺的 0 與指定長度張開</td><td>5 公分可能指線段 \( \overline{OA} \) 的長，也可能指 \( O \)、\( P \) 兩點的距離</td></tr>
+          <tr class="ok"><th scope="row">（4）所有半徑</th><td>圓心與圓上任意點連成的線段都等長</td><td>「從圓心到圓上每一點，都一樣遠。」</td><td>第 2 節畫五條半徑、量五條；GeoGebra 拖動圓上的點</td><td>要學生自己發現「每一條」都一樣長，不是由教師宣布</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box note">
+        <p class="tag">板書提醒</p>
+        <p>臺灣教材以 \( \overline{OA} \) 同時表示線段與它的長度。教師寫 \( \overline{OA} \) 時，口頭說清楚現在指的是「這條線」還是「這條線有多長」，例如「\( \overline{OA} \) 這條線是半徑」與「\( \overline{OA} \) 有 3 公分長」。</p>
+      </div>
+
+      <h4>三、圓與圓區域</h4>
+      <blockquote class="official">
+        <p>圓區域：圓和圓內部合起來稱為圓區域。利用圓規畫圓時，畫出來的圖形是圓，利用摺紙找出圓的直徑時，所摺的圖形是圓區域。</p>
+        <p>教師應區分圓或圓區域使用的時機及其限制。</p>
+        <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 67 至 70 頁，Q20 教學建議（二）之 1。</cite>
+      </blockquote>
+      <div class="def">
+        <p class="def-h">定義　圓與圓區域<span class="aud">教師端</span></p>
+        <div class="def-b">
+          <p>在平面上選定一點 \( O \) 與一個長度 \( r \)。與 \( O \) 的距離等於 \( r \) 的所有點所成的集合稱為圓，\( O \) 為圓心，\( r \) 為半徑：</p>
+          \[ C=\{\, P \mid \overline{OP}=r \,\},\ r>0 \]
+          <p>圓和圓內部合起來稱為圓區域：</p>
+          \[ D=\{\, P \mid \overline{OP}\le r \,\} \]
+          <p>圓心在圓區域裡，但不在圓上：\( O\notin C \)，因為 \( \overline{OO}=0\neq r \)。這就是學習重點備註「圓心並不屬於圓」的意思。直徑與半徑的關係，教師端可寫 \( d=2r \)。</p>
+        </div>
+      </div>
+      <div class="dual">
+        <div class="stu">
+          <p class="who">給學生的說法</p>
+          <ul>
+            <li>「圓規畫出來的那一圈線，叫做圓。」</li>
+            <li>「把圓剪下來的紙片，叫做圓形紙片。我們現在摺的是圓形紙片，摺痕就是直徑。」</li>
+            <li>「圓心在圓的裡面，不在那一圈線上。」</li>
+            <li>\( \text{直徑}=\text{半徑}+\text{半徑} \)：「直徑是兩條半徑接起來。」</li>
+          </ul>
+        </div>
+        <div class="tch">
+          <p class="who">教師要知道的</p>
+          <ul>
+            <li>對三年級學生，可以用「圓形紙片」代替「圓區域」這個詞；重點是教師的用詞前後一致，畫出來的線叫「圓」，剪下的紙叫「圓形紙片」。</li>
+            <li>摺紙的限制：摺痕在紙片上，能找到直徑與圓心的位置，但會讓學生以為圓是一個面。摺完一定要回到圓規畫的那一圈線，指著說「圓是這一圈」。</li>
+            <li>學生說「圓心在圓上」時，更正為「圓心在圓的裡面」。</li>
+            <li>三年級學生較難掌握「10 是 5 的 2 倍」這類倍數關係，所以學生端一律用加法說直徑與半徑的關係。</li>
+          </ul>
+        </div>
+      </div>
+      <blockquote class="official">
+        <p>10 是 5 的 2 倍是基準量和比較量關係的描述，指的是以 5 為基準量 1 時，比較量 10 會是 2，三年級學生較無法掌握 10 是 5 的 2 倍的意義。建議教師利用方法二說明半徑與直徑的關係。</p>
+        <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 67 至 70 頁，Q20 教學建議（二）之 3。</cite>
+      </blockquote>
+
+      <h4>四、直徑的例與非例</h4>
+      <figure class="fig">
+        <svg viewBox="0 0 520 410" role="img" aria-labelledby="u-dia-t u-dia-d">
+          <title id="u-dia-t">直徑的例與非例</title>
+          <desc id="u-dia-d">四個一樣大的圓，每個圓裡畫一條線段，判斷是不是直徑。左上：一條橫的線段穿過圓心，兩端都在圓上，是直徑。右上：一條斜的線段穿過圓心，兩端都在圓上，也是直徑，說明直徑不一定是橫的。左下：一條橫的線段兩端都在圓上，但位在圓心上方，沒有穿過圓心，不是直徑。右下：一條線段從圓心出發連到圓上，只有一端在圓上，這是半徑，不是直徑。</desc>
+          <g stroke="var(--hair)" stroke-width="1" fill="none">
+            <line x1="260" y1="10" x2="260" y2="400"/>
+            <line x1="10" y1="200" x2="510" y2="200"/>
+          </g>
+          <!-- 左上：橫的直徑 -->
+          <circle cx="130" cy="88" r="62" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="68" y1="88" x2="192" y2="88" stroke="var(--blue)" stroke-width="3.2"/>
+          <circle cx="130" cy="88" r="4" fill="var(--ink)"/>
+          <circle cx="68" cy="88" r="3.4" fill="var(--blue)"/><circle cx="192" cy="88" r="3.4" fill="var(--blue)"/>
+          <g text-anchor="middle">
+            <text x="130" y="176" font-size="14" font-weight="600" fill="var(--green)">是直徑</text>
+            <text x="130" y="194" font-size="12.5" fill="var(--graphite)">橫的，穿過圓心</text>
+          </g>
+          <!-- 右上：斜的直徑 -->
+          <circle cx="390" cy="88" r="62" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="339.21" y1="123.56" x2="440.79" y2="52.44" stroke="var(--blue)" stroke-width="3.2"/>
+          <circle cx="390" cy="88" r="4" fill="var(--ink)"/>
+          <circle cx="339.21" cy="123.56" r="3.4" fill="var(--blue)"/><circle cx="440.79" cy="52.44" r="3.4" fill="var(--blue)"/>
+          <g text-anchor="middle">
+            <text x="390" y="176" font-size="14" font-weight="600" fill="var(--green)">也是直徑</text>
+            <text x="390" y="194" font-size="12.5" fill="var(--graphite)">斜的，一樣穿過圓心</text>
+          </g>
+          <!-- 左下：不過圓心的弦 -->
+          <circle cx="130" cy="288" r="62" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="75.74" y1="258" x2="184.26" y2="258" stroke="var(--red)" stroke-width="3" stroke-dasharray="7 5"/>
+          <circle cx="130" cy="288" r="4" fill="var(--ink)"/>
+          <circle cx="75.74" cy="258" r="3.4" fill="var(--red)"/><circle cx="184.26" cy="258" r="3.4" fill="var(--red)"/>
+          <g text-anchor="middle">
+            <text x="130" y="376" font-size="14" font-weight="600" fill="var(--red)">不是直徑</text>
+            <text x="130" y="394" font-size="12.5" fill="var(--graphite)">橫的，但沒有穿過圓心</text>
+          </g>
+          <!-- 右下：半徑 -->
+          <circle cx="390" cy="288" r="62" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="390" y1="288" x2="433.84" y2="244.16" stroke="var(--brass)" stroke-width="3.2"/>
+          <circle cx="390" cy="288" r="4" fill="var(--ink)"/>
+          <circle cx="433.84" cy="244.16" r="3.4" fill="var(--brass)"/>
+          <g text-anchor="middle">
+            <text x="390" y="376" font-size="14" font-weight="600" fill="var(--red)">不是直徑，是半徑</text>
+            <text x="390" y="394" font-size="12.5" fill="var(--graphite)">從圓心出發，只有一頭在圓上</text>
+          </g>
+        </svg>
+        <figcaption><b>例與非例卡的其中四張</b>　右上那張用來打破「直徑是橫的」；左下那張正是錯誤類型 2：水平的弦兩端都在圓上，但沒有穿過圓心。</figcaption>
+      </figure>
+
+      <div class="ggb-block" data-ggb="radius-set">
+        <div class="ggb-head"><p class="t">互動作圖<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+        <div class="ggb-body">
+          <figure class="ggb-still">
+            <svg viewBox="0 0 520 340" role="img" aria-labelledby="u-rs-t u-rs-d">
+              <title id="u-rs-t">四條半徑一樣長</title>
+              <desc id="u-rs-d">一個圓，圓心 O 在中央。紅點 A 在圓的最右邊，藍點 P 在右上方、Q 在左上方、R 在左下方，四個點都在圓上。從 O 分別連到 A、P、Q、R 的四條黃銅色線段都是半徑，每一條旁邊都標著長度 3 公分。圖下方寫著四條半徑都是 3 公分。</desc>
+              <circle cx="260" cy="170" r="120" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+              <g stroke="var(--brass)" stroke-width="3.4" stroke-linecap="round">
+                <line x1="260" y1="170" x2="380" y2="170"/>
+                <line x1="260" y1="170" x2="336.49" y2="77.54"/>
+                <line x1="260" y1="170" x2="158.68" y2="105.7"/>
+                <line x1="260" y1="170" x2="195.7" y2="271.32"/>
+              </g>
+              <circle cx="260" cy="170" r="5" fill="var(--ink)"/>
+              <circle cx="380" cy="170" r="6.5" fill="var(--red)"/>
+              <g fill="var(--blue)">
+                <circle cx="336.49" cy="77.54" r="5.5"/>
+                <circle cx="158.68" cy="105.7" r="5.5"/>
+                <circle cx="195.7" cy="271.32" r="5.5"/>
+              </g>
+              <g font-size="15" font-weight="600" fill="var(--ink)">
+                <text x="268" y="196">O</text>
+                <text x="390" y="166" fill="var(--red)">A</text>
+                <text x="344" y="70" fill="var(--blue)">P</text>
+                <text x="136" y="100" fill="var(--blue)">Q</text>
+                <text x="176" y="292" fill="var(--blue)">R</text>
+              </g>
+              <g font-size="14" font-weight="600" fill="var(--brass)">
+                <text x="316" y="190">3 公分</text>
+                <text x="298" y="116" text-anchor="end">3 公分</text>
+                <text x="204" y="156" text-anchor="end">3 公分</text>
+                <text x="236" y="234">3 公分</text>
+              </g>
+              <text x="260" y="326" font-size="14" fill="var(--ink)" text-anchor="middle">四條半徑都是 3 公分</text>
+            </svg>
+            <figcaption><b>靜態版</b>　圓心 O 到圓上 A、P、Q、R 四點的線段都是半徑，長度都是 3 公分。</figcaption>
+          </figure>
+          <div class="ggb-stage"></div>
+          <p class="ggb-how"><b>操作方式</b>　拖動紅點 A 改變半徑；拖動藍點 P、Q、R 沿著圓移動。四條半徑都會顯示長度，怎麼拖四個長度都相同。建議提問順序：先拖 P，問「P 換了位置，這條半徑變長了嗎？」再拖 A，問「A 拉遠了，另外三條也跟著變嗎？」最後請學生用自己的話說出「從圓心到圓上每一點，都一樣遠」。</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="gl star" id="g3">
+    <div class="gl-h"><span class="gl-code">G3</span><h3>建構知識</h3><span class="axis">多元表徵<br>執行功能層</span></div>
+    <div class="gl-b">
+      <p>圓的本質是「到圓心一樣遠」。這一格先讓學生用摺紙、紙條、畫半徑量長度自己發現這件事，再拿這個發現去檢驗「兩個圓要疊合才算一樣大」的想法。學生會在一個判斷裡同時用上半徑與「一樣大」，這正是選 ④ 的學生缺的那一步。</p>
+      <blockquote class="official">
+        <p>這些學生可能不認識「圓心」、「圓周」、「半徑」與「直徑」的意義，他們知道沒有過圓心的弦不是直徑，但誤認為畫出來的兩個圓要完全疊合才算一樣大，而不是半徑一樣長的圓就是一樣大。</p>
+        <cite>國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測數學三年級施測結果報告，第 68 頁，一、試題分析（三）之 4（46% 選 ④）。</cite>
+      </blockquote>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">摺紙找中心、量從中心到邊（第 1 節 12～22 分）</p><p>每人一張圓形紙片（半徑 6 公分）、一張橢圓形紙片、2 條紙條。圓形紙片換兩個方向各對摺一次，兩條摺痕交叉處點出中心；紙條一端放在中心，另一端碰到邊時做記號，再轉到另外 3 個方向比。橢圓形紙片照做一次。學生會發現圓形紙片每個方向都剛好碰到邊，橢圓形紙片橫的長、直的短，並用自己的話說出「圓從中心到邊，每一個方向都一樣長」。這裡連結先備 S-2-1 的「內外」與「周界」：中心在裡面，邊上那一圈是周界；22～30 分再由 G2 命名為圓心、圓周。</p></div></li>
+            <li><div><p class="t">發現半徑都一樣長，再接出直徑（第 2 節 4～26 分）</p><p>4～14 分：在圓形紙片上從圓心往 5 個不同方向各畫一條半徑，用直尺量，全班報告都是 6 公分或只差 1、2 毫米；再用 GeoGebra 半徑作圖拖動圓上的點，看長度一直不變。14～26 分：三條進路任選，都走到「直徑是兩條半徑接起來」：摺紙（對摺出通過圓心的摺痕，圓心兩側塗兩色）、紙條（兩條半徑長的紙條頭尾相接，放在摺痕上剛好放得下）、互動作圖（拖動紅點 A，黃銅色與藍色兩條半徑一直接成直徑）。任何一條走通都算數，三條都走過的學生可以當小老師。最後回到同一句話：「從圓心到圓上每一點，都一樣遠。」</p></div></li>
+            <li><div><p class="t">兩個分開放的圓：先猜（第 4 節 12～24 分）</p><p>練習單印三個圓，圓心都標出：甲在左上、乙在右下，半徑都是 3 公分；丙在中間偏右，半徑 4 公分。三個圓彼此不重疊。問：「甲和乙一樣大嗎？你怎麼知道？」每人先在單子上寫下答案與理由（G9 的改想法練習從這裡開始）。</p></div></li>
+            <li><div><p class="t">收理由</p><p>教師請學生說理由，黑板分三欄記錄：「看起來」「要剪下來疊疊看」「量半徑」，每個理由都寫上去，不評對錯。可以追問：「如果這兩個圓畫在黑板上，剪不下來，還能知道一不一樣大嗎？」</p></div></li>
+            <li><div><p class="t">用圓規驗證</p><p>針尖放在甲的圓心、筆尖放在甲的圓上；張開距離不動，整支搬到乙，看筆尖是否剛好落在乙的圓上。再搬到丙，筆尖落在丙的圓裡面，表示丙的半徑比較長，丙比較大。</p></div></li>
+            <li><div><p class="t">拿出自己的作品，歸納</p><p>翻開第 3 節練習階梯「自由」那一格：兩個圓分在紙的左右兩邊，沒有疊在一起，用的是同一個張開距離。問：「它們一樣大嗎？」學生說出：「半徑一樣長的圓就一樣大，放在哪裡都一樣。」第 5 節三層挑戰的第三層（用同一個張開距離畫至少 3 個一樣大的圓，並說明為什麼一樣大）會把這個判斷反過來用。</p></div></li>
+            <li><div><p class="t">搬不動的圓（延伸建議，未排入五節課）</p><p>教師用黑板圓規在黑板左右兩端各畫一個一樣大的圓，問：「這兩個圓剪不下來，也搬不過去，還能知道一不一樣大嗎？」請兩位學生上台用長尺或繩子量半徑，讓「量」成為唯一可用的方法。</p></div></li>
+            <li><div><p class="t">對照：圓心在同一點，也不一定一樣大（延伸建議，未排入五節課）</p><p>發一張同心圓紙（同一個圓心，半徑 3 公分與 4 公分）。問：「這兩個圓的圓心在同一點，它們一樣大嗎？」讓學生看到圓心放在哪裡都不決定大小，決定大小的是半徑。</p></div></li>
+            <li><div><p class="t">搬過去確認（延伸建議，未排入五節課）</p><p>兩張透明片各畫一個半徑 3 公分的圓，錯開放；再把其中一張移過去，兩圓完全疊合。問：「移動的時候，圓變大或變小了嗎？」位置改變，大小不變。</p></div></li>
+          </ol>
+          <p class="say">甲和乙沒有疊在一起。不剪下來疊，我們還有什麼辦法知道它們一不一樣大？</p>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>第 1 節：圓形紙片（半徑 6 公分）、橢圓形紙片各 1 張，紙條 2 條，每人一套</li>
+          <li>第 2 節：圓形紙片（半徑 6 公分）每人 2 張；剪成半徑長（6 公分）的紙條，每人 2 條；平板與 GeoGebra</li>
+          <li>第 4 節：甲、乙、丙三個圓的練習單（甲、乙半徑 3 公分，丙半徑 4 公分，圓心都標出），每人 1 張；圓規、直尺；出場卡</li>
+          <li>延伸建議用：黑板圓規與 1 公尺長尺；同心圓紙（半徑 3 公分與 4 公分）；透明片 2 張與白板筆</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 1 節：摺紙找中心、量從中心到邊 10 分鐘（12～22 分，與 G1、G4 共用）。第 2 節：畫五條半徑並量長度 10 分鐘（4～14 分）、三條進路接出直徑 12 分鐘（14～26 分），都與 G2 共用。第 4 節：兩個分開放的圓，從預測到用圓規驗證約 12 分鐘（12～24 分）；出場卡 8 分鐘（32～40 分，與 G9 共用）。第 5 節：檢核題 9 分鐘（28～37 分，與 G2 共用）。黑板圓、同心圓與透明片三項是延伸建議，未排入五節課。</dd>
+        <dt>對應障礙點</dt>
+        <dd>錯誤類型 3（主要）：以為要疊合才算一樣大。錯誤類型 1：學生若只把圓當成「圓圓的形狀」，就沒有「到圓心一樣遠」這個依據可用。視覺：用眼睛比兩個圓的大小，對視知覺困難的學生特別不可靠；改成量一個長度，每個學生都用得上。工作記憶：判斷兩圓是否一樣大，只要比一個數（半徑），不必在腦中移動、旋轉圖形。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>預測與修正：比對第 4 節 12～24 分一開始寫的預測與用圓規驗證後的「我現在認為」，數一數理由從「看起來、疊起來」改成「量半徑」的人數。</li>
+          <li>出場卡第一題：紙上兩個分開的圓，半徑都是 3 公分，學生判斷一不一樣大，理由中要提到半徑。下課後把理由分三類記人數：以半徑判斷；以疊合或剪下來比判斷；以位置或看起來判斷。</li>
+          <li>後兩類的學生列成名單，第 5 節開頭四詞圖示對照時（0～6 分），優先請他們說「半徑和圓的大小」這一組。</li>
+          <li>後測以評量頁的檢核題對應錯誤類型 3，見 <a href="assessment.html">評量與效果檢核</a>。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p1">第 1 節</a>：摺紙找中心、量從中心到邊。<a href="lesson.html#p2">第 2 節</a>：畫五條半徑、三條進路接出直徑。<a href="lesson.html#p4">第 4 節</a>：兩個分開放的圓（主場）。<a href="lesson.html#p5">第 5 節</a>：檢核題。</dd>
+        <dt>調整類型</dt>
+        <dd>替代：以「量半徑」替代「用眼睛比、疊起來比」的判斷方式。重整：先收齊學生的理由（包括「剪下來疊疊看」），再用圓規搬半徑驗證，疊合留作事後確認，讓學生原本的疊合經驗接上新的判斷方式。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>3.1 連結先備知識（中心、S-2-1 的內外與周界）；3.2 凸顯關鍵特徵與關係（半徑決定大小，位置不影響）；3.3 多種認識方式（摺紙、紙條、互動作圖三條進路）；3.4 遷移與類化（練習單上的圓、自己畫的圓、螢幕上的圓都能判斷，第 5 節再用來畫一樣大的圓）。</dd>
+      </dl>
+
+      <div class="box warn">
+        <p class="tag">這是全班的課，不是抽離的補救</p>
+        <p>選 ④ 的比例高分組 47%、低分組 35%。這個想法不只出現在學習較慢的學生身上，所以「兩個分開放的圓」要全班一起做，特殊需求學生在同一個活動裡用自己的工具（觸覺圓、紙條圓規、A3 學習單）參與。</p>
+      </div>
+
+      <h4>疊合的經驗不要丟掉，要接上</h4>
+      <div class="dual">
+        <div class="stu">
+          <p class="who">給學生的說法</p>
+          <ul>
+            <li>「兩個圓一不一樣大，量半徑就知道。半徑一樣長，就一樣大。」</li>
+            <li>「圓放在哪裡、有沒有疊在一起，都不會改變它的大小。」</li>
+            <li>「搬得動的話，搬過去會剛好疊在一起；搬不動的時候，量半徑就好。」</li>
+          </ul>
+        </div>
+        <div class="tch">
+          <p class="who">教師要知道的</p>
+          <ul>
+            <li>「移過去能疊合」在數學上是對的：兩個半徑相等的圓，移動後一定能完全疊合。</li>
+            <li>迷思在於把「畫出來的時候就疊在一起」當成一樣大的必要條件，沒疊在一起就不敢說一樣大。</li>
+            <li>所以第 4 節先收齊學生的理由，「剪下來疊疊看」也寫上黑板；接著用圓規搬半徑驗證，疊合留作事後確認。兩種想法接起來，學生原本的經驗不必被否定。延伸建議中的黑板圓與透明片，可以把這兩步做得更完整。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ggb-block" data-ggb="two-circles">
+        <div class="ggb-head"><p class="t">互動作圖<span>GeoGebra</span></p><button class="ggb-btn" type="button" data-ggb-open>開啟互動作圖</button></div>
+        <div class="ggb-body">
+          <figure class="ggb-still">
+            <svg viewBox="0 0 560 300" role="img" aria-labelledby="u-tc-t u-tc-d">
+              <title id="u-tc-t">兩個分開放的等半徑圓</title>
+              <desc id="u-tc-d">左右兩個圓，左邊是甲，右邊是乙，乙的位置比甲稍高，兩個圓分開沒有重疊。甲從圓心向右畫一條半徑，標示半徑 3 公分；乙從圓心向右稍微往上畫一條半徑，也標示半徑 3 公分。圖下方寫著位置不同，沒有疊在一起，半徑都是 3 公分，所以一樣大。</desc>
+              <circle cx="152" cy="160" r="80" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+              <circle cx="400" cy="136" r="80" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+              <line x1="152" y1="160" x2="232" y2="160" stroke="var(--brass)" stroke-width="3.4" stroke-linecap="round"/>
+              <line x1="400" y1="136" x2="479.37" y2="125.97" stroke="var(--brass)" stroke-width="3.4" stroke-linecap="round"/>
+              <circle cx="152" cy="160" r="4.5" fill="var(--ink)"/>
+              <circle cx="400" cy="136" r="4.5" fill="var(--ink)"/>
+              <circle cx="232" cy="160" r="6.5" fill="var(--red)"/>
+              <circle cx="479.37" cy="125.97" r="4" fill="var(--ink)"/>
+              <g font-size="15" font-weight="600" fill="var(--ink)">
+                <text x="138" y="184">甲</text>
+                <text x="386" y="160">乙</text>
+                <text x="240" y="176" fill="var(--red)">A</text>
+              </g>
+              <g font-size="13" font-weight="600" fill="var(--brass)">
+                <text x="156" y="150">半徑 3 公分</text>
+                <text x="398" y="118">半徑 3 公分</text>
+              </g>
+              <text x="280" y="284" font-size="14" fill="var(--ink)" text-anchor="middle">位置不同，沒有疊在一起，半徑都是 3 公分，所以一樣大</text>
+            </svg>
+            <figcaption><b>靜態版</b>　甲、乙分開放，也沒有疊合；兩個半徑都是 3 公分，所以一樣大。</figcaption>
+          </figure>
+          <div class="ggb-stage"></div>
+          <p class="ggb-how"><b>操作方式</b>　甲、乙的圓心都可以拖到任何位置；拖紅點 A 改變甲的半徑，乙的半徑會同步變化，兩個圓永遠一樣大。建議提問：「把乙拖到右上角，它變小了嗎？」「把兩個圓拖到疊在一起，再拖開，大小有變嗎？」「A 拉遠之後，乙為什麼也變大？」最後請學生說出「半徑一樣長，就一樣大，放在哪裡都一樣」。</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="action" aria-labelledby="h-action">
+  <p class="eyebrow">原則三．多元行動與表達 HOW</p>
+  <h2 id="h-action">多元行動與表達：工具與方式可以選，要求不變</h2>
+  <p>圓規是三年級學生第一次用的工具，本單元還要用它複製線段、比較長度。這三格的共同原則是：畫圓的工具、回答的方式、作品的形式都可以選，但「指定半徑」「標出圓心」「分辨半徑與直徑」這些要求，每個學生都一樣。</p>
+
+  <article class="gl" id="g4">
+    <div class="gl-h"><span class="gl-code">G4</span><h3>互動</h3><span class="axis">多元行動與表達<br>獲取層</span></div>
+    <div class="gl-b">
+      <p>同一個問題，學生可以用不同方式回答；同一個任務，學生可以用不同工具完成。這一格確保學生懂了之後表現得出來，不被手部動作或書寫卡住。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">說寫做回應卡</p><p>每人桌上一張三格卡：說、寫、做。教師問核心問題時（例如「這條線是不是直徑？為什麼？」「這兩個圓一樣大嗎？」），學生選一種方式回答：說給夥伴或老師聽、寫在小白板上、用直尺量給老師看。三種回答都要含理由。</p></div></li>
+            <li><div><p class="t">徒手畫圓比較（第 3 節 0～6 分，與認識圓規同一段）</p><p>全班先徒手畫一個圓，限時 20 秒，再用上一節的紙條從自己估的中心量到邊，量 4 個方向。長度通常有長有短，學生就說得出「為什麼需要圓規」。徒手畫圓是用來比較的，不是替代工具。</p></div></li>
+            <li><div><p class="t">實體圓規：每個學生都要試</p><p>本單元的主要工具。操作支援：圓規螺絲事先鎖緊、紙下墊軟木墊、紙用紙膠帶固定在桌上、允許轉紙而不轉圓規。</p></div></li>
+            <li><div><p class="t">電子圓規 App</p><p>平板上用 GeoGebra 的圓工具，自己從圓心拖出半徑，看畫面顯示的長度，拖到 3 公分再放開；不直接輸入數字，學生仍要判斷張開多少。提供給手部操作有困難、或實體圓規連續失敗的學生；在第 3 節 19～31 分的練習階梯中，它是可選的工具之一。</p></div></li>
+            <li><div><p class="t">替代工具的界線</p><p>S-3-3 要求「能使用圓規畫指定半徑的圓」。學生若因肢體或動作協調限制無法操作實體圓規，改用紙條圓規或 App，並在個別化教育計畫（IEP）中寫明替代工具；「指定半徑」這個要求不變。</p></div></li>
+            <li><div><p class="t">移動與位置</p><p>黑板圓規畫圓時，讓不同學生上台；需要活動身體才能專注的學生，擔任「量半徑小幫手」，到各組幫忙量並記錄。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>說寫做回應卡，每人 1 張；小白板與白板筆</li>
+          <li>平板每組 1 台，事先裝好 GeoGebra</li>
+          <li>實體圓規、紙條圓規（做法見 G9）、黑板圓規</li>
+          <li>紙膠帶、軟木墊或瓦楞紙板、直尺</li>
+          <li>教師用座位表（記錄每位學生的回答方式）</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>回應卡每次提問約 2 分鐘，併在第 2 至 5 節各段內，不另占時間。徒手畫圓比較在第 3 節 0～6 分，與認識圓規同一段。App 在第 3 節 19～31 分的練習階梯與實體圓規並行，不另占時間。</dd>
+        <dt>對應障礙點</dt>
+        <dd>精細動作與書寫：懂得圓的概念，但手做不到、字寫不出來。口語表達：想得到說不出。這一格不直接對應某一個錯誤類型，它讓學生對錯誤類型 1 至 3 的理解能表現出來，不被表達方式擋住，教師才看得到學生真正的想法。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>座位表紀錄：每位學生在每個核心問題至少有一次被記下的回答，任何形式都算。</li>
+          <li>使用 App 或紙條圓規的學生，也完成「畫半徑 3 公分的圓並標出圓心」。</li>
+          <li>徒手畫圓比較後，學生能說出一個需要圓規的理由。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p2">第 2 節</a>：回應卡。<a href="lesson.html#p3">第 3 節</a>：徒手比較與三種畫圓工具（主場）。<a href="lesson.html#p4">第 4 節</a>：用圓規搬長度時選擇工具。<a href="lesson.html#p5">第 5 節</a>：三層挑戰與檢核題的作答方式可選。</dd>
+        <dt>調整類型</dt>
+        <dd>替代：以 App、紙條圓規替代實體圓規；以說與做替代寫。指定半徑的要求不變。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>4.1 提供並尊重多種回應、操作與移動方式（說寫做、上台、量半徑小幫手）；4.2 取得無障礙教材與輔助工具（App、紙條圓規、固定紙張）。</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="gl" id="g5">
+    <div class="gl-h"><span class="gl-code">G5</span><h3>表達與溝通</h3><span class="axis">多元行動與表達<br>支持層</span></div>
+    <div class="gl-b">
+      <p>學生用不同的方式把學會的東西做出來、說出來。作品形式可以選，但每件作品要看到的三件事是固定的。練習則用階梯安排，每一階都有明確的下一步。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">練習階梯：描、用、自由，再到應用</p><p>第 3 節 19～31 分的練習單分三格。描：紙上印好半徑 3 公分的虛線圓與圓心，針尖放在圓心、筆尖放在虛線上，沿虛線轉一圈。用：紙上只有兩個圓心點，畫半徑 3 公分與半徑 4 公分的圓。自由：自己選一個張開距離，張開後不再調整，在紙的左右各畫一個圓，第 4 節會拿出來用。應用在第 4 節 4～12 分：用圓規比較兩條線段哪一條比較長，並複製一條線段（針尖放在線段一端、筆尖放在另一端，張好後移到另一條線段上比）。「用」與「應用」是單元目標，每人都要完成；「描」是入口，「自由」可選。</p></div></li>
+            <li><div><p class="t">作品說明任選（第 5 節 6～22 分，三層挑戰內）</p><p>作品就是三層挑戰畫出的圓。作品旁的說明三選一：寫兩三句話、拍 30 秒短影片教同學怎麼畫、做成小海報。不論哪一種，都要做到三件事：標出圓心；畫一條半徑並寫出長度；畫一條直徑並寫出長度，說明 \( \text{直徑}=\text{半徑}+\text{半徑} \)。作品與小海報一起展出於圓的藝術展。</p></div></li>
+            <li><div><p class="t">拍短影片教同學畫圓</p><p>選拍影片的學生用三步驟腳本卡：「一、把圓規張開，對準直尺的 0 和要畫的半徑。二、針尖扎在圓心，不要動。三、捏住頂端，轉一圈回到起點。」兩人一組，一人操作一人拍，只拍手和紙，不拍臉；要讓觀眾看到怎麼量張開的長度，不只拍轉圓規的畫面。影片在班上播放屬延伸建議，未排入五節課，可放在下一堂數學課開頭，當成下一次練習的提示。</p></div></li>
+            <li><div><p class="t">規準公開</p><p>三件事做成規準卡貼在黑板，作品形式不影響評分。字寫得少的學生可以口頭補充，由教師記錄在規準卡上。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>練習單（描、用、自由三格），每人 1 張，每格有打勾欄</li>
+          <li>小海報紙、彩色筆</li>
+          <li>平板（拍影片）</li>
+          <li>三步驟腳本卡、作品規準卡</li>
+          <li>直尺、圓規、兩條長度不同的線段學習單與「量、搬、畫」步驟卡（應用一階，第 4 節）</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>第 3 節：練習階梯「描、用、自由」12 分鐘（19～31 分，與 G8 共用）。第 4 節：「應用」一階 8 分鐘（4～12 分，用圓規搬長度）。第 5 節：作品與說明（含短影片）併在三層挑戰的 16 分鐘內（6～22 分，與 G8 共用）。影片在班上播放 5 至 10 分鐘，屬延伸建議，未排入五節課。</dd>
+        <dt>對應障礙點</dt>
+        <dd>書寫與口語表達限制：作品形式可選，口頭補充可代替書寫。工作記憶：腳本卡把畫圓三步驟寫出來，學生不必記順序。錯誤類型 1：每件作品都要標出圓心、半徑、直徑。錯誤類型 2：作品中的直徑必須穿過圓心，規準卡上寫明。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>規準卡三件事逐項打勾，每件作品三項都要有。</li>
+          <li>影片中三個步驟都出現，順序正確。</li>
+          <li>練習階梯：每人「用」與「應用」兩階都打勾；應用一階要能正確說出兩條線段哪一條比較長。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p3">第 3 節</a>：練習階梯「描、用、自由」。<a href="lesson.html#p4">第 4 節</a>：「應用」一階，用圓規比較與複製線段。<a href="lesson.html#p5">第 5 節</a>：三層挑戰的作品與說明、短影片（主場）。</dd>
+        <dt>調整類型</dt>
+        <dd>替代：作品形式與表達工具可替代，口頭補充可替代書寫。分解：練習階梯把「會用圓規」拆成描、用、自由三格，第 4 節再接應用一階。規準三件事所有人相同。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>5.1 使用多種媒材溝通（文字說明、小海報、短影片）；5.2 使用多種工具建構與創作（圓規、App、實物）；5.3 以漸進支持建立流暢度（練習階梯）；5.4 處理表達方式上的偏見（作品形式不影響評分）。</dd>
+      </dl>
+    </div>
+  </article>
+
+  <article class="gl" id="g6">
+    <div class="gl-h"><span class="gl-code">G6</span><h3>策略發展</h3><span class="axis">多元行動與表達<br>執行功能層</span></div>
+    <div class="gl-b">
+      <p>把「畫圓」拆成學生自己管理得了的步驟：先定目標，再預想會卡在哪裡，畫完自己檢查。教師的口頭提醒改成學生手上的卡片。</p>
+      <dl>
+        <dt>具體做法</dt>
+        <dd>
+          <ol class="steps">
+            <li><div><p class="t">自設目標（每節開頭一段內，約 1 分鐘）</p><p>目標卡三選一或自訂：「我今天要：畫出半徑 3 公分的圓／畫出兩個一樣大的圓／畫出同心圓。」第一項是第 3 節的共同目標，每個人都要選到；想挑戰的再加選後兩項。目標卡從第 2 節 0～4 分的「回顧與今日目標」開始使用。</p></div></li>
+            <li><div><p class="t">策略卡：畫不出來時我會怎麼辦</p><p>如果針尖滑掉：紙下墊軟木墊，針尖壓進去一點。如果圓沒有接起來：捏住頂端一次轉完，轉不過去時改成轉紙。如果腳越畫越開：重新對準直尺量一次，請老師鎖緊螺絲。如果試了三次還是不行：換紙條圓規，或請夥伴幫忙壓紙。學生用過哪一條，就在旁邊畫圈。</p></div></li>
+            <li><div><p class="t">自我檢核表（每畫完一個圓）</p><p>封閉：手指沿著線走一圈，有沒有斷掉或叉開？半徑齊一：用直尺從圓心量到圓上三個不同的點，都一樣長嗎？圓心：圓心有標出來嗎？每一問勾「是」或「還沒」，「還沒」的旁邊寫下一步要做什麼。</p></div></li>
+            <li><div><p class="t">把資訊放在手邊</p><p>鉛筆盒裡貼一張小卡：正面是四個詞的圖示，背面是畫圓三步驟。學生卡住時先看小卡，再問人。</p></div></li>
+            <li><div><p class="t">節末對照（併在每節最後一段內）</p><p>回頭看目標卡，勾「完成」或「還差一點」，寫下下一節的目標。第 3 節併在 36～40 分的策略卡時段；第 5 節併在 37～40 分的回顧。</p></div></li>
+          </ol>
+        </dd>
+        <dt>準備材料</dt>
+        <dd><ul>
+          <li>目標卡、策略卡、自我檢核表，每人各 1 張</li>
+          <li>鉛筆盒小卡（四詞圖示與畫圓三步驟）</li>
+          <li>直尺、軟木墊、紙條圓規（策略卡最後一條會用到）</li>
+        </ul></dd>
+        <dt>預估時間</dt>
+        <dd>目標卡：每節開頭一段內圈選、最後一段內對照，各約 1 分鐘，不另占時間。第 3 節：夥伴互測 5 分鐘（31～36 分，與 G8 共用）、策略卡 4 分鐘（36～40 分，與 G9 共用）；自我檢核表在 19～31 分的練習階梯中隨時使用，每次約 1 分鐘。第 5 節：自我檢核與夥伴檢核 6 分鐘（22～28 分，與 G8、G9 共用）。</dd>
+        <dt>對應障礙點</dt>
+        <dd>執行功能與工作記憶：畫圓時要同時記住張開多少、針放哪裡、怎麼轉，畫完還要記得檢查。步驟、策略與檢查項目都寫在卡上，學生看卡做，不必全部放在腦中。錯誤類型 3：「半徑齊一」這一問，讓學生每畫一個圓就用「半徑一樣長」檢查一次，這正是判斷兩圓一樣大的依據。</dd>
+        <dt>檢核方式</dt>
+        <dd><ul>
+          <li>自我檢核表完成率。</li>
+          <li>教師每節抽 5 份，比對「半徑齊一」一欄學生自評與教師實際量測是否一致。</li>
+          <li>策略卡上畫圈的策略數，以及第 3 節到第 5 節是否增加。</li>
+          <li>目標卡勾「完成」的學生，作品上確實看得到該目標。</li>
+        </ul></dd>
+        <dt>對應節次</dt>
+        <dd><a href="lesson.html#p2">第 2 節</a>：目標卡首次使用（0～4 分）。<a href="lesson.html#p3">第 3 節</a>：策略卡、自我檢核表首次使用（主場）。<a href="lesson.html#p4">第 4 節</a>：用「半徑齊一」檢查甲、乙兩圓。<a href="lesson.html#p5">第 5 節</a>：自我檢核與夥伴檢核、目標對照。</dd>
+        <dt>調整類型</dt>
+        <dd>重整：把教師的口頭提醒改成學生手上的卡片，由學生自己管理。檢查的項目與課綱要求相同。</dd>
+        <dt>UDL 檢核點</dt>
+        <dd>6.1 設定有意義的目標（目標卡）；6.2 預想挑戰並規劃（策略卡）；6.3 組織資訊與資源（鉛筆盒小卡）；6.4 監控進展（自我檢核表、節末對照）。</dd>
+      </dl>
+      <figure class="fig">
+        <svg viewBox="0 0 600 250" role="img" aria-labelledby="u-ck-t u-ck-d">
+          <title id="u-ck-t">自我檢核的三種情形</title>
+          <desc id="u-ck-d">三個學生畫的圓並排比較。左邊合格：線條完整接起來，圓心有點，從圓心到圓上三個不同位置的半徑都標示 3 公分，封閉與半徑齊一都做到。中間沒有封閉：線條畫了大約九成圈，右側留下一個缺口，起點和終點沒有接起來。右邊半徑不齊：線條像慢慢張開的漩渦，終點比起點離圓心更遠，接不起來；從圓心往上量的半徑比較短，往下量的半徑比較長。</desc>
+          <!-- 左：合格 -->
+          <circle cx="100" cy="112" r="62" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+          <g stroke="var(--brass)" stroke-width="2.4">
+            <line x1="100" y1="112" x2="100" y2="50"/>
+            <line x1="100" y1="112" x2="46.31" y2="143"/>
+            <line x1="100" y1="112" x2="153.69" y2="143"/>
+          </g>
+          <circle cx="100" cy="112" r="4" fill="var(--ink)"/>
+          <g font-size="13" font-weight="600" fill="var(--brass)">
+            <text x="106" y="86">3 公分</text>
+            <text x="80" y="118" text-anchor="end">3 公分</text>
+            <text x="120" y="118">3 公分</text>
+          </g>
+          <g text-anchor="middle">
+            <text x="100" y="206" font-size="14" font-weight="600" fill="var(--green)">合格</text>
+            <text x="100" y="228" font-size="12.5" fill="var(--graphite)">封閉、半徑齊一都做到</text>
+          </g>
+          <!-- 中：沒有封閉 -->
+          <path d="M 358.26 90.79 A 62 62 0 1 0 358.26 133.21" fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+          <circle cx="358.26" cy="90.79" r="3.4" fill="var(--red)"/>
+          <circle cx="358.26" cy="133.21" r="3.4" fill="var(--red)"/>
+          <circle cx="300" cy="112" r="4" fill="var(--ink)"/>
+          <text x="368" y="117" font-size="13" font-weight="600" fill="var(--red)">缺口</text>
+          <g text-anchor="middle">
+            <text x="300" y="206" font-size="14" font-weight="600" fill="var(--red)">沒有封閉</text>
+            <text x="300" y="228" font-size="12.5" fill="var(--graphite)">線沒有接起來</text>
+          </g>
+          <!-- 右：半徑不齊 -->
+          <path d="M 556.0 112.0 L 555.8 104.7 L 554.6 97.4 L 552.4 90.3 L 549.4 83.5 L 545.4 77.1 L 540.7 71.3 L 535.2 66.2 L 529.0 61.8 L 522.3 58.2 L 515.1 55.5 L 507.7 53.8 L 500.0 53.0 L 492.3 53.3 L 484.6 54.5 L 477.1 56.8 L 470.0 60.0 L 463.3 64.2 L 457.2 69.2 L 451.8 75.0 L 447.2 81.5 L 443.4 88.6 L 440.6 96.1 L 438.8 103.9 L 438.0 112.0 L 438.3 120.1 L 439.6 128.2 L 442.0 136.0 L 445.4 143.5 L 449.8 150.5 L 455.1 156.9 L 461.2 162.6 L 468.0 167.4 L 475.4 171.4 L 483.3 174.3 L 491.5 176.2 L 500.0 177.0 L 508.5 176.7 L 517.0 175.3 L 525.2 172.7 L 533.0 169.2 L 540.3 164.6 L 547.0 159.0 L 553.0 152.6 L 558.0 145.5 L 562.1 137.7 L 565.2 129.5 L 567.2 120.8 L 568.0 112.0" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/>
+          <g stroke="var(--brass)" stroke-width="2.4">
+            <line x1="500" y1="112" x2="500" y2="53"/>
+            <line x1="500" y1="112" x2="500" y2="177"/>
+          </g>
+          <circle cx="500" cy="112" r="4" fill="var(--ink)"/>
+          <g font-size="13" font-weight="600" fill="var(--red)">
+            <text x="506" y="88">短</text>
+            <text x="506" y="152">長</text>
+          </g>
+          <g text-anchor="middle">
+            <text x="500" y="206" font-size="14" font-weight="600" fill="var(--red)">半徑不齊</text>
+            <text x="500" y="228" font-size="12.5" fill="var(--graphite)">量起來一長一短</text>
+          </g>
+        </svg>
+        <figcaption><b>自我檢核表的兩個關鍵問題</b>　中間的圓「封閉」要勾「還沒」，對應策略卡「捏住頂端一次轉完」；右邊的圓「半徑齊一」要勾「還沒」，對應策略卡「重新量、鎖緊螺絲」。</figcaption>
+      </figure>
+    </div>
+  </article>
+</section>
+
+<nav class="pager" aria-label="上下頁"><a href="concept.html"><span class="k">上一頁</span><span class="v">數學本質</span></a><a class="next" href="lesson.html"><span class="k">下一頁</span><span class="v">教學流程</span></a></nav>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>資料來源　國立臺中教育大學測驗統計與適性學習研究中心（2023）。112 年度縣市學生學習能力檢測：數學三年級施測結果報告。</p>
+    <p>設計框架　CAST (2024). Universal Design for Learning Guidelines version 3.0.</p>
+    <p>春耕未來・數造共好｜在知識翻新環境下以 AI 協作之教師專業增能計畫．徐道寧教授數學教育與人文關懷實踐獎助．國立清華大學教育與學習科技學系</p>
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="window.spmRenderMath&&spmRenderMath()"></script>
+<script src="assets/site.js?v=4"></script>
+</body>
+</html>
